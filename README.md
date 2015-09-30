@@ -1,0 +1,2 @@
+# iSYSU-Wechat
+For iSYSU
