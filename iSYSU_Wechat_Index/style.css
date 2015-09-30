@@ -1,0 +1,130 @@
+
+body {
+    background-color:  	#228B22;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.page-header {
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+#img-carousel {
+    display: none;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#head {
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+#head span#sysu {
+    display: block;
+    float: right;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: Georgia,serif;
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 1px 1px 1px gray;
+}
+
+.item-div {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+    padding: 5px;
+}
+
+.col-xs-4 {
+    text-align: center;
+}
+
+a.thumbnail {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+a.thumbnail:hover {
+
+}
+
+.item-img {
+    animation: start_animation 2s 1s ;
+    -webkit-animation: start_animation 2s 1s;
+    -o-animation: start_animation 2s 1s;
+    -moz-animation: start_animation 2s 1s;
+    position: relative;
+    width: 80%;
+}
+
+a.thumbnail span {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+@keyframes start_animation {
+    0% {
+
+    }
+    25% {
+        transform: rotateY(180deg) rotateX(360deg);
+        -webkit-transform: rotateY(180deg) rotateX(360deg);
+        -moz-transform: rotateY(180deg) rotateX(360deg);
+        -ms-transform: rotateY(180deg) rotateX(360deg);
+        -o-transform: rotateY(180deg) rotateX(360deg);
+    }
+    50% {
+        transform: rotateY(360deg) rotateX(360deg);
+        -webkit-transform: rotateY(360deg) rotateX(360deg);
+        -moz-transform: rotateY(360deg) rotateX(360deg);
+        -ms-transform: rotateY(360deg) rotateX(360deg);
+        -o-transform: rotateY(360deg) rotateX(360deg);
+    }
+    75% {
+        -webkit-transform: translateX(30px);
+        -moz-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+        -o-transform: translateX(30px);
+        transform: translateX(30px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+#foot {
+    text-align: center;
+    color: white;
+}
+
+@media screen and (min-width: 500px) {
+    #wrapper {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #wrapper {
+        width: 50%;
+        /*-webkit-box-shadow: 10px 10px 40px gray;
+        -moz-box-shadow: 10px 10px 40px gray;
+        box-shadow: 10px 10px 40px gray;*/
+    }
+}
