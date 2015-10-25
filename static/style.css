@@ -1,0 +1,121 @@
+body {
+    background: #d7dfbe;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#wrapper {
+    width: 100%;
+    padding: 10% 5%;
+    position: relative;
+}
+
+#background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.col-xs-4 {
+    text-align: center;
+}
+
+.item-div {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+a.thumbnail {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-img {
+    width: 70%;
+    animation: start_animation 2s 1s ;
+    -webkit-animation: start_animation 2s 1s;
+    -o-animation: start_animation 2s 1s;
+    -moz-animation: start_animation 2s 1s;
+    position: relative;
+}
+
+a.thumbnail p {
+    margin-top: 10px;
+    color: gray;
+    font-size: 9px;
+
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+@keyframes start_animation {
+    0% {
+
+    }
+    25% {
+        transform: rotateY(180deg) rotateX(360deg);
+        -webkit-transform: rotateY(180deg) rotateX(360deg);
+        -moz-transform: rotateY(180deg) rotateX(360deg);
+        -ms-transform: rotateY(180deg) rotateX(360deg);
+        -o-transform: rotateY(180deg) rotateX(360deg);
+    }
+    50% {
+        transform: rotateY(360deg) rotateX(360deg);
+        -webkit-transform: rotateY(360deg) rotateX(360deg);
+        -moz-transform: rotateY(360deg) rotateX(360deg);
+        -ms-transform: rotateY(360deg) rotateX(360deg);
+        -o-transform: rotateY(360deg) rotateX(360deg);
+    }
+    75% {
+        -webkit-transform: translateX(30px);
+        -moz-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+        -o-transform: translateX(30px);
+        transform: translateX(30px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .item-div {
+        text-align: center;
+        width: 80%;
+        height: auto;
+        padding: 5px;
+        margin-top: 7%;
+    }
+
+    a.thumbnail p {
+        margin-top: 10px;
+        color: gray;
+        font-size: inherit;
+
+        text-shadow: 1px 1px 1px #FFFFFF;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background: #eeeeee;
+    }
+
+    #wrapper {
+        width: 50%;
+        padding: 3% 5%;
+        position: relative;
+    }
+
+}
