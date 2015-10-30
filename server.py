@@ -12,15 +12,23 @@ class IndexHandler(tornado.web.RequestHandler):
     def get(self):
         self.render("index.html")
 
+class GameHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render("game.html")
+
 def main():
     # tornado.options.parse_command_line()
 
-    APP = tornado.web.Application(
-        handlers = [("/", IndexHandler)],
-        template_path = os.path.join(os.path.dirname(__file__), "templates"),
-        static_path = os.path.join(os.path.dirname(__file__), "static"),
-        debug = True
-    )
+    settings = {
+        "static_path": os.path.join(os.path.dirname(__file__), "static"),
+        "template_path": os.path.join(os.path.dirname(__file__), "templates"),
+        "debug": True
+    }
+
+    APP = tornado.web.Application([
+        ("/", IndexHandler),
+        (r"/game", GameHandler)
+    ], **settings)
 
     HTTP_SERVER = tornado.httpserver.HTTPServer(APP)
     HTTP_SERVER.listen(options.port)
