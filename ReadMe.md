@@ -6,9 +6,9 @@
 
 ### 技术架构 ###
 
-后端服务器：基于python的Tornado
-数据库：未使用，待定
-前端：Bootstrap3， cocos2d-JS游戏框架， jquery
+- 后端服务器：基于python的Tornado
+- 数据库：未使用，待定
+- 前端：Bootstrap3， cocos2d-JS游戏框架， jquery
 
 ### 运行方法 ###
 
@@ -20,10 +20,10 @@ python server.py
 
 ### 项目结构 ###
 
-static: 包含静态文件， css, js, res/imgs, libs（依赖库）
-templates: 模板文件
-.idea: pycharm IDE 依赖
-server.py
+- static: 包含静态文件， css, js, res/imgs, libs（依赖库）
+- templates: 模板文件
+- .idea: pycharm IDE 依赖
+- server.py
 
 ### 未完成任务 ###
 
