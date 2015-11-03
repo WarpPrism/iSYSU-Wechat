@@ -13,7 +13,7 @@ var StartLayer = cc.Layer.extend({
         helloLabel.y = size.Height / 2;
         this.addChild(helloLabel);*/
 
-        this.bgSprite = new cc.Sprite(res.BackGround_png);
+        this.bgSprite = new cc.Sprite(res.back1);
         this.bgSprite.attr({
             x: size.width / 2,
             y: size.height / 2
