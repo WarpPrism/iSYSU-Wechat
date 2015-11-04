@@ -1,45 +1,54 @@
 /**
  * Created by zhoujihao on 15-10-20.
  */
-var BackgroundLayer = cc.Layer.extend({
-    // TiledMap
-    map00: null,
-    map01: null,
-    mapWidth: 0,
-    mapIndex: 0
-});
 
 var PlayLayer = cc.Layer.extend({
     bgSprite: null,
     runnerSprite: null,
+    win_size: null,
+    center_pos: null,
+    start_time : null,
+    mission_complete: false,
+
+    // Initial function of play layer.
     ctor: function() {
         this._super();
-        var size = cc.winSize;
+        // The start time of this mission.
+        this.start_time = new Date().getTime();
 
+        this.win_size = cc.winSize;
+        this.center_pos = cc.p(this.win_size.width / 2, this.win_size.height / 2);
+
+        this.addBackground();
+        this.addRunner();
+        this.addTouchEventListener();
+        this.addTimeLabel();
+
+        // Count Time!
+        this.schedule(this.updateTime, 0.5, 100, 0);
+
+        return true;
+    },
+
+    addBackground: function() {
         // add background of this layer
-        this.bgSprite = new cc.Sprite(res.back1);
+        this.bgSprite = new backgroundSprite(res.back1);
         this.bgSprite.attr({
-            x: size.width / 2,
-            y: size.height / 2
+            x: this.win_size.width + 500,
+            y: this.win_size.height / 2
         });
         this.addChild(this.bgSprite, 0);
+    },
 
-        // add runner
+    addRunner: function() {
+          // add runner
         this.runnerSprite = new runnerSprite(res.runner_Ready);
         /*console.log(this.runnerSprite.texture.url);*/
         this.runnerSprite.attr({
-            x: size.width / 15,
+            x: this.win_size.width / 3,
             y: 80
         });
-        /*var runAction = cc.MoveTo.create(4, cc.p(this.runnerSprite.y, -30));
-        this.runnerSprite.runAction(runAction);*/
-        this.addChild(this.runnerSprite, 2);
-
-        this.addTouchEventListener();
-
-        this.labelMeter = new cc.LabelTTF("0M", "Helvetica", 20);
-        this.labelMeter.setPosition(cc.p(size.width - 70, size.height - 20));
-        this.addChild(this.labelMeter);
+        this.addChild(this.runnerSprite, 1);
     },
 
     addTouchEventListener: function() {
@@ -50,84 +59,93 @@ var PlayLayer = cc.Layer.extend({
             swallowTouches: true,
             //onTouchBegan event callback function
             onTouchBegan: function(touch, event) {
-                var pos = touch.getLocation();
+                /*var pos = touch.getLocation();*/
                 var target = event.getCurrentTarget();
-                target.runnerSprite.move();
+                var x = target.bgSprite._position.x;
+                if (x > -(2000 - target.win_size.width)) {
+                    target.bgSprite.move();
+                    target.runnerSprite.changeTexture();
+                } else {
+                    if(target.runnerSprite.move()) {
+                        target.endMissionSuccessfully();
+                        cc.eventManager.removeListener(this);
+                    }
+                    target.runnerSprite.changeTexture();
+                }
                 return false;
             }
         });
         cc.eventManager.addListener(this.touchListener, this);
-    }
-
-});
-
-var PlayScene = cc.Scene.extend({
-   onEnter: function() {
-       this._super();
-       var layer = new PlayLayer();
-       this.addChild(layer);
-   }
-});
-/*var PlayLayer = cc.Layer.extend({
-    bgSprite:null,
-    leafSprites: null,
-    ctor: function() {
-        this._super();
-        this.leafSprites = [];
-        var size = cc.winSize;
-
-
-        // add bg
-        this.bgSprite = new cc.Sprite(res.BackGround_png);
-        this.bgSprite.attr({
-            x: size.width / 2,
-            y: size.height / 2
-            // rotation: 180
-        });
-        this.addChild(this.bgSprite, 0);
-
-        // 设置定时器,
-        this.schedule(this.update,1,16*1024,1);
-        return true;
     },
 
-    addLeaf: function() {
-        var leaf = new cc.Sprite(res.Leaf_png);
-        var size = cc.winSize;
-
-        var x = leaf.width/2+size.width/2*cc.random0To1();
-
-        leaf.attr({
-            x: x,
-            y: size.height - 30,
-            scale: 0.5
-        });
-
-        var dropAction = cc.MoveTo.create(4, cc.p(leaf.x,-30));
-        leaf.runAction(dropAction);
-
-        this.addChild(leaf, 5);
-
-        this.leafSprites.push(leaf);
+    addTimeLabel: function() {
+        this.labelTime = new cc.LabelTTF("剩余时间：20 s", "Helvetica", 40);
+        this.labelTime.setPosition(cc.p(this.win_size.width - 200, this.win_size.height - 50));
+        this.addChild(this.labelTime, 1);
     },
 
-    removeLeaf : function() {
-        //移除到屏幕底部的leaf
-        for (var i = 0; i < this.leafSprites.length; i++) {
-            cc.log("removeSushi.........");
-            if(0 == this.leafSprites[i].y) {
-                cc.log("==============remove:"+i);
-                this.leafSprites[i].removeFromParent();
-                this.leafSprites[i] = undefined;
-                this.leafSprites.splice(i,1);
-                i= i-1;
-            }
+    updateTime: function() {
+        if (this.mission_complete) {
+            return;
         }
+        var now_time = new Date().getTime();
+        var delta_t = Math.floor((now_time - this.start_time) / 1000);
+        var remain = 20 - delta_t;
+        if (remain < 0) {
+            this.labelTime.setString("计时完毕");
+            this.endWithTimeout();
+            return;
+        }
+        this.labelTime.setString("剩余时间：" + remain + ' s');
     },
 
-    update: function() {
-        this.addLeaf();
-        this.removeLeaf();
+    endMissionSuccessfully: function() {
+        this.mission_complete = true;
+        var tipSprite = new cc.Sprite(res.success1);
+        tipSprite.setPosition(this.center_pos);
+        this.addChild(tipSprite, 2);
+
+        var inviteFriends = new cc.MenuItemImage(
+            res.invite_friends,
+            res.invite_friends,
+            function() {
+                alert("Invite Friends!");
+            }, this);
+
+        inviteFriends.attr({
+            x: this.win_size.width / 2,
+            y: this.win_size.height / 2
+        });
+
+        var menu = new cc.Menu(inviteFriends);
+        menu.x = 0;
+        menu.y = 0;
+        this.addChild(menu, 2);
+    },
+
+    endWithTimeout: function() {
+        this.mission_complete = false;
+        var tipSprite = new cc.Sprite(res.failure1);
+        tipSprite.setPosition(this.center_pos);
+        this.addChild(tipSprite, 2);
+
+        var runAgain = new cc.MenuItemImage(
+            res.run_again,
+            res.run_again,
+            function() {
+                alert("Run Again!");
+                cc.director.runScene(new PlayScene());
+            }, this);
+
+        runAgain.attr({
+            x: this.win_size.width / 2,
+            y: this.win_size.height / 2
+        });
+
+        var menu = new cc.Menu(runAgain);
+        menu.x = 0;
+        menu.y = 0;
+        this.addChild(menu, 2);
     }
 
 });
@@ -136,7 +154,7 @@ var PlayScene = cc.Scene.extend({
    onEnter: function() {
        this._super();
        var layer = new PlayLayer();
-
        this.addChild(layer);
    }
-});*/
+});
+

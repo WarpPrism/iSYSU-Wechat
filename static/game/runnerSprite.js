@@ -11,7 +11,7 @@ var runnerSprite = cc.Sprite.extend({
 
     },
 
-    move: function() {
+    changeTexture: function() {
         /*console.log(this.texture.url);*/
         // Animation??
         /*var animation = new cc.Animation();
@@ -40,6 +40,16 @@ var runnerSprite = cc.Sprite.extend({
             texture = res.runner_Ready;
         }
         this.setTexture(texture);
-        this.runAction(new cc.moveBy(0.1, 15, 0));
+
+    },
+
+    move: function() {
+        /*console.log(this._position);*/
+        if (this._position.x >= 1070) {
+            return true;
+        } else {
+            this.runAction(new cc.moveBy(0.1, 30, 0));
+            return false;
+        }
     }
 });

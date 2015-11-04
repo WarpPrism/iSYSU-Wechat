@@ -24,7 +24,6 @@ var StartLayer = cc.Layer.extend({
             res.Start_png,
             res.Start_png,
             function () {
-                cc.log("Menu is clicked!");
                 cc.director.runScene(new PlayScene());
             }, this);
 
