@@ -7,8 +7,8 @@ window.onload = function() {
         var canvas = document.getElementById("gameCanvas");
 
         // Cross Screen
-        cc.view.setDesignResolutionSize(1500, 750, cc.ResolutionPolicy.SHOW_ALL);
-        cc.view.setResolutionPolicy(cc.ResolutionPolicy.SHOW_ALL);
+        cc.view.setDesignResolutionSize(1500, 750, cc.ResolutionPolicy.NO_BORDER);
+        cc.view.setResolutionPolicy(cc.ResolutionPolicy.NO_BORDER);
         cc.view.resizeWithBrowserSize(true);
 
         // Full Screen
@@ -16,7 +16,7 @@ window.onload = function() {
 
         //load resources
         cc.LoaderScene.preload(g_resources, function () {
-            cc.director.runScene(new StartScene());
+            cc.director.runScene(new BeginScene());
         }, this);
     };
     cc.game.run("gameCanvas");

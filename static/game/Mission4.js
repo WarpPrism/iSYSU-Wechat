@@ -2,37 +2,59 @@
  * Created by zhoujihao on 15-10-20.
  */
 
-var PlayLayer = cc.Layer.extend({
+var PlayLayer4 = cc.Layer.extend({
     bgSprite: null,
     runnerSprite: null,
     win_size: null,
     center_pos: null,
     start_time : null,
     mission_complete: false,
+    request_time: 20,
 
     // Initial function of play layer.
     ctor: function() {
         this._super();
-        // The start time of this mission.
-        this.start_time = new Date().getTime();
 
         this.win_size = cc.winSize;
         this.center_pos = cc.p(this.win_size.width / 2, this.win_size.height / 2);
 
         this.addBackground();
         this.addRunner();
-        this.addTouchEventListener();
         this.addTimeLabel();
 
-        // Count Time!
-        this.schedule(this.updateTime, 0.5, 100, 0);
+        this.ready_go = new cc.LabelTTF("Ready?", "Symbol", 120);
+        this.ready_go.setColor(cc.color(255,120,0));
+        this.ready_go.setPosition(cc.p(this.win_size.width / 2, this.win_size.height / 2));
+        this.addChild(this.ready_go, 1);
+
+
+        this.mission_info = new cc.LabelTTF("第四关", "Symbol", 40);
+        this.mission_info.setColor(cc.color(255,120,0));
+        this.mission_info.setPosition(cc.p(200, this.win_size.height - 60));
+        this.addChild(this.mission_info, 1);
+
+
+        // Closure ??!!
+        var layer = this;
+        setTimeout(function () {
+            layer.ready_go.setString("Go!");
+
+            // Count Time! Game Start!
+            // The start time of this mission.
+            layer.start_time = new Date().getTime();
+            layer.schedule(layer.updateTime, 0.5, 100, 0);
+            layer.addTouchEventListener();
+        }, 1000);
+        setTimeout(function () {
+            layer.ready_go.setString("");
+        }, 1500);
 
         return true;
     },
 
     addBackground: function() {
         // add background of this layer
-        this.bgSprite = new backgroundSprite(res.back1);
+        this.bgSprite = new backgroundSprite(res.mission4);
         this.bgSprite.attr({
             x: this.win_size.width + 500,
             y: this.win_size.height / 2
@@ -45,7 +67,7 @@ var PlayLayer = cc.Layer.extend({
         this.runnerSprite = new runnerSprite(res.runner_Ready);
         /*console.log(this.runnerSprite.texture.url);*/
         this.runnerSprite.attr({
-            x: this.win_size.width / 3,
+            x: this.win_size.width / 5,
             y: 80
         });
         this.addChild(this.runnerSprite, 1);
@@ -68,7 +90,6 @@ var PlayLayer = cc.Layer.extend({
                 } else {
                     if(target.runnerSprite.move()) {
                         target.endMissionSuccessfully();
-                        cc.eventManager.removeListener(this);
                     }
                     target.runnerSprite.changeTexture();
                 }
@@ -79,19 +100,21 @@ var PlayLayer = cc.Layer.extend({
     },
 
     addTimeLabel: function() {
-        this.labelTime = new cc.LabelTTF("剩余时间：20 s", "Helvetica", 40);
-        this.labelTime.setPosition(cc.p(this.win_size.width - 200, this.win_size.height - 50));
+        this.labelTime = new cc.LabelTTF("剩余时间：" + this.request_time + " s", "Symbol", 40);
+        this.labelTime.setColor(cc.color(255,120,0));
+        this.labelTime.setPosition(cc.p(this.win_size.width - 250, this.win_size.height - 60));
         this.addChild(this.labelTime, 1);
     },
 
     updateTime: function() {
+
         if (this.mission_complete) {
             return;
         }
         var now_time = new Date().getTime();
         var delta_t = Math.floor((now_time - this.start_time) / 1000);
-        var remain = 20 - delta_t;
-        if (remain < 0) {
+        var remain = this.request_time - delta_t;
+        if (remain <= 0) {
             this.labelTime.setString("计时完毕");
             this.endWithTimeout();
             return;
@@ -101,6 +124,7 @@ var PlayLayer = cc.Layer.extend({
 
     endMissionSuccessfully: function() {
         this.mission_complete = true;
+        cc.eventManager.removeListener(this.touchListener);
         var tipSprite = new cc.Sprite(res.success1);
         tipSprite.setPosition(this.center_pos);
         this.addChild(tipSprite, 2);
@@ -113,17 +137,30 @@ var PlayLayer = cc.Layer.extend({
             }, this);
 
         inviteFriends.attr({
-            x: this.win_size.width / 2,
-            y: this.win_size.height / 2
+            x: this.win_size.width / 2 - 120,
+            y: this.win_size.height / 2 - 230
         });
 
-        var menu = new cc.Menu(inviteFriends);
+        var run_again = new cc.MenuItemImage(
+            res.run_again_small,
+            res.run_again_small,
+            function() {
+                cc.director.runScene(new BeginScene());
+            }, this);
+
+        run_again.attr({
+            x: this.win_size.width / 2 + 120,
+            y: this.win_size.height / 2 - 230
+        });
+
+        var menu = new cc.Menu(run_again, inviteFriends);
         menu.x = 0;
         menu.y = 0;
         this.addChild(menu, 2);
     },
 
     endWithTimeout: function() {
+        cc.eventManager.removeListener(this.touchListener);
         this.mission_complete = false;
         var tipSprite = new cc.Sprite(res.failure1);
         tipSprite.setPosition(this.center_pos);
@@ -133,16 +170,15 @@ var PlayLayer = cc.Layer.extend({
             res.run_again,
             res.run_again,
             function() {
-                alert("Run Again!");
-                cc.director.runScene(new PlayScene());
+                cc.director.runScene(new BeginScene());
             }, this);
 
         runAgain.attr({
             x: this.win_size.width / 2,
-            y: this.win_size.height / 2
+            y: this.win_size.height / 2 - 200
         });
 
-        var menu = new cc.Menu(runAgain);
+        var menu = new cc.Menu(runAgain, getCloseLabel(this.win_size));
         menu.x = 0;
         menu.y = 0;
         this.addChild(menu, 2);
@@ -150,10 +186,26 @@ var PlayLayer = cc.Layer.extend({
 
 });
 
-var PlayScene = cc.Scene.extend({
+var getCloseLabel = function(size) {
+    this.item = new cc.MenuItemImage(
+            res.close,
+            res.close,
+            function () {
+                cc.director.runScene(new BeginScene());
+            }, this);
+    this.item.attr({
+            x: size.width*3/4-58,
+            y: size.height - 90 ,
+            anchorX: 0.5,
+            anchorY: 0.5
+        });
+    return this.item;
+};
+
+var Mission4 = cc.Scene.extend({
    onEnter: function() {
        this._super();
-       var layer = new PlayLayer();
+       var layer = new PlayLayer4();
        this.addChild(layer);
    }
 });

@@ -48,7 +48,7 @@ var runnerSprite = cc.Sprite.extend({
         if (this._position.x >= 1070) {
             return true;
         } else {
-            this.runAction(new cc.moveBy(0.1, 30, 0));
+            this.runAction(new cc.moveBy(0.2, 50, 0));
             return false;
         }
     }
