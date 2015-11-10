@@ -3,9 +3,12 @@
  */
 
 window.onload = function() {
+    var canvas = document.getElementById("gameCanvas");
+    /*alert(window.orientation);
+    if (window.orientation == 0) {
+        /!*canvas.addClass('rotate');*!/
+    }*/
     cc.game.onStart = function() {
-        var canvas = document.getElementById("gameCanvas");
-
         // Cross Screen
         cc.view.setDesignResolutionSize(1500, 750, cc.ResolutionPolicy.NO_BORDER);
         cc.view.setResolutionPolicy(cc.ResolutionPolicy.NO_BORDER);
@@ -13,6 +16,7 @@ window.onload = function() {
 
         // Full Screen
         /*cc.screen.requestFullScreen(canvas);*/
+        cc.view.enableAutoFullScreen(true)
 
         //load resources
         cc.LoaderScene.preload(g_resources, function () {
@@ -20,4 +24,6 @@ window.onload = function() {
         }, this);
     };
     cc.game.run("gameCanvas");
+
+
 };
