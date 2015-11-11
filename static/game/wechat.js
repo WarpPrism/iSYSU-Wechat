@@ -1,6 +1,3 @@
-/**
- * Created by zhoujihao on 15-11-10.
- */
 
 /*
 wx.config({

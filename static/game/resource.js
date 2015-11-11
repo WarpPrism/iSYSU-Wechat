@@ -24,7 +24,11 @@ var res = {
     begin_rules:"static/res/game/home1.png",
     rule_label:"static/res/game/rules3.gif",
     rule_know:"static/res/game/rules4.gif",
-    close:"static/res/game/close.gif"
+    close:"static/res/game/close.gif",
+
+    // music and audio
+    backgroundMP3: "static/res/game/background.mp3",
+    jumpWAV: "static/res/game/jump.WAV"
 };
 
 var g_resources = [
@@ -48,5 +52,8 @@ var g_resources = [
     res.begin_rules,
     res.close,
     res.rule_know,
-    res.rule_label
+    res.rule_label,
+
+    res.backgroundMP3,
+    res.jumpWAV
 ];

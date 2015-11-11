@@ -4,19 +4,26 @@
 
 window.onload = function() {
     var canvas = document.getElementById("gameCanvas");
-    /*alert(window.orientation);
-    if (window.orientation == 0) {
-        /!*canvas.addClass('rotate');*!/
-    }*/
+    console.log(canvas);
+    console.log("Run! SYSUer!!");
+
     cc.game.onStart = function() {
         // Cross Screen
+        cc.view.adjustViewPort(true);
+        cc.view.enableAutoFullScreen(true);
+
+       /* // 横屏模式
         cc.view.setDesignResolutionSize(1500, 750, cc.ResolutionPolicy.NO_BORDER);
         cc.view.setResolutionPolicy(cc.ResolutionPolicy.NO_BORDER);
-        cc.view.resizeWithBrowserSize(true);
+        cc.view.resizeWithBrowserSize(true);*/
 
-        // Full Screen
-        /*cc.screen.requestFullScreen(canvas);*/
-        cc.view.enableAutoFullScreen(true)
+        /*// 微信竖屏解决方案
+        cc.view.setDesignResolutionSize(1000, 1700, cc.ResolutionPolicy.NO_BORDER);
+        cc.view.setResolutionPolicy(cc.ResolutionPolicy.NO_BORDER);
+        cc.view.resizeWithBrowserSize(true);*/
+        cc.view.setDesignResolutionSize(750, 1500, cc.ResolutionPolicy.NO_BORDER);
+        cc.view.setResolutionPolicy(cc.ResolutionPolicy.NO_BORDER);
+        cc.view.resizeWithBrowserSize(true);
 
         //load resources
         cc.LoaderScene.preload(g_resources, function () {
@@ -27,3 +34,4 @@ window.onload = function() {
 
 
 };
+

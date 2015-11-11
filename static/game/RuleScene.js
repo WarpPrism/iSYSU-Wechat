@@ -34,7 +34,7 @@ var getKnowLabel = function(size) {
             }, this);
     this.item.attr({
             x: size.width / 2,
-            y: size.height / 4,
+            y: size.height / 4 + 150,
             anchorX: 0.5,
             anchorY: 0.5
         });
@@ -79,6 +79,7 @@ var RuleScene = cc.Scene.extend({
     onEnter: function() {
         this._super();
         var layer = new RuleLayer();
+        layer.rotation = 90;
         this.addChild(layer);
     }
 });

@@ -9,7 +9,7 @@ var PlayLayer2 = cc.Layer.extend({
     center_pos: null,
     start_time : null,
     mission_complete: false,
-    request_time: 20,
+    request_time: 17,
 
     // Initial function of play layer.
     ctor: function() {
@@ -17,6 +17,7 @@ var PlayLayer2 = cc.Layer.extend({
 
         this.win_size = cc.winSize;
         this.center_pos = cc.p(this.win_size.width / 2, this.win_size.height / 2);
+        console.log(this.win_size.width, this.win_size.height);
 
         this.addBackground();
         this.addRunner();
@@ -29,7 +30,7 @@ var PlayLayer2 = cc.Layer.extend({
 
         this.mission_info = new cc.LabelTTF("第二关", "Symbol", 40);
         this.mission_info.setColor(cc.color(255,120,0));
-        this.mission_info.setPosition(cc.p(200, this.win_size.height - 60));
+        this.mission_info.setPosition(cc.p(-150, this.win_size.height/2 + 300));
         this.addChild(this.mission_info, 1);
 
 
@@ -53,9 +54,9 @@ var PlayLayer2 = cc.Layer.extend({
 
     addBackground: function() {
         // add background of this layer
-        this.bgSprite = new backgroundSprite(res.mission2);
+        this.bgSprite = new backgroundSprite(res.mission1);
         this.bgSprite.attr({
-            x: this.win_size.width + 500,
+            x: this.win_size.width  + 950,
             y: this.win_size.height / 2
         });
         this.addChild(this.bgSprite, 0);
@@ -66,8 +67,8 @@ var PlayLayer2 = cc.Layer.extend({
         this.runnerSprite = new runnerSprite(res.runner_Ready);
         /*console.log(this.runnerSprite.texture.url);*/
         this.runnerSprite.attr({
-            x: this.win_size.width / 5,
-            y: 80
+            x: 0,
+            y: this.win_size.height / 4 + 100
         });
         this.addChild(this.runnerSprite, 1);
     },
@@ -83,7 +84,8 @@ var PlayLayer2 = cc.Layer.extend({
                 /*var pos = touch.getLocation();*/
                 var target = event.getCurrentTarget();
                 var x = target.bgSprite._position.x;
-                if (x > -(2000 - target.win_size.width)) {
+                /*console.log(x);*/
+                if (x > -900) {
                     target.bgSprite.move();
                     target.runnerSprite.changeTexture();
                 } else {
@@ -101,7 +103,7 @@ var PlayLayer2 = cc.Layer.extend({
     addTimeLabel: function() {
         this.labelTime = new cc.LabelTTF("剩余时间：" + this.request_time + " s", "Symbol", 40);
         this.labelTime.setColor(cc.color(255,120,0));
-        this.labelTime.setPosition(cc.p(this.win_size.width - 250, this.win_size.height - 60));
+        this.labelTime.setPosition(cc.p(this.win_size.width / 2 + 400, this.win_size.height / 2 + 300));
         this.addChild(this.labelTime, 1);
     },
 
@@ -205,6 +207,7 @@ var Mission2 = cc.Scene.extend({
    onEnter: function() {
        this._super();
        var layer = new PlayLayer2();
+       layer.rotation = 90;
        this.addChild(layer);
    }
 });

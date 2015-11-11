@@ -3,6 +3,7 @@
  */
 
 var runnerSprite = cc.Sprite.extend({
+    jump: 0,
     onEnter: function() {
         this._super();
     },
@@ -41,11 +42,21 @@ var runnerSprite = cc.Sprite.extend({
         }
         this.setTexture(texture);
 
+        // And Jump
+        if (this.jump == 0) {
+            this.runAction(new cc.moveBy(0.05, 0, 20));
+            cc.audioEngine.playEffect(res.jumpWAV);
+            this.jump = 1;
+        } else {
+            this.runAction(new cc.moveBy(0.05, 3, -20));
+            this.jump = 0;
+        }
+
     },
 
     move: function() {
         /*console.log(this._position);*/
-        if (this._position.x >= 1070) {
+        if (this._position.x >= 593) {
             return true;
         } else {
             this.runAction(new cc.moveBy(0.2, 50, 0));

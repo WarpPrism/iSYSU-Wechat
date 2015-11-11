@@ -31,11 +31,11 @@ var getEnterLabel = function(size) {
             res.begin_enter,
             res.begin_enter,
             function () {
-                cc.director.runScene(new Mission4());
+                cc.director.runScene(new Mission2());
             }, this);
     this.item.attr({
             x: size.width / 2,
-            y: size.height / 4+200,
+            y: size.height / 4 + 300,
             anchorX: 0.5,
             anchorY: 0.5
         });
@@ -51,7 +51,7 @@ var getRuleLabel = function(size) {
             }, this);
     this.item.attr({
             x: size.width / 2,
-            y: size.height / 4 + 50 ,
+            y: size.height / 4 + 150 ,
             anchorX: 0.5,
             anchorY: 0.5
         });
@@ -63,13 +63,11 @@ var getBigLabelOfBegin = function(size) {
             res.begin_label,
             res.begin_label,
             function () {
-                cc.director.runScene(new RuleScene());
+                /*cc.director.runScene(new RuleScene());*/
             }, this);
     this.item.attr({
             x: size.width / 2,
-            y: size.height*(3/4),
-            anchorX: 0.5,
-            anchorY: 0.5
+            y: size.height*(2/3) - 50
         });
     return this.item;
 };
@@ -80,6 +78,13 @@ var BeginScene = cc.Scene.extend({
     onEnter: function() {
         this._super();
         var layer = new BeginLayer();
+
+        layer.rotation = 90;
+
         this.addChild(layer);
+
+        cc.audioEngine.playMusic(res.backgroundMP3, true);
+
+        this.scheduleUpdate();
     }
 });
