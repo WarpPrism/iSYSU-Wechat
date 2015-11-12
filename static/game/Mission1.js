@@ -42,7 +42,7 @@ var PlayLayer1 = cc.Layer.extend({
             // Count Time! Game Start!
             // The start time of this mission.
             layer.start_time = new Date().getTime();
-            layer.schedule(layer.updateTime, 0.5, 100, 0);
+            layer.schedule(layer.updateTime, 0.5, 50, 0);
             layer.addTouchEventListener();
         }, 1000);
         setTimeout(function () {
@@ -207,6 +207,7 @@ var Mission1 = cc.Scene.extend({
    onEnter: function() {
        this._super();
        var layer = new PlayLayer1();
+       // change landscape to portrait.
        layer.rotation = 90;
        this.addChild(layer);
    }
