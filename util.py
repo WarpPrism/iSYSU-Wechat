@@ -92,7 +92,7 @@ class Helper(object):
         buffer = BytesIO()
         create = pycurl.Curl()
         create.setopt(create.URL, createMenuURL)
-        create.setopt(create.POSTFIELDS, urlencode(menuData))
+        create.setopt(create.POSTFIELDS, (urlencode({'data': menuData}))[5:])
         create.setopt(create.WRITEDATA, buffer)
         create.perform()
         create.close()
@@ -104,5 +104,6 @@ class Helper(object):
                 print("create menu success")
             else:
                 print(errmsg)
+                print(errcode)
         except Exception as e:
             print(e)

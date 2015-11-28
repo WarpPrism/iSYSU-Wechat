@@ -1,0 +1,1807 @@
+{
+  "is_add_friend_reply_open": 1,
+  "is_autoreply_open": 0,
+  "add_friend_autoreply_info": {
+    "type": "text",
+    "content": "欢迎关注，这里是中山大学(Sun Yat-sen University)官方微信平台iSYSU。\n回复【中山大学】，获得中山大学简介。\n回复【招生】或【录取】，获得中山大学各院系介绍、中山大学相关招生信息 。\n\n中大官方微信平台欢迎您的投稿，投稿邮箱：zhongdaguanwei@163.com，您对中大微信平台的意见和建议也可直接回复至微信平台。\n\n更多中大相关信息可移步至中山大学官方网站：http://www.sysu.edu.cn/"
+  },
+  "keyword_autoreply_info": {
+    "list": [
+      {
+        "rule_name": "回答错了喔",
+        "create_time": 1447136761,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "CBBA"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "CABC"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "CBBC"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "cccc"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "CBCA"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "text",
+            "content": "呀，很接近了，再查一查问一问吧"
+          }
+        ]
+      },
+      {
+        "rule_name": "回答错了喔",
+        "create_time": 1447135593,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "CAAC"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "CBAB"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "CBAA"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "CCAC"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "CAAA"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "CBBB"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "CCBB"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "CCCA"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "CBCB"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "CAAB"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "text",
+            "content": "呀，很接近了，再查一查问一问吧/害羞"
+          }
+        ]
+      },
+      {
+        "rule_name": "【等推送后再去掉大括号 】",
+        "create_time": 1447088944,
+        "reply_mode": "reply_all",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "【十一月壁纸】"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "【11月壁纸 】"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "【十一月壁紙 】"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "【11月壁紙 】"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "text",
+            "content": "我问你爱我有多深，你爱我有几分/害羞 点击右上角→阅读原文，查看11月10日的推送。答对几道中大历史题，才可以获得壁纸呀！ \n\n可以交头接耳；可以百度百科；可以向朋友圈观众求助"
+          }
+        ]
+      },
+      {
+        "rule_name": "十一月壁纸",
+        "create_time": 1447088650,
+        "reply_mode": "reply_all",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "CBAC"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "cbac"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "c b a c"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "C B A C"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "c,b,a,c"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "C,B,A,C"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "img",
+            "content": "up2_H4ChlKuvz-h4C1IHANDgZaqkQEQGs9op-ANw95UsPDruKENRWFOphI2fnd30"
+          },
+          {
+            "type": "img",
+            "content": "UMkhWZuYAYsijm4I50tMjgzCWwYE1skr8l70Y9NBZYOZtyT4MpTrvV9F9R3c6c4I"
+          },
+          {
+            "type": "img",
+            "content": "e3KC_xgQwS2FCdlq0KBn7LbY93ZH_MY6ri1EBGSN8fxcTWwV_ndNJUPFaNVvi038"
+          },
+          {
+            "type": "img",
+            "content": "U4F9E4zSDy-gMNi_ogECqpiuoMpje2zOiAe_aL0uGu40L01SdhlqLuvoaDyY8t_Y"
+          },
+          {
+            "type": "img",
+            "content": "QUCYo48XK4Zq_zIjcjW0uHyadO5uO2ODxsJ0TMua5hkC0jRJ4dOh-y7i5M3scfi9"
+          }
+        ]
+      },
+      {
+        "rule_name": "m下的讲座",
+        "create_time": 1446466605,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "讲座"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "講座"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "lk1QMHvdr1yBOl3hQJGRu7IVaVTNSKlFObnqDpjhmJc",
+            "news_info": {
+              "list": [
+                {
+                  "title": "讲座 | 第七周讲座资讯",
+                  "author": "中山大学官微",
+                  "digest": "南校区CAMPUS  OF  SOUTH  Using ATAC-seq to understand",
+                  "show_cover": 1,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZEChTVYCanwfibcBdG23icEIO6NyLHDYVw7nbqJL64jRAV73Em0ia14fBiaDiamOqNbsrfuOPr8JNKX8Q/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=400361668&idx=1&sn=9fbfcef2f84c803e7b53cbf4faf2b2a8&scene=20#wechat_redirect",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "万圣节光影",
+        "create_time": 1446466579,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "万圣节"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "lk1QMHvdr1yBOl3hQJGRu6LIFlgWJ0tSQDbpj_jb6Mc",
+            "news_info": {
+              "list": [
+                {
+                  "title": "光影丨一个万圣节发生在中大的故事",
+                  "author": "中山大学官微",
+                  "digest": "万圣节的时候，一个故事在中大校园里，悄然发生。",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZEChTVYCanwfibcBdG23icEIdP1bR02FreDqibe5ba4OJ9cSxyrI50ADkGTjdupyp2khNlNMMJfqu2w/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=400362650&idx=1&sn=e9ba76503e26121b79d726e841a4ae4b&scene=20#wechat_redirect",
+                  "source_url": ""
+                },
+                {
+                  "title": "讲座 | 第七周讲座资讯",
+                  "author": "中山大学官微",
+                  "digest": "南校区CAMPUS  OF  SOUTHUsing ATAC-seq to understand allel",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZEChTVYCanwfibcBdG23icEI5pnSic8seM75vC4yKyALrLt33N4yReCvCV6zssZYLeRXTabIPVTZ15A/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=400362650&idx=2&sn=67bf3c4a04af8ad83082457ba7393d70&scene=20#wechat_redirect",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "人物",
+        "create_time": 1446466433,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "人物"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "F6bjNygLCm4V-UUtyGCqyszBNsFYRfMlh0XYN8W1xZ0",
+            "news_info": {
+              "list": [
+                {
+                  "title": "人物 | 陈嘉言：我国引力波研究的先行者",
+                  "author": "中山大学官微",
+                  "digest": "“ 没有陈嘉言以及他所领导的团队的工作基础，取得这些从一穷二白到国际水平的成果是不可想象的。",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1bE5icwcJHmOCnBAe8iajN7CWg5UWW7BGqMahA9ewIJsuMFouTC2OTicjvbb0fFsou0FibEWAZjyRXbFQ/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=400347546&idx=1&sn=547d8e40d763075ac96dead7e5bd201f&scene=20#wechat_redirect",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "学子说",
+        "create_time": 1446466363,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "学子说"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "1gwUrFHdfZC0_iyM_5bkwaeqNIIZTNF_3jYLSSJHEkk",
+            "news_info": {
+              "list": [
+                {
+                  "title": "学子说 | 我的第一次·在中大",
+                  "author": "中山大学官微",
+                  "digest": "遇见中大，遇见自己\n在中大，你可以有无数个第一次，无论是与每个校区的相见，还是与每个人的相遇，都有着别样的韵味",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZBh4Eznibbzias5iciavF3I0XzBwVR72aRchnhRpA4kfBRlHE65E28HXpbcxFMibfOWj5UCm1kFU23z6w/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=400070869&idx=1&sn=d86beb3d7428f69e2f44110f3b107337#wechat_redirect",
+                  "source_url": ""
+                },
+                {
+                  "title": "书评 | 辩护与建构：评《化蛹成蝶——中国哲学史方法论断想》",
+                  "author": "中山大学官微",
+                  "digest": "图书作者杨海文，男，1968年生，湖南长沙人，本科毕业于武汉大学哲学系，硕士、博士毕业于中山大学哲学系，曾供",
+                  "show_cover": 1,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZBh4Eznibbzias5iciavF3I0XzPRWUZkMSF1ibXibYNwN5wBQAgwcQClwSGrX37YUIjZwlc8CssXzrVcLg/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=400070869&idx=2&sn=4df4c9faaf9fb3909717a2c86bed559b#wechat_redirect",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "光影",
+        "create_time": 1446466266,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "光影"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "Oim8B1DSOWeV5thL3cJsOFFh5hmxJgRAnYPzKkEzy-w",
+            "news_info": {
+              "list": [
+                {
+                  "title": "光影｜单车上的中大",
+                  "author": "中山大学官微",
+                  "digest": "所有交通工具中，单车是最青春洋溢的一种。鲜衣怒马少年时。",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1YCrcHGAxvC2RQLiaichXeHPr9sZYKcyibJfoRXf1R4hDASKJLOTLcsNR0IqMZuribzIgedql9vXvxFSA/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=208325182&idx=1&sn=8e8cab5d3b904bacd57cac57e2f36c18#rd",
+                  "source_url": ""
+                },
+                {
+                  "title": "师说·学子说｜长期开放投稿，我想听你说",
+                  "author": "",
+                  "digest": "不觉间iSYSU已经陪伴了大家那么久一路走来我们向大家诉说了好多中大美好的故事诉说了好多中大辉煌的成就一直以",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1YCrcHGAxvC2RQLiaichXeHPrd9POgfmHWxjkw5spicJQmibMic1rRWYk7ibsNkxR3HicNPn8b3RcVJpiasug/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=208325182&idx=2&sn=35492466165661ce4323dcddb4b8c9d7#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "三行情书",
+        "create_time": 1446466165,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "三行情书"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "te7iK3uPWic6IUYd2Bn4k1NPhv2X-fEv0oLyNOjqnq0",
+            "news_info": {
+              "list": [
+                {
+                  "title": "三行情书里的家国情怀",
+                  "author": "中山大学官微",
+                  "digest": "“尊师爱校，强军爱国”主题三行情书大赛落幕，现以诗意传递情怀，以情怀共鸣梦想。",
+                  "show_cover": 1,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1alY2BlvoiaSKAFVcTPy5icKyoIUoLxp06OhDt2a82kREM23DfseDWx2icRNplDuqYLxfVjLwE0hPsCQ/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=208209749&idx=1&sn=772537e7d133e323c4de665a19d3e784&scene=20#rd",
+                  "source_url": "http://www.epub360.com/manage/book/azpdvj/"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "叶剑清讲座",
+        "create_time": 1446027442,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "微讲座1"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "text",
+            "content": "您好，叶剑清老师的讲座已经结束，请期待iSYSU的下一次讲座，谢谢支持~"
+          }
+        ]
+      },
+      {
+        "rule_name": "投稿",
+        "create_time": 1444913202,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "投稿"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "征稿"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "Oim8B1DSOWeV5thL3cJsOKU0kmIdw-ultLhh2ln0XPg",
+            "news_info": {
+              "list": [
+                {
+                  "title": "师说·学子说｜长期开放投稿，我想听你说",
+                  "author": "中山大学官微",
+                  "digest": "师说·学子说栏目推出，长期面向全体中大人开放投稿。",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1YCrcHGAxvC2RQLiaichXeHPrd9POgfmHWxjkw5spicJQmibMic1rRWYk7ibsNkxR3HicNPn8b3RcVJpiasug/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=208321472&idx=1&sn=9464e94fd91bed725576fc6b8b682211&scene=20#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "十月壁纸",
+        "create_time": 1444152135,
+        "reply_mode": "reply_all",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "十月壁纸"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "十月壁紙"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "10月壁纸"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "10月壁紙"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "img",
+            "content": "WGXStzzmZPHD1QuSidDnu7xKSVhs2WuIvDMlTK5HhgtBgz6dAQau12Jy4lTeYYLb"
+          },
+          {
+            "type": "img",
+            "content": "slmjyKvVjzud6Nubp0R9XG0kBnfDs8CR8gZ3GR2EZdgVed0oIE8UlVPbiwfe3jRM"
+          },
+          {
+            "type": "img",
+            "content": "5Led8VIkAvYSIh0lX2UChMjZ9nDEJFB7o3RD4yHK85NVxzAYfr8cfE3m0QERJM90"
+          },
+          {
+            "type": "img",
+            "content": "6nhG3nDdy4y2rxg6oTStP5-S2DQH-9TYrceP2hc36_5FYn5wuM6xMoirZA_wjVRB"
+          }
+        ]
+      },
+      {
+        "rule_name": "中大月饼",
+        "create_time": 1443357337,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "中大月饼"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "月饼"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "JCui4O1ggECvugbMHFSg4Fdb8dyrgJtL35uXjRG9MeQ",
+            "news_info": {
+              "list": [
+                {
+                  "title": "舌尖SYSU | 中大月饼是如何炼成的",
+                  "author": "中山大学官微",
+                  "digest": "做中大特色的月饼，抒中大人独有的情怀，愿你尝得到这份舌尖上的感动。",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZuvZ3dJOQ3Dlv4v0RITAeWJBccOicm3LfhUERnb6S1Cz76DSxtJvaY05LZ38y8lg59rLHYBVESyzg/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=208109381&idx=1&sn=20a6c79fca2bbed172af9d0034558c2b&scene=20#rd",
+                  "source_url": ""
+                },
+                {
+                  "title": "“月亮换月饼”落幕 | iSYSU温馨送月饼",
+                  "author": "中山大学官微",
+                  "digest": "“月亮换月饼”优秀作品展“月亮换月饼”中秋摄影设计征集活动到此就暂告一段落了推送发出后短短三天小编便收到了5",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZuvZ3dJOQ3Dlv4v0RITAeWiafUGPyTgdcpTSGBZWFVTic7dApicERiaAq3Cw573LhXTibnMXuibcD4rOmQ/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=208109381&idx=2&sn=1d12f75bc475cf0889526146d7be4310&scene=20#rd",
+                  "source_url": ""
+                },
+                {
+                  "title": "讲座 | 第二周讲座预告",
+                  "author": "中山大学官微",
+                  "digest": "——校内讲座——Eating, Drinking and Karaoke and Firm Innovati",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZuvZ3dJOQ3Dlv4v0RITAeWicEZqCd3tviciaibic3jZ1HnGia1OwoEzv3bibYBibtOibZuLBdu8WXSGg9VAXQ/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=208109381&idx=3&sn=363b17d5cab9428a65c8a2e8d51b2880&scene=20#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "许崇清",
+        "create_time": 1443357292,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "许崇清"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "svuhVZkpe1PTey5SIs82iSetfFnaZRRPsDcCI5t9NkE",
+            "news_info": {
+              "list": [
+                {
+                  "title": "人物 | 口述：许崇清与抗战时期的中山大学",
+                  "author": "",
+                  "digest": "今天，许锡挥先生为我们回忆抗战时期，父亲许崇清三任中大校长，带领同学们和家人一起度过那段艰难的岁月。",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZUSUqGksJUYkL2oTQZlJppK1m9t7FofWYKtdoVMlZoZia6ibdm5tPTTkMOMBl7sUpNracRwtcnGqdg/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=208055743&idx=1&sn=c99b1b73677689f07e0090c68f793c8e&scene=20#rd",
+                  "source_url": ""
+                },
+                {
+                  "title": "讲座 | 新学期，一起约讲座吧！",
+                  "author": "",
+                  "digest": "南校区CAMPUS OF SOUTH儒学治世策主讲人：黎红雷 (教授)时间：9月23日 (周三) 15:00",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZUSUqGksJUYkL2oTQZlJppsnVy1KkU7OzLFQLWc482d8VCTrONSXcbfPOpdxJAlX8dtgNrHm41Eg/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=208055743&idx=2&sn=abedf623789675a748b2e50c21329a9b&scene=20#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "中大排名",
+        "create_time": 1443357258,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "中大排名"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "CsmMTkyF-e5cKAYLLoV05xpD9NBVp_9-nUGbagv8diE",
+            "news_info": {
+              "list": [
+                {
+                  "title": "最新ESI中国大学百强榜出炉，中山大学在全国排名第八！",
+                  "author": "",
+                  "digest": "2015年9月中国大陆高校ESI综合排名公布，中大全国排名第八。",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1Yp37PXk966xNgvSXM0WsiaiclDrFL9JzOVDNHs8hSAUkw6lXjS32icxEyKEGkPQicQSHF6K0D106EKUQ/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=207969590&idx=1&sn=7e0f78e92f06ccd68f189cfbedbe3c47&scene=20#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "每周讲座",
+        "create_time": 1443356904,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "讲座"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "lk1QMHvdr1yBOl3hQJGRu7IVaVTNSKlFObnqDpjhmJc",
+            "news_info": {
+              "list": [
+                {
+                  "title": "讲座 | 第七周讲座资讯",
+                  "author": "中山大学官微",
+                  "digest": "南校区CAMPUS  OF  SOUTH  Using ATAC-seq to understand",
+                  "show_cover": 1,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZEChTVYCanwfibcBdG23icEIO6NyLHDYVw7nbqJL64jRAV73Em0ia14fBiaDiamOqNbsrfuOPr8JNKX8Q/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=400361668&idx=1&sn=9fbfcef2f84c803e7b53cbf4faf2b2a8&scene=20#wechat_redirect",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "九月壁纸五张",
+        "create_time": 1442130114,
+        "reply_mode": "reply_all",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "九月壁纸"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "9月壁纸"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "img",
+            "content": "XEmkp9IQXVxlfRKB3omt5SSnyrXhTUZ4RDc4zoDKx09C5Flfu2_wAT2MWYP_9Q27"
+          },
+          {
+            "type": "img",
+            "content": "AurzJrvP42bQ0eNXmJN61oykDp60lwxcr7y-P7HEazhY30JDVW_z_Tpcagrh10XE"
+          },
+          {
+            "type": "img",
+            "content": "mU_Iur7TSMbqVCs2hPHILkqOouIj314Y0_YB60n1ryEz8xIqhjOyqJKtcAuS9g6f"
+          },
+          {
+            "type": "img",
+            "content": "RLmjQddwzEPemO1Jv9W839ytifMVHg7UMtTu0OgPePSfHuEGVLG-z7iX_74xU3bp"
+          },
+          {
+            "type": "img",
+            "content": "JwHfH58btAReENe9Vrnj2uiNIpDyQeW8j_byAj1lzEHWegF7631_8W9C-ZgJ-KkW"
+          }
+        ]
+      },
+      {
+        "rule_name": "报道完毕",
+        "create_time": 1441692367,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "报道"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "Ij_QaXBC_4JO6LeYuMsl7Cp0lwjj9YtTNNArmO5XqS8",
+            "news_info": {
+              "list": [
+                {
+                  "title": "报到完毕！我已正式成为一名中大人",
+                  "author": "",
+                  "digest": "在师兄师姐的等待之下，2015级鲜肉于19、20日正式进驻中大。",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1b6qqXNS7zlZsHXR9f5XAo4QkCNw2iaV9dScTqtP6CsLYm2IJYamZgGW5dEwIVWHoWfCjcicqsK5QNw/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=207685225&idx=1&sn=e36da3b72256fc587bc0ceb1fa686c42&scene=20#rd",
+                  "source_url": ""
+                },
+                {
+                  "title": "iSYSU迎新 | 中大，若如初见",
+                  "author": "",
+                  "digest": "﻿又是一年新生报到时师弟师妹身上洋溢的青春气息给假期的静谧校园带来了热闹的气氛小鲜肉和中大校园对彼此都很好奇",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1b6qqXNS7zlZsHXR9f5XAo4065WKWmZQZibN2QPKJ7HazTB5yDA7qW3WMg7GcIQgVPmM1ibwIaPUibQQ/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=207685225&idx=2&sn=f6058f5630b9addc8f27b8f0e3f13a1f&scene=20#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "开学典礼",
+        "create_time": 1441692327,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "开学典礼"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "AVHszT4QCSZmgUsAqY4vS0LT9TlC9l-BqgM8PIx7tCA",
+            "news_info": {
+              "list": [
+                {
+                  "title": "又一年开学典礼，听听他们怎么讲",
+                  "author": "",
+                  "digest": "8月21日，我校先后在珠海校区、东校区、南校区、北校区举行2015年开学典礼。",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1bgaQNbNhYjWSFfntBicckvQ47ZkGvDqicgriaac8IjlWOpWM5FTNP4bbueJ71nrWAQ6pKbHJs4QoeEg/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=207728344&idx=1&sn=114e56b3c30264bedce4a7f8a8fae4b2&scene=20#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "健身",
+        "create_time": 1441692267,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "锻炼"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "体育馆"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "健身"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "-IvpxWP3NCcM68q_zTIyTIvNQDdknzHdZWBa_Ps_g-w",
+            "news_info": {
+              "list": [
+                {
+                  "title": "带上我，一起在中大健身锻炼",
+                  "author": "",
+                  "digest": "中山大学奥运冠军及四校区体育场馆使用指南",
+                  "show_cover": 1,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1a8MLWdIWaAfWqLXQFHKwQw4ia5WbqRUWBdf0J2V6xqBqzA0BMic1AictMb5crzZQcTv0BsE1v174v9A/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=207700660&idx=1&sn=8cb09ba245f339ad61a1e68607357cd9#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "抗战三迁，中大历史",
+        "create_time": 1441692205,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "抗战"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "历史"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "GqPyo9sq_xc6fEXnoH1MpgAXwUrCRNm91NjXTBsPuew",
+            "news_info": {
+              "list": [
+                {
+                  "title": "致敬70年｜抗战三迁，你不能不知的中大历史",
+                  "author": "",
+                  "digest": "浴血岁月，抗日战争时期中山大学的三次迁徙。",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1YUWBYBbMRicsa1XsaLiceG8r0nz8r3kB166bLmSFqT1tKmUc4NGOSH0Ur0bsxfE913a3NYgREmib6Ww/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=207764837&idx=1&sn=b06cf0db1fcd0954ecf0160d1a02c476&scene=20#rd",
+                  "source_url": ""
+                },
+                {
+                  "title": "中山大学面向全球公开招聘学院（系）院长（系主任）和学术英才公告",
+                  "author": "",
+                  "digest": "中山大学1924年由孙中山先生创建，历经90余载薪火相传，形成了优良的学风和校风，具备了人文社科和理医工多学",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1YUWBYBbMRicsa1XsaLiceG8rzv1icEsD5Ta14xxO7YSrfibbpIkdGolicsIBKO02icOVuVMDvu1HAHasvQ/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=207764837&idx=2&sn=96930e50d6b9c2b38c3938ccbbd2f5d6&scene=20#rd",
+                  "source_url": ""
+                },
+                {
+                  "title": "Top Job Openings: Professors,Department Chairs and School Deans",
+                  "author": "",
+                  "digest": "Make Your Mark as an Academic Leader at China’s Presti",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1YUWBYBbMRicsa1XsaLiceG8ribibjsiaDRLgSonH501hw7NSLVhJawtqH42gGnY2ibOXywRTHCzJWocTNw/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=207764837&idx=3&sn=64f413fddc4265bb46e0335a50875999&scene=20#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "日军细菌战部队遗址",
+        "create_time": 1441692136,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "细菌战"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "日军"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "YwGjuIFIn4cqGMySKLgF3Z4FiWSP3bb7kADDyAf5TAY",
+            "news_info": {
+              "list": [
+                {
+                  "title": "中大北校区旧图书馆 日军细菌战部队遗址",
+                  "author": "",
+                  "digest": "1942年春夏，中大医学院图书馆不幸沦为日军波字8604部队驻地。",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1Y6aMxfickLJHzib1QU1nMcdsBAPxic8I3QXzoY6INet7HQ9l1LgpxC1tTAfqkY4vzFWwxK6bjGsxLXA/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=207819336&idx=1&sn=3a6f53b9a861b1b48404aec2714e0fe7&scene=20#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "中大老兵",
+        "create_time": 1441692069,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "老兵"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "UDLJgMSUPlCAgBayQL1Ae5GeQip9K-5GawfAsLau9D0",
+            "news_info": {
+              "list": [
+                {
+                  "title": "亲历者说——听中大老兵讲述抗战故事",
+                  "author": "中山大学",
+                  "digest": "听他诉说抗战故事，一同回望那段可歌可泣、饱经沧桑的烽火岁月……",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZC2CEVibyMfKVLfgujoVGicibWnjT8AGHG4DfjQjCAvbfeKCMtEa95b6wfPLzxvByeMOEdgPUqzJZkQ/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=207834916&idx=1&sn=91f9ca81e2e092ed8be6d37bbe9ad0fc&scene=20#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "招新",
+        "create_time": 1441507465,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "招新，报名"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "YwGjuIFIn4cqGMySKLgF3VmafolkmcsHX4sfJQl5X-I",
+            "news_info": {
+              "list": [
+                {
+                  "title": "中山大学新媒体中心面向全校招新！",
+                  "author": "",
+                  "digest": "万事俱备，只欠一个你！",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1Z1zZaRzwvpTCIEL5jmU8H2k5PzNynZIZYZic7AoO5ict369LDUUMHxqdeNu7JKTk7Y1Me7nkeQMOXw/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=207811462&idx=1&sn=66da5b3d8e2cf08752ac8afbced81861#rd",
+                  "source_url": "https://jinshuju.net/f/iAeEwI"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "报到",
+        "create_time": 1439806838,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "报到"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "5Qska-PXfRCxAAxMBAT-2TC5f1XtjBeXvV5x283VGlA",
+            "news_info": {
+              "list": [
+                {
+                  "title": "iSYSU迎新 | 看完这些，搞定入学第一天",
+                  "author": "",
+                  "digest": "新生开学融入中大全攻略！",
+                  "show_cover": 1,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1a3H26w9FV1QIYs2icKibxiaUt1QWKgfSibUEzHPsK9ldlDBDRhBoe5xAWGxBbPlmS3icXJNuMq4fQYsVw/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=207588503&idx=1&sn=29da8e5c231b0f2e7bb881817f148f35#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "投稿",
+        "create_time": 1435634135,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "投稿"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "text",
+            "content": "中大官微iSYSU期待您的踊跃投稿，为您的精彩提供展现平台。同时，也欢迎您真诚的反馈与建议，我们立志于更好。各类稿源、反馈请发：zhongdaguanwei@163.com。感谢您对iSYSU的支持！/示爱"
+          }
+        ]
+      },
+      {
+        "rule_name": "中大谣言",
+        "create_time": 1435156634,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "中大谣言"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "GQCg-x3bGxNmRnbZiCyr8xbdrbDmX0PzNo1Lx4X-S38",
+            "news_info": {
+              "list": [
+                {
+                  "title": "发现 | 中山大学的一千零一个谣言",
+                  "author": "",
+                  "digest": "你最想掐死的【伪·真相】",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1bggiaC6icNFhk6Y1SoKb6W3SC8KpaAupbWSU2Zq49G10GopufQcLqo35kYpzwAy9QbZrsZYic7jx1kA/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=205649652&idx=1&sn=db077973cab033afdaae116cd40aeeeb#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "校历",
+        "create_time": 1434471761,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "校历"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "img",
+            "content": "uOmatxbFMqq0mtoDx2BbjfmAIXd-oxR7zMQaaxu0UjQTSjLYSLaMUSNnr6dk1EMh"
+          }
+        ]
+      },
+      {
+        "rule_name": "2015年中山大学高考卷答案",
+        "create_time": 1433671235,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "答案"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "QaukNbEkjn1XjZaLZ-Tj_5FHoeBeSYntuRxxkObEkwI",
+            "news_info": {
+              "list": [
+                {
+                  "title": "嘿，看看你是多少分？",
+                  "author": "",
+                  "digest": "来看看你的高考多少分？【注意事项】：本试卷及答案欢迎外泄，欢迎各位考生传播。",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1a5Lu5HIKXs4tWNiazmNtlQp9Loonnqq7d8tjCQYUwZJQozFiazRSAtRz78UHJQfuWz3O3H2YP684kA/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=206119322&idx=1&sn=c75f9bb91052aec467c0fe052d86c434#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "招生",
+        "create_time": 1433089118,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "录取"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "招生"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "分数线"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "成人高考"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "夜校"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "自考"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "艺考"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "自招"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "自主招生"
+          },
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "高考"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "text",
+            "content": "您好，这里是中山大学官方微信平台iSYSU，感谢您对中山大学的关注。\n\n1，招生信息可关注微信公众号【中山大学本科招生办】及【中山大学研究生招生】。\n2，最新招生公告、录取分数线、中大各院系介绍、自主招生、艺术生招生、成人继续教育等信息可查阅以下网站：\n本科招生网：http://admission.sysu.edu.cn/\n研究生招生网：http://graduate.sysu.edu.cn/gra02/index.html\n教务处成人教育管理科：http://cjc.sysu.edu.cn/\n\n中山大学欢迎您/可爱"
+          }
+        ]
+      },
+      {
+        "rule_name": "研究生宣讲会",
+        "create_time": 1432010037,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "研究生宣讲会"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "7qLWPI7LJZV3SBrWfNexB_RU4-NSZXmTyRmCKZ9Adjo",
+            "news_info": {
+              "list": [
+                {
+                  "title": "中山大学2016年研究生招生宣讲会预告",
+                  "author": "",
+                  "digest": "我知道你们一直在问研究生招生信息，这里有你们想要的。",
+                  "show_cover": 1,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZWckJBjvtrXkom2jsAicflBV0RjhrDh9Uyowp8vxuXX8BAKXEZV1sYgX1pAIjXBXvNy3iaQ2yRqSLw/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=205374453&idx=1&sn=bbdea63f77e69f53bc04597a6e94d9bb#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "校歌",
+        "create_time": 1431698081,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "校歌"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "LkZPYfLBnFCiu9bOi04RA-ov78lBQl79Prc7-enScOs",
+            "news_info": {
+              "list": [
+                {
+                  "title": "文菁︱校歌里的美丽中大",
+                  "author": "",
+                  "digest": "你是一个动人的故事讲了许多年，风里的钟楼火里的凤凰激扬文字的昨天 你是一支美丽的歌谣唱了许多遍，灯下的身影清晨的书声青春不老的容颜。",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1bvmG0vwIp3DoH94fAUYL9auZPdFWs0lJamz6kvEVBsA64DOEr4iaiabfgrEhwq3ACN24MN2ebWZmnQ/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=204797375&idx=1&sn=c06e66662fa10f8d2acef221b5acb0ca#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "研究生招生",
+        "create_time": 1431697994,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "研究生"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "7qLWPI7LJZV3SBrWfNexB_RU4-NSZXmTyRmCKZ9Adjo",
+            "news_info": {
+              "list": [
+                {
+                  "title": "中山大学2016年研究生招生宣讲会预告",
+                  "author": "",
+                  "digest": "我知道你们一直在问研究生招生信息，这里有你们想要的。",
+                  "show_cover": 1,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZWckJBjvtrXkom2jsAicflBV0RjhrDh9Uyowp8vxuXX8BAKXEZV1sYgX1pAIjXBXvNy3iaQ2yRqSLw/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=205374453&idx=1&sn=bbdea63f77e69f53bc04597a6e94d9bb#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "光影五月天蓝",
+        "create_time": 1431697855,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "五月"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "蓝天"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "美图"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "Xwj0sg-M2NutTJFW4bn7B84suCb71-fgg7vnpSy1ZrM",
+            "news_info": {
+              "list": [
+                {
+                  "title": "光影 | 中大五月的天，刚刚诞生的夏天",
+                  "author": "",
+                  "digest": "中山大学五月的天蓝，想和你一起看。",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZzjgUlCZSTVwKx5ovqZ2k37ibcmgAWrjD5TAzVhcUL9oF9fEDcyO56hhwWeA6Aa8ShgoUMkcXBfoA/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=205259641&idx=1&sn=a218c51cfa5ae6fc8e30609a46696332#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "在中大拍大片",
+        "create_time": 1431697802,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "中大拍大片"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "大片"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "中大取景的电影"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "电影"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "W5yrcwhfj6e7mI7xMURSgcWxHv7dcJls0C1hmEQX75c",
+            "news_info": {
+              "list": [
+                {
+                  "title": "逸趣 | 在中大拍大片，是一种怎样的体验？",
+                  "author": "",
+                  "digest": "那些年，在中大取景的影视剧",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1Y0siaFuHQmHWDSrGWRlnKMQ5bmBt7sRa1IeGrLqBVToVc95ZZ4VjstUdTb3ofRbd3plTnS7HqG8qQ/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=205244503&idx=1&sn=e8933c72ac6b5a03be6da67e93c51730#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "母亲节",
+        "create_time": 1431697702,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "母亲"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "母亲节"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "_7T5DeqrFNLXAPHEUycBjLYHFgKj64j6uV7Yslj92zc",
+            "news_info": {
+              "list": [
+                {
+                  "title": "【母亲节】如果二十年前就有朋友圈...",
+                  "author": "",
+                  "digest": "  　　你是否想过，你的出现让一个自由自在的女孩变成一个牵肠挂肚的母亲？　　你是否想过，二十五年前的母亲是什",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZElahDaSuibVicZs6WmPcMQ0say875icQotTwrg3IL2zAS8u6gumVtBHj98eAkMk3L5ibzNxZ2N9CibAA/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=205149040&idx=1&sn=cc51d37303d707bd9b2babf4372334eb#rd",
+                  "source_url": ""
+                },
+                {
+                  "title": "2015年中山大学学位授予式排期表揭晓",
+                  "author": "",
+                  "digest": "最新资讯#2015年学位授予仪式#5月8日下午，校办发布最新通知，学校定于【7月4日~7月7日在南校区梁銶琚",
+                  "show_cover": 1,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZElahDaSuibVicZs6WmPcMQ06oAOHhN6gTBSWsrAZBy4bibFb3u3anjUsXf1Kibj5Hy9QwyyAQjRfmGQ/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=205149040&idx=2&sn=a38322cb3f79cd47f5b3f3f50d8bf103#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "how old",
+        "create_time": 1431697462,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "中大老人家"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "铜人"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "aN1dkQmcs60-g2e7wdw038Aza4WOKXxgIpo1Y4c32Tw",
+            "news_info": {
+              "list": [
+                {
+                  "title": "当中大“老人家”遇上”how-old. Net”",
+                  "author": "",
+                  "digest": "中大“老人家”遇上”how-old. Net”，会发生什么？",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1YA1NrUUq1ibBwmefOET8icQib4mAe2awOxDo8fTDCRhlokHiciaG298OaA0mmEJyyIzX27l19WSChh3BQ/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=205074380&idx=1&sn=10bd3ee8acc2e11dfc13bacb72f92cd7#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "十大提案",
+        "create_time": 1431697324,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "问卷"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "十大提案"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "W0LWfuW4AflVSvukJrLh9F7ZdKjSheUdaA6cZsj70zQ",
+            "news_info": {
+              "list": [
+                {
+                  "title": "逸趣 | 那些年填过的问卷改变了中大什么",
+                  "author": "",
+                  "digest": "改变，从一张问卷开始。",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZyF9ZXdicCRoCZ0S9gPPKq8TC61P9z2MoPJrvS1y9Qxy8Y3mYfiauYUPMK8c9fVHUZ5WJSwlXes1EA/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=205052533&idx=1&sn=d650331c26be653b51b44ed9df4c8e98#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "相恋在中大",
+        "create_time": 1431697036,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "恋爱"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "相恋"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "n8vsleyy50XgHCescRq3oOjaHDxjePsWZkRfiiUvWN0",
+            "news_info": {
+              "list": [
+                {
+                  "title": "发现 | 当初我们相恋在中大",
+                  "author": "",
+                  "digest": "我们相爱啦！",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1bkG2XJKDUR4QN6A55UJwicicyFm7CibR79qADDs5ZGnM3BVRDdrQ5z4lv5NfsniaWJLCYzWGZP4TdFaA/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=204681903&idx=1&sn=fef80cd19c08ece7690f4342b1be1220#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "汪国真",
+        "create_time": 1431696886,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "汪国真"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "B9gClz75-oAUeLbeiW7LCXgjeQsggStEQvBAj8veJyM",
+            "news_info": {
+              "list": [
+                {
+                  "title": "文菁︳缅怀诗人汪国真",
+                  "author": "",
+                  "digest": "一代诗人汪国真离世，重温汪国真诗歌，重温汪国真时代。",
+                  "show_cover": 1,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1aDDnM1W9826rt2pLvGYyLS1L7LMvJhMA9nJuYYQ8ibxKqnWjYicaS3aMQiau1rQbZ0YdljTklbe8ouQ/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=204708684&idx=1&sn=2ad30cc0c1b2a89e9d38c119d8cd8a4f#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "sysu学校简介",
+        "create_time": 1431681903,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "【sysu】"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "SYSU"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "sysu"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "【SYSU】"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "中山大学"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "【中山大学】"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "oHpG6Si0azlvbtaLQ1HKeldvFm7psHCLXx1B__FfKAM",
+            "news_info": {
+              "list": [
+                {
+                  "title": "中山大学 | 吾校矗立，蔚为国光",
+                  "author": "",
+                  "digest": "你好，这里是中山大学。",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1bkQ1atsqEfDLcqAtribGYrgv1lxGlvLoXFGbYgNeb5iaGv5ibicXj20DuJcWZakvA4lusUABO6j4Rtwg/0?wx_fmt=jpeg",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=205366004&idx=1&sn=3b407ba22dbf0535b76622842b8a0078#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "协和",
+        "create_time": 1427786623,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "协和"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "cJfcaDkkUX_OYCJawj0qGTSILah6xtK6fZziqns08hs",
+            "news_info": {
+              "list": [
+                {
+                  "title": "冷金花：深入基层，巡回医疗服务",
+                  "author": "",
+                  "digest": "协和巡回医疗队始于1951年。一代代协和人前赴后继奔赴老少边穷地区、无私帮助基层医疗机构的医疗队故事深深地打动了节目在场的每一个人。",
+                  "show_cover": 1,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1ZcFKbeIML5zC0zROickM9bB2bowz15IBXn9aJAbXiczemGcCd7yamvj3VMcMxEVqARxYVcKLe8RnJw/0",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=203975728&idx=1&sn=5ff96f7bda26251b8bbfd1f06d069fa6#rd",
+                  "source_url": ""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "校庆",
+        "create_time": 1422529458,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "校庆"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "GEc2sJSpF8Tj5UbXJprhIW9NxND4jEFN7MHCDFcOsAY",
+            "news_info": {
+              "list": [
+                {
+                  "title": "中山大学90年校庆晚会全程录像",
+                  "author": "中大电视台",
+                  "digest": "错过了18日晚中山大学90周年校庆文艺晚会的小伙伴不用纠结，全程高清录像来了！",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1bATByOKAayOniamWn36ia7nFVce4PKyLZ692jvv8x4GV882MhR47Pgt1tUsLzsnT9xTa5EXnsaqnTQ/0",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=200798908&idx=1&sn=75f8ca4e34587f9fc397e8372a11e00e#rd",
+                  "source_url": "http://v.cuctv.com/video/player_Ze4qbcFi868.html"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "履历",
+        "create_time": 1422336239,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "华中工"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "text",
+            "content": "读者您好，由于罗俊校长于华中工学院毕业时，该校未设立理论物理学位点，故他于中山大学取得硕士学位。谢谢您的关注：）"
+          }
+        ]
+      },
+      {
+        "rule_name": "回顾",
+        "create_time": 1419862825,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "回顾"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "cYDkbX898uc0bnjlAccfYoDWTL0ZeAyYUEJhmsjZHnw",
+            "news_info": {
+              "list": [
+                {
+                  "title": "于云起时听风——重温中大校园专辑的故事",
+                  "author": "",
+                  "digest": "1986年至今，中大已经发行了三张校园专辑：《向大海》《毕业谣》《让梦飞翔》。一起来重温悠扬旋律中的故事吧。",
+                  "show_cover": 0,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1YwJhkzkpkPziakb0NmOIhY6pXu5y39A2rsfJZ3O5UVu868BDzibSHYkQxia5NIPwW9MoFara4YFs2qg/0",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=202045337&idx=1&sn=7afb9d1b27ebec2f73593382c8d2c2dd#rd",
+                  "source_url": "http://xiaobao.sysu.edu.cn/index.aspx?sid=181"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "校庆演唱会",
+        "create_time": 1415373269,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "演唱会"
+          },
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "节目单"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "Zm60gLM2i9qvF3M5nOq9Br66HrP3SkSoELk9eGEuZnQ",
+            "news_info": {
+              "list": [
+                {
+                  "title": "【中大90校庆】校友音乐作品及校园歌曲演唱会宣传片",
+                  "author": "春意文化传媒",
+                  "digest": "你是一个动人的故事，讲了许多年。青春的校园，流动着一样的时间，一样的岁月，不一样的脸。梦想的启程，永久的歌声",
+                  "show_cover": 1,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1Y5mzicjYvwkHczJqQY3Ec2icYydDqP62GlIwcYVvqSGk0PCZY5kSXAS0T6mbOumdzwpaKeumh9VrQQ/0",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=201083889&idx=1&sn=a54c701c5673ab91bdbc4cd80ea5b5d1#rd",
+                  "source_url": "http://mp.weixin.qq.com/s?__biz=MjM5NTg3MjIyMQ==&mid=202651273&idx=2&sn=af7240c2579ca18b7c94fd3bddecf42d&scene=1&from=groupmessage&isappinstalled=0#rd"
+                },
+                {
+                  "title": "【中大90校庆】校友音乐作品及校园歌曲演唱会节目单出炉，相约11月8日晚永芳堂前广场，历届“维纳斯”歌手倾情演唱一起重温校园时光",
+                  "author": "春意文化传媒",
+                  "digest": "珍藏那些笑脸庆祝孙中山先生创办中山大学90周年——校友音乐作品及校园歌曲演唱会1924年孙中山先生首创中山大",
+                  "show_cover": 1,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1Y5mzicjYvwkHczJqQY3Ec2ic1fBJAVKFJmkvdqd36f3XcowK8qGicXJ31d4HSlQwfeJccoIX6Ticb4qQ/0",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=201083889&idx=2&sn=3458e75d3d6570e464a542e654e531e5#rd",
+                  "source_url": "http://mp.weixin.qq.com/s?__biz=MjM5NTg3MjIyMQ==&mid=203098930&idx=1&sn=d591c1432027b71311e7c6003691996b&scene=1&from=groupmessage&isappinstalled=0#rd"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "rule_name": "校车时刻表自动回复",
+        "create_time": 1413386549,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "contain",
+            "content": "校车"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "text",
+            "content": "最新时刻表，请以总务处发布信息为准：http://home3.sysu.edu.cn/zwc/news/news01/44571.htm"
+          }
+        ]
+      },
+      {
+        "rule_name": "M1",
+        "create_time": 1413297819,
+        "reply_mode": "random_one",
+        "keyword_list_info": [
+          {
+            "type": "text",
+            "match_mode": "equal",
+            "content": "M1"
+          }
+        ],
+        "reply_list_info": [
+          {
+            "type": "news",
+            "content": "x-XqSUO_puNPTS62ndr2tsn9XGy2no0qHm5QSOoz-HU",
+            "news_info": {
+              "list": [
+                {
+                  "title": "中山大学发现M1天然病毒能精确杀灭癌细胞",
+                  "author": "中山医学院",
+                  "digest": "\n      导读\n    \n  \n\t\t“在杀死癌细胞的同时，也杀死了正常细胞。”这个困惑了全世界医生和癌症",
+                  "show_cover": 1,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1YSTLibR88mYmFebBN84YJgIv6EepccBe5T2ucic0iaz6gHvHSqrwnFCfo58AjTyUez0w2jYtjnLHBKQ/0",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=200773119&idx=1&sn=deeb1c9482c63963c945d2e1a8934567#rd",
+                  "source_url": "http://news2.sysu.edu.cn/news01/140628.htm"
+                },
+                {
+                  "title": "中山大学科学家正研究： 让蚊子不育！",
+                  "author": "羊城晚报",
+                  "digest": "记者从联合国粮农组织／国际原子能机构核技术粮食和农业应用联合司昆虫防治处了解到，正在该机构访问的密歇根州立大",
+                  "show_cover": 1,
+                  "cover_url": "http://mmbiz.qpic.cn/mmbiz/GickudYkiaj1YSTLibR88mYmFebBN84YJgI8JVRKJpGntZJZE3jNQ7U7sWk3fOGE7u4YvDuSTDtH7Jpmgqxq64yvg/0",
+                  "content_url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=200773119&idx=2&sn=7869f2c15137ee228bb59ec8f1d2bd94#rd",
+                  "source_url": "http://www.ycwb.com/ePaper/ycwb/html/2014-10/10/content_554874.htm?div=-1"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
