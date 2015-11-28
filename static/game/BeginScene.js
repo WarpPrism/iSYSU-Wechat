@@ -36,6 +36,7 @@ var getEnterLabel = function(size) {
                 switch (server_data.mission_id) {
                     case '0':
                         // The Player has passed all missions!
+                        mission = new Mission4();
                         cc.director.runScene(new PassAllScene());
                         break;
                     case '1':
@@ -53,7 +54,7 @@ var getEnterLabel = function(size) {
                     default:
                         break;
                 }
-                cc.director.runScene(new PassAllScene());
+                cc.director.runScene(mission);
             }, this);
     this.item.attr({
             x: size.width / 2,

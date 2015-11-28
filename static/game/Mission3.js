@@ -9,7 +9,7 @@ var PlayLayer3 = cc.Layer.extend({
     center_pos: null,
     start_time : null,
     mission_complete: false,
-    request_time: 15,
+    request_time: 14,
 
     // Initial function of play layer.
     ctor: function() {
@@ -17,7 +17,6 @@ var PlayLayer3 = cc.Layer.extend({
 
         this.win_size = cc.winSize;
         this.center_pos = cc.p(this.win_size.width / 2, this.win_size.height / 2);
-        console.log(this.win_size.width, this.win_size.height);
 
         this.addBackground();
         this.addRunner();
@@ -42,7 +41,7 @@ var PlayLayer3 = cc.Layer.extend({
             // Count Time! Game Start!
             // The start time of this mission.
             layer.start_time = new Date().getTime();
-            layer.schedule(layer.updateTime, 0.5, 100, 0);
+            layer.schedule(layer.updateTime, 0.5, 50, 0);
             layer.addTouchEventListener();
         }, 1000);
         setTimeout(function () {
@@ -124,40 +123,88 @@ var PlayLayer3 = cc.Layer.extend({
     },
 
     endMissionSuccessfully: function() {
+        // send info to server
+        $.post(
+            "/winGame",
+            { share_id: server_data.share_id, mission_id: server_data.mission_id},
+            function(res){
+                console.log(res);
+            }
+        );
         this.mission_complete = true;
         cc.eventManager.removeListener(this.touchListener);
-        var tipSprite = new cc.Sprite(res.success1);
-        tipSprite.setPosition(this.center_pos);
-        this.addChild(tipSprite, 2);
 
-        var inviteFriends = new cc.MenuItemImage(
+        var tipSprite = null;
+        // Game Launcher
+        if (server_data.share_id == server_data.player_id) {
+            tipSprite = new cc.Sprite(res.success1);
+            tipSprite.setPosition(this.center_pos);
+            this.addChild(tipSprite, 2);
+
+            var inviteFriends = new cc.MenuItemImage(
             res.invite_friends,
             res.invite_friends,
             function() {
                 alert("Invite Friends!");
             }, this);
 
-        inviteFriends.attr({
-            x: this.win_size.width / 2 - 120,
-            y: this.win_size.height / 2 - 230
-        });
+            inviteFriends.attr({
+                x: this.win_size.width / 2 - 120,
+                y: this.win_size.height / 2 - 230
+            });
 
-        var run_again = new cc.MenuItemImage(
+            var run_again = new cc.MenuItemImage(
             res.run_again_small,
             res.run_again_small,
             function() {
                 cc.director.runScene(new BeginScene());
             }, this);
 
-        run_again.attr({
-            x: this.win_size.width / 2 + 120,
-            y: this.win_size.height / 2 - 230
-        });
+            run_again.attr({
+                x: this.win_size.width / 2 + 120,
+                y: this.win_size.height / 2 - 230
+            });
 
-        var menu = new cc.Menu(run_again, inviteFriends);
-        menu.x = 0;
-        menu.y = 0;
-        this.addChild(menu, 2);
+            var menu = new cc.Menu(run_again, inviteFriends);
+            menu.x = 0;
+            menu.y = 0;
+            this.addChild(menu, 2);
+        }
+        // Game Helper
+        else if (server_data.share_id != server_data.player_id) {
+            tipSprite = new cc.Sprite(res.success2);
+            tipSprite.setPosition(this.center_pos);
+            this.addChild(tipSprite, 2);
+
+            var LaunchGame = new cc.MenuItemImage(
+            res.launch,
+            res.launch,
+            function() {
+                cc.director.runScene(new BicodeScene());
+            }, this);
+
+            LaunchGame.attr({
+                x: this.win_size.width / 2 - 120,
+                y: this.win_size.height / 2 - 230
+            });
+
+            var run_again = new cc.MenuItemImage(
+            res.run_again_small,
+            res.run_again_small,
+            function() {
+                cc.director.runScene(new BeginScene());
+            }, this);
+
+            run_again.attr({
+                x: this.win_size.width / 2 + 120,
+                y: this.win_size.height / 2 - 230
+            });
+
+            var menu = new cc.Menu(run_again, LaunchGame);
+            menu.x = 0;
+            menu.y = 0;
+            this.addChild(menu, 2);
+        }
     },
 
     endWithTimeout: function() {
@@ -207,6 +254,7 @@ var Mission3 = cc.Scene.extend({
    onEnter: function() {
        this._super();
        var layer = new PlayLayer3();
+       // change landscape to portrait.
        layer.rotation = 90;
        this.addChild(layer);
    }

@@ -46,7 +46,7 @@ class PlayGameProcess(tornado.web.RequestHandler):
         code = self.get_argument('code', None)
         state = self.get_argument('state', None)
         if Debug:
-            playerId = 'zhoujihao'
+            playerId = 'test'
         else:
             url = "https://api.weixin.qq.com/sns/oauth2/access_token?" \
                 "appid="+AppId+"&secret="+AppSecret+"&code="+code+"&grant_type=authorization_code"
@@ -87,22 +87,24 @@ class PlayGameProcess(tornado.web.RequestHandler):
                         self.render('game.html', shareId=id, playerId=playerId, missionId=0, passMission='T')
                     else:
                         self.render('game.html', shareId=id, playerId=playerId, missionId=1, passMission='F')
-
-
             else:
-                cur.execute('select * from sysu_game where openid="%s"'% shareId)
-                # data : (openid, mission1, mission2, mission3, mission4)
-                (id, m1, m2, m3, m4) = cur.fetchone()
-                if m1 == 0L:
-                    self.render('game.html', shareId=id, playerId=playerId, missionId=1, passMission='F')
-                elif m2 == 0L:
-                    self.render('game.html', shareId=id, playerId=playerId, missionId=2, passMission='F')
-                elif m3 == 0L:
-                    self.render('game.html', shareId=id, playerId=playerId, missionId=3, passMission='F')
-                elif m4 == 0L:
-                    self.render('game.html', shareId=id, playerId=playerId, missionId=4, passMission='F')
+                count = cur.execute('select * from sysu_game where openid="%s"'% shareId)
+                if count != 0L:
+                    # data : (openid, mission1, mission2, mission3, mission4)
+                    (id, m1, m2, m3, m4) = cur.fetchone()
+                    if m1 == 0L:
+                        self.render('game.html', shareId=id, playerId=playerId, missionId=1, passMission='F')
+                    elif m2 == 0L:
+                        self.render('game.html', shareId=id, playerId=playerId, missionId=2, passMission='F')
+                    elif m3 == 0L:
+                        self.render('game.html', shareId=id, playerId=playerId, missionId=3, passMission='F')
+                    elif m4 == 0L:
+                        self.render('game.html', shareId=id, playerId=playerId, missionId=4, passMission='F')
+                    else:
+                        self.render('game.html', shareId=id, playerId=playerId, missionId=0, passMission='T')
                 else:
-                    self.render('game.html', shareId=id, playerId=playerId, missionId=0, passMission='T')
+                    print 'Can not find shareId record'
+                    self.render('game.html', shareId='', playerId='', missionId=-1, passMission='F')
 
             conn.commit()
             cur.close()
@@ -246,10 +248,10 @@ if __name__ == '__main__':
         "debug": True
     }
     app = tornado.web.Application([
-        (r"/shareGame/(\?\w+)?", ShareLinkProcess),
-        (r"/game", PlayGameProcess),
+        (r"/shareGame/?(\?\w+)?", ShareLinkProcess),
+        (r"/game", InitialLinkProcess),
         (r"/winGame", WinGameProcess),
-        (r"/play_game/(\w+)?", PlayGameProcess)
+        (r"/play_game/?(\w+)?", PlayGameProcess)
         # (r"/", AuthorizationJS)
     ], **settings)
     http_server = tornado.httpserver.HTTPServer(app)

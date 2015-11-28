@@ -136,7 +136,7 @@ var PlayLayer1 = cc.Layer.extend({
 
         var tipSprite = null;
         // Game Launcher
-        if (server_data.share_id != server_data.player_id) {
+        if (server_data.share_id == server_data.player_id) {
             tipSprite = new cc.Sprite(res.success1);
             tipSprite.setPosition(this.center_pos);
             this.addChild(tipSprite, 2);
@@ -171,7 +171,7 @@ var PlayLayer1 = cc.Layer.extend({
             this.addChild(menu, 2);
         }
         // Game Helper
-        else if (server_data.share_id == server_data.player_id) {
+        else if (server_data.share_id != server_data.player_id) {
             tipSprite = new cc.Sprite(res.success2);
             tipSprite.setPosition(this.center_pos);
             this.addChild(tipSprite, 2);

@@ -21,7 +21,16 @@ window.onload = function() {
 
         //pre-load resources
         cc.LoaderScene.preload(g_resources, function () {
-            cc.director.runScene(new BeginScene());
+            // All Mission Completed! The sponsor win the prize!
+            if (server_data.pass_mission == 'T' && server_data.mission_id == '0') {
+                if (server_data.share_id == server_data.player_id) {
+                    cc.director.runScene(new PassAllScene());
+                } else {
+                    cc.director.runScene(new BeginScene());
+                }
+            } else {
+                cc.director.runScene(new BeginScene());
+            }
         }, this);
     };
     cc.game.run("gameCanvas");
