@@ -31,7 +31,29 @@ var getEnterLabel = function(size) {
             res.begin_enter,
             res.begin_enter,
             function () {
-                cc.director.runScene(new Mission1());
+                // Select Mission
+                var mission = null;
+                switch (server_data.mission_id) {
+                    case '0':
+                        // The Player has passed all missions!
+                        cc.director.runScene(new PassAllScene());
+                        break;
+                    case '1':
+                        mission = new Mission1();
+                        break;
+                    case '2':
+                        mission = new Mission2();
+                        break;
+                    case '3':
+                        mission = new Mission3();
+                        break;
+                    case '4':
+                        mission = new Mission4();
+                        break;
+                    default:
+                        break;
+                }
+                cc.director.runScene(new PassAllScene());
             }, this);
     this.item.attr({
             x: size.width / 2,

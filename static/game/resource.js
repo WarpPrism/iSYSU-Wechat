@@ -9,6 +9,7 @@ var res = {
     mission4: "static/res/game/mission4.jpg",
 
     success1: "static/res/game/success1.gif",
+    success2: "static/res/game/success2.gif",
     failure1: "static/res/game/failure1.gif",
     runner_Ready: "static/res/game/runner_Ready.png",
     runner_Run1: "static/res/game/runner_Run_1.png",
@@ -19,12 +20,15 @@ var res = {
     run_again_small: "static/res/game/run_again_small.gif",
 
     begin_bg: "static/res/game/home_back.png",
+    bicode: "static/res/game/bicode.png",
     begin_label:"static/res/game/home0.png",
     begin_enter:"static/res/game/home2.png",
     begin_rules:"static/res/game/home1.png",
     rule_label:"static/res/game/rules3.gif",
     rule_know:"static/res/game/rules4.gif",
     close:"static/res/game/close.gif",
+    launch:"static/res/game/launch_game_small.gif",
+    pass:"static/res/game/pass.png",
 
     // music and audio
     /*backgroundMP3: "static/res/game/background.mp3",*/
@@ -32,11 +36,15 @@ var res = {
 };
 
 var g_resources = [
+    res.pass,
+    res.launch,
+    res.bicode,
     res.mission1,
     res.mission2,
     res.mission3,
     res.mission4,
     res.success1,
+    res.success2,
     res.failure1,
     res.runner_Ready,
     res.runner_Run1,
