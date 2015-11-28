@@ -46,11 +46,14 @@
             wx_config: {
                 timestamp: '', // 必填，生成签名的时间戳
                 nonceStr: '', // 必填，生成签名的随机串
+                url: '',
+                jsapi_ticket: '',
                 signature: ''
             },
-            open_id: "123",
-            mission_id: "1",
-            role : "helper/sponsor"
+            share_id: {{shareId}},
+            player_id: {{playerId}},
+            mission_id: {{missionId}},
+            pass_mission: {{passMission}}
         };
     </script>
 </head>
