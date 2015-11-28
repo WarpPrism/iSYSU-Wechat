@@ -25,6 +25,7 @@
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <script type="text/javascript" src="{{static_url('libs/cocos2d-js-v3.8-lite.js')}}" charset="utf-8"></script>
+    <script type="text/javascript" src="{{static_url('libs/jquery-2.1.4.min.js')}}" charset="utf-8"></script>
     <script type="text/javascript" src="{{static_url('game/resource.js')}}"></script>
     <script type="text/javascript" src="{{static_url('game/runnerSprite.js')}}"></script>
     <script type="text/javascript" src="{{static_url('game/backgroundSprite.js')}}"></script>
@@ -35,13 +36,23 @@
     <script type="text/javascript" src="{{static_url('game/BeginScene.js')}}"></script>
     <script type="text/javascript" src="{{static_url('game/RuleScene.js')}}"></script>
     <script type="text/javascript" src="{{static_url('game/main.js')}}"></script>
-    {#<script>var level={{1}}</script>#}
 
-    {#wechat js sdk#}
-    {#<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <!--wechat js sdk-->
+    <!--{#<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-    <script type="text/javascript" src="{{static_url('game/wechat.js')}}"></script>#}
-
+    <script type="text/javascript" src="{{static_url('game/wechat.js')}}"></script>#}-->
+    <script type="text/javascript">
+        var server_data = {
+            wx_config: {
+                timestamp: '', // 必填，生成签名的时间戳
+                nonceStr: '', // 必填，生成签名的随机串
+                signature: ''
+            },
+            open_id: "123",
+            mission_id: "1",
+            role : "helper/sponsor"
+        };
+    </script>
 </head>
 <body>
     <canvas id="gameCanvas" class=""></canvas>

@@ -16,6 +16,10 @@ class GameHandler(tornado.web.RequestHandler):
     def get(self):
         self.render("game.html")
 
+class winHandler(tornado.web.RequestHandler):
+    def post(self):
+        self.write("win!")
+
 def main():
     # tornado.options.parse_command_line()
 
@@ -27,7 +31,8 @@ def main():
 
     APP = tornado.web.Application([
         ("/", IndexHandler),
-        (r"/game", GameHandler)
+        (r"/game", GameHandler),
+        (r"/winGame", winHandler)
     ], **settings)
 
     HTTP_SERVER = tornado.httpserver.HTTPServer(APP)

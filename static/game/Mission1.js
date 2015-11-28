@@ -124,6 +124,14 @@ var PlayLayer1 = cc.Layer.extend({
     },
 
     endMissionSuccessfully: function() {
+        // send info to server
+        $.post(
+            "/winGame",
+            {mission_id: server_data.mission_id, open_id: server_data.open_id},
+            function(res){
+                console.log(res);
+            }
+        );
         this.mission_complete = true;
         cc.eventManager.removeListener(this.touchListener);
         var tipSprite = new cc.Sprite(res.success1);

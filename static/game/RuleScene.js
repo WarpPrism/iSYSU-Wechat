@@ -49,8 +49,8 @@ var getCloseLabel = function(size) {
                 cc.director.runScene(new BeginScene());
             }, this);
     this.item.attr({
-            x: size.width*3/4-58,
-            y: size.height-48 ,
+            x: size.width / 1.08,
+            y: size.height / 1.39,
             anchorX: 0.5,
             anchorY: 0.5
         });

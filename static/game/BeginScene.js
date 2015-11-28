@@ -31,7 +31,7 @@ var getEnterLabel = function(size) {
             res.begin_enter,
             res.begin_enter,
             function () {
-                cc.director.runScene(new Mission2());
+                cc.director.runScene(new Mission1());
             }, this);
     this.item.attr({
             x: size.width / 2,
@@ -83,7 +83,7 @@ var BeginScene = cc.Scene.extend({
 
         this.addChild(layer);
 
-        cc.audioEngine.playMusic(res.backgroundMP3, true);
+        /*cc.audioEngine.playMusic(res.backgroundMP3, true);*/
 
         this.scheduleUpdate();
     }

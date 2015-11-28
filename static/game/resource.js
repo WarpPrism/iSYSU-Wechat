@@ -27,8 +27,8 @@ var res = {
     close:"static/res/game/close.gif",
 
     // music and audio
-    backgroundMP3: "static/res/game/background.mp3",
-    jumpWAV: "static/res/game/jump.WAV"
+    /*backgroundMP3: "static/res/game/background.mp3",*/
+    jumpMP3: "static/res/game/jump.mp3"
 };
 
 var g_resources = [
@@ -54,6 +54,6 @@ var g_resources = [
     res.rule_know,
     res.rule_label,
 
-    res.backgroundMP3,
-    res.jumpWAV
+    /*res.backgroundMP3,*/
+    res.jumpMP3
 ];

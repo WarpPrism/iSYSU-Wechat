@@ -45,7 +45,7 @@ var runnerSprite = cc.Sprite.extend({
         // And Jump
         if (this.jump == 0) {
             this.runAction(new cc.moveBy(0.05, 0, 20));
-            cc.audioEngine.playEffect(res.jumpWAV);
+            cc.audioEngine.playEffect(res.jumpMP3);
             this.jump = 1;
         } else {
             this.runAction(new cc.moveBy(0.05, 3, -20));
