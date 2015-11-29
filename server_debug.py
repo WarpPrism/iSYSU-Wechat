@@ -7,6 +7,7 @@ from urllib import urlencode
 import json
 import pycurl
 from io import BytesIO
+from StringIO import StringIO
 from pprint import pprint
 
 import tornado.httpserver
@@ -28,7 +29,7 @@ from util import Helper
 helper = Helper(AppId, AppSecret)
 import replyer
 
-Debug = True
+Debug = False
 
 #存放自定义回复规则
 rules = []
@@ -118,15 +119,17 @@ menuData = """
 
 #################################### Get json data by url ###################
 def getKeyValueByURL(url, key):
-    buffers = BytesIO()
+    #print "url is: ", url
+    buffers = StringIO()
     request_page = pycurl.Curl()
-    request_page.setopt(request_page.URL, url)
-    request_page.setopt(request_page.WRITEDATA, buffers)
+    request_page.setopt(request_page.URL, str(url))
+    #request_page.setopt(request_page.WRITEDATA, buffers)
+    request_page.setopt(request_page.WRITEFUNCTION, buffers.write)
     try:
         request_page.perform()
         request_page.close()
         jsonData = buffers.getvalue().decode()
-        return json.loads(jsonData)[key]
+        return json.loads(jsonData)[str(key)]
     except pycurl.error, error:
         errno, errstr = error
         print 'An error occurred: ', errstr
@@ -138,17 +141,19 @@ def getKeyValueByURL(url, key):
 class PlayGameProcess(tornado.web.RequestHandler):
     global Debug
     def get(self, shareId=None):
+        #print shareId
         code = self.get_argument('code', None)
         state = self.get_argument('state', None)
         if Debug:
             playerId = 'test'
+        elif code is None:
+            print "code is None"
         else:
-            url = "https://api.weixin.qq.com/sns/oauth2/access_token?" \
-                "appid="+AppId+"&secret="+AppSecret+"&code="+code+"&grant_type=authorization_code"
+            url = "https://api.weixin.qq.com/sns/oauth2/access_token?"+"appid="+AppId+"&secret="+AppSecret+"&code="+code+"&grant_type=authorization_code"
             playerId = getKeyValueByURL(url, 'openid')
 
         try:
-            conn = MySQLdb.connect(host='localhost', user='root', passwd='zhoujihao', port=3306)
+            conn = MySQLdb.connect(host='localhost', user='root', passwd='isysu2015', port=3306)
             cur = conn.cursor()
 
             # database iSysu
@@ -165,41 +170,54 @@ class PlayGameProcess(tornado.web.RequestHandler):
                 mission2 int,
                 mission3 int,
                 mission4 int)""")
-            if shareId is None:
+            # print "current" + self.request.remote_ip 
+            authorization = AuthorizationJS()
+            
+            if shareId.strip() == '' or shareId is None:
+                print "ShareId is None"
+                d_d = authorization.get('http://isysu.sysu.edu.cn/play_game?code='+str(code)+'&state='+str(state))
+		# print "sid" + shareId
+                # print d_d['timestamp']
+                # print d_d['signature'] + '\n'
+                # print d_d['url'] + '\n'
+                # print d_d['nonceStr'] + '\n'
+                # print "play_process" + js_au_url
                 count = cur.execute('select * from sysu_game where openid="%s"'% playerId)
                 
                 if count == 0L:
                     # new player comes, create database record
                     cur.execute("insert into sysu_game values('%s', '%d', '%d', '%d', '%d')"% \
                         (playerId, 0, 0, 0, 0))
-                    self.render('game.html', shareId=playerId, playerId=playerId, missionId=1, passMission='F')
+                    self.render('game.html', jsonData=d_d, shareId=playerId, playerId=playerId, missionId=1, passMission='F')
                 else:
                     # old player comes
                     cur.execute('select * from sysu_game where openid="%s"'% playerId)
                     # data : (openid, mission1, mission2, mission3, mission4)
                     (id, m1, m2, m3, m4) = cur.fetchone()
                     if m1 == 1L and m2 == 1L and m3 == 1L and m4 == 1L:
-                        self.render('game.html', shareId=id, playerId=playerId, missionId=0, passMission='T')
+                        self.render('game.html', jsonData=d_d, shareId=id, playerId=playerId, missionId=0, passMission='T')
                     else:
-                        self.render('game.html', shareId=id, playerId=playerId, missionId=1, passMission='F')
+                        self.render('game.html', jsonData=d_d, shareId=id, playerId=playerId, missionId=1, passMission='F')
             else:
+                d_d = authorization.get('http://isysu.sysu.edu.cn/play_game/'+str(shareId)+'?code='+str(code)+'&state='+str(state))
                 count = cur.execute('select * from sysu_game where openid="%s"'% shareId)
+                print "current dir: ", os.getcwd()
                 if count != 0L:
                     # data : (openid, mission1, mission2, mission3, mission4)
                     (id, m1, m2, m3, m4) = cur.fetchone()
                     if m1 == 0L:
-                        self.render('game.html', shareId=id, playerId=playerId, missionId=1, passMission='F')
+                        self.render('game.html', jsonData=d_d, shareId=id, playerId=playerId, missionId=1, passMission='F')
                     elif m2 == 0L:
-                        self.render('game.html', shareId=id, playerId=playerId, missionId=2, passMission='F')
+                        self.render('game.html', jsonData=d_d, shareId=id, playerId=playerId, missionId=2, passMission='F')
                     elif m3 == 0L:
-                        self.render('game.html', shareId=id, playerId=playerId, missionId=3, passMission='F')
+                        self.render('game.html', jsonData=d_d, shareId=id, playerId=playerId, missionId=3, passMission='F')
                     elif m4 == 0L:
-                        self.render('game.html', shareId=id, playerId=playerId, missionId=4, passMission='F')
+                        self.render('game.html', jsonData=d_d, shareId=id, playerId=playerId, missionId=4, passMission='F')
                     else:
-                        self.render('game.html', shareId=id, playerId=playerId, missionId=0, passMission='T')
+                        self.render('game.html', jsonData=d_d, shareId=id, playerId=playerId, missionId=0, passMission='T')
                 else:
                     print 'Can not find shareId record'
-                    self.render('game.html', shareId='', playerId='', missionId=-1, passMission='F')
+                    self.render('game.html', jsonData=d_d, shareId='', playerId='', missionId=-1, passMission='F')
 
             conn.commit()
             cur.close()
@@ -215,36 +233,30 @@ class PlayGameProcess(tornado.web.RequestHandler):
 class ShareLinkProcess(tornado.web.RequestHandler):
     global Debug
     def get(self, shareId):
-        redirect_uri = urlencode({'url': "https://isysu.sysu.edu.cn/play_game/%s"% shareId})
+        #print 'initi shareId: ', shareId
+        shareId = shareId.strip()
+        #print 'ShareId == ', shareId
+        redirect_uri = urlencode({'url': "http://isysu.sysu.edu.cn/play_game/%s"% shareId})
 
-        getCodeUrl = "https://open.weixin.qq.com/connect/oauth2/authorize?\
-            appid=%s&\
-            redirect_uri=%s&\
-            response_type=code&\
-            scope=snsapi_base&\
-            state=OK#wechat_redirect"% (AppId, redirect_uri[4:])
+        getCodeUrl = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=%s&redirect_uri=%s&response_type=code&scope=snsapi_userinfo&state=OK#wechat_redirect"% (AppId, redirect_uri[4:])
         if Debug:
-            self.redirect('/play_game/zsh')
+            self.redirect('/play_game')
         else:
             # redirect to PlayGameProcess
+            # print getCodeUrl
             self.redirect(getCodeUrl)
 
 
 class InitialLinkProcess(tornado.web.RequestHandler):
     global Debug
     def get(self):
-        redirect_uri = urlencode({'url': "https://isysu.sysu.edu.cn/play_game/"})
+        redirect_uri = urlencode({'url': "http://isysu.sysu.edu.cn/play_game"})
 
-        getCodeUrl = "https://open.weixin.qq.com/connect/oauth2/authorize?\
-            appid=%s&\
-            redirect_uri=%s&\
-            response_type=code&\
-            scope=snsapi_base&\
-            state=OK#wechat_redirect"% (AppId, redirect_uri[4:])
+        getCodeUrl = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=%s&redirect_uri=%s&response_type=code&scope=snsapi_userinfo&state=OK#wechat_redirect"% (AppId, redirect_uri[4:])
         if Debug:
             self.redirect('/play_game')
         else:
-            # redirect to PlayGameProcess
+            # 引导用户打开验证授权界面
             self.redirect(getCodeUrl)
 
 
@@ -254,7 +266,7 @@ class WinGameProcess(tornado.web.RequestHandler):
         winnerId = self.get_argument('share_id')
         missionId = int(self.get_argument('mission_id'))
         try:
-            conn = MySQLdb.connect(host='localhost', user='root', passwd='zhoujihao', port=3306)
+            conn = MySQLdb.connect(host='localhost', user='root', passwd='isysu2015', port=3306)
             cur = conn.cursor()
 
             # database iSysu
@@ -331,7 +343,7 @@ class ServerAuthor(tornado.web.RequestHandler):
 ################## Get Sign part ##################################
 class Sign:
     def __init__(self, jsapi_ticket, url):
-        self.ret = {
+	self.ret = {
             'nonceStr': self.__create_nonce_str(),
             'jsapi_ticket': jsapi_ticket,
             'timestamp': self.__create_timestamp(),
@@ -346,39 +358,41 @@ class Sign:
 
     def sign(self):
         string = '&'.join(['%s=%s' % (key.lower(), self.ret[key]) for key in sorted(self.ret)])
-        print string
         self.ret['signature'] = hashlib.sha1(string).hexdigest()
         return self.ret
 
-class AuthorizationJS(tornado.web.RequestHandler):
-    def get(self):
+class AuthorizationJS:
+    global helper
+    def get(self, url):
         #self.render("game.html", timestamp=t, nonceStr=str, signature=sig)
-        accessToken = getAccessToken()
+        accessToken = helper.getAccessToken()
         get_jsapi_ticket = "https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=%s&type=jsapi"% accessToken
         ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
         if ticket is not None:
-            url = "http://isysu.sysu.edu.cn/game"
-            sign = Sign(url, ticket)
+            sign = Sign(ticket, url)
             # return to forward
-            data = sign.sign()
-            self.write(
-                nonceStr=data['nonceStr'],
-                jsapi_ticket=data['jsapi_ticket'],
-                timestamp=data['timestamp'],
-                url=data['url'],
-                signature=data['signature'])
+            #data = sign.sign()
+            return sign.sign()
         else:
-            self.write(
-                nonceStr='',
-                jsapi_ticket='',
-                timestamp='',
-                url='',
-                signature='')
+            return None
+        #    self.write(
+        #        nonceStr=data['nonceStr'],
+        #        jsapi_ticket=data['jsapi_ticket'],
+        #        timestamp=data['timestamp'],
+        #        url=data['url'],
+        #        signature=data['signature'])
+        #else:
+        #    self.write(
+        #        nonceStr='',
+        #        jsapi_ticket='',
+        #        timestamp='',
+        #        url='',
+        #        signature='')
 
 
 if __name__ == '__main__':
     rules = replyer.create_rulers('rule.json')
-    helper.createMenu(menuData)
+    #helper.createMenu(menuData)
 
     tornado.options.parse_command_line()
     settings = {
@@ -388,10 +402,10 @@ if __name__ == '__main__':
     }
 
     app = tornado.web.Application([
-        (r"/shareGame/?(\?\w+)?", ShareLinkProcess),
+        (r"/shareGame/?([a-zA-Z0-9\?_\-&=]*)", ShareLinkProcess),
         (r"/game", InitialLinkProcess),
         (r"/winGame", WinGameProcess),
-        (r"/play_game/?(\w+)?", PlayGameProcess),
+        (r"/play_game/?([a-zA-Z0-9\-_]*)", PlayGameProcess),
         (r"/", ServerAuthor)
     ], **settings)
 

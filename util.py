@@ -2,7 +2,7 @@
 import datetime
 import json
 import pycurl
-from io import BytesIO
+from StringIO import StringIO
 from pprint import pprint
 
 try:
@@ -44,10 +44,10 @@ class Helper(object):
             getTokenURL = "https://api.weixin.qq.com/cgi-bin/token?" \
                           "grant_type=client_credential&appid=" \
                           + self.appid + "&secret=" + self.appsecret
-            buffer = BytesIO()
+            buffer = StringIO()
             getToken = pycurl.Curl()
             getToken.setopt(getToken.URL, getTokenURL)
-            getToken.setopt(getToken.WRITEDATA, buffer)
+            getToken.setopt(getToken.WRITEFUNCTION, buffer.write)
             self.lastTime = datetime.datetime.now()
             getToken.perform()
             getToken.close()
@@ -67,10 +67,10 @@ class Helper(object):
         # getReplyRuleURL = "https://api.weixin.qq.com/cgi-bin/" \
         #                   "get_current_selfmenu_info?" \
         #                   "access_token=" + self.getAccessToken()
-        buffer = BytesIO()
+        buffer = StringIO()
         getReplyRule = pycurl.Curl()
         getReplyRule.setopt(getReplyRule.URL, getReplyRuleURL)
-        getReplyRule.setopt(getReplyRule.WRITEDATA, buffer)
+        getReplyRule.setopt(getReplyRule.WRITEFUNCTION, buffer.write)
         getReplyRule.perform()
         getReplyRule.close()
         if buffer.getvalue():
@@ -89,11 +89,11 @@ class Helper(object):
         """
         createMenuURL = "https://api.weixin.qq.com/cgi-bin/menu/create?" \
                         "access_token=" + self.getAccessToken()
-        buffer = BytesIO()
+        buffer = StringIO()
         create = pycurl.Curl()
-        create.setopt(create.URL, createMenuURL)
+        create.setopt(create.URL, str(createMenuURL))
         create.setopt(create.POSTFIELDS, (urlencode({'data': menuData}))[5:])
-        create.setopt(create.WRITEDATA, buffer)
+        create.setopt(create.WRITEFUNCTION, buffer.write)
         create.perform()
         create.close()
         try:

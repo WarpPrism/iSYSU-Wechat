@@ -1,0 +1,137 @@
+[I 151128 12:10:01 web:1946] 302 GET /game (127.0.0.1) 1.04ms
+[I 151128 12:10:01 web:1946] 200 GET /play_game (127.0.0.1) 69.15ms
+[I 151128 12:10:03 web:1946] 304 GET /play_game (127.0.0.1) 1.49ms
+[I 151128 12:10:11 web:1946] 304 GET /play_game (127.0.0.1) 1.60ms
+[I 151128 12:10:21 web:1946] 304 GET /play_game (127.0.0.1) 1.17ms
+[I 151128 12:10:21 web:1946] 304 GET /play_game (127.0.0.1) 1.44ms
+[I 151128 12:10:29 web:1946] 304 GET /play_game (127.0.0.1) 1.81ms
+[I 151128 12:12:00 web:1946] 200 GET / (127.0.0.1) 1.09ms
+[I 151128 12:13:05 web:1946] 304 GET /play_game (127.0.0.1) 1.51ms
+[I 151128 12:13:15 web:1946] 200 GET / (127.0.0.1) 0.91ms
+[I 151128 12:14:42 web:1946] 302 GET /game (127.0.0.1) 0.90ms
+[I 151128 12:14:42 web:1946] 200 GET / (127.0.0.1) 0.90ms
+[I 151128 12:14:42 web:1946] 200 GET / (127.0.0.1) 0.91ms
+[I 151128 12:14:42 web:1946] 200 GET /play_game (127.0.0.1) 1.49ms
+[I 151128 12:14:51 web:1946] 200 GET / (127.0.0.1) 0.56ms
+[I 151128 12:14:52 web:1946] 200 GET / (127.0.0.1) 0.62ms
+[I 151128 12:14:54 web:1946] 302 GET /game (127.0.0.1) 0.94ms
+[I 151128 12:14:54 web:1946] 302 GET /game (127.0.0.1) 0.85ms
+[I 151128 12:14:54 web:1946] 200 GET /play_game (127.0.0.1) 1.39ms
+[I 151128 12:14:54 web:1946] 200 GET /play_game (127.0.0.1) 1.00ms
+[I 151128 12:15:04 web:1946] 302 GET /game (127.0.0.1) 0.88ms
+[I 151128 12:15:05 web:1946] 200 GET /play_game (127.0.0.1) 1.83ms
+[I 151128 12:15:18 web:1946] 302 GET /game (127.0.0.1) 0.87ms
+[I 151128 12:15:18 web:1946] 200 GET /play_game (127.0.0.1) 1.37ms
+[I 151128 12:16:05 autoreload:204] /var/www/isysu-wechat/server_debug.py modified; restarting server
+[I 151128 12:16:09 web:1946] 304 GET / (127.0.0.1) 1.33ms
+[I 151128 12:16:24 web:1946] 200 GET /game (127.0.0.1) 20.22ms
+[I 151128 12:17:11 web:1946] 304 GET /game (127.0.0.1) 2.67ms
+[I 151128 12:17:12 web:1946] 304 GET /game (127.0.0.1) 1.45ms
+[I 151128 12:17:12 web:1946] 304 GET /game (127.0.0.1) 2.13ms
+[I 151128 12:17:13 web:1946] 304 GET /game (127.0.0.1) 1.80ms
+[I 151128 12:17:13 web:1946] 304 GET /game (127.0.0.1) 1.79ms
+[I 151128 12:17:13 web:1946] 304 GET /game (127.0.0.1) 1.54ms
+[I 151128 12:17:14 web:1946] 304 GET /game (127.0.0.1) 1.91ms
+[I 151128 12:17:14 web:1946] 304 GET /game (127.0.0.1) 1.84ms
+[I 151128 12:17:15 web:1946] 304 GET /game (127.0.0.1) 1.89ms
+[I 151128 12:17:15 web:1946] 304 GET /game (127.0.0.1) 1.88ms
+[I 151128 12:17:16 web:1946] 304 GET /game (127.0.0.1) 1.53ms
+[I 151128 12:17:16 web:1946] 304 GET /game (127.0.0.1) 1.90ms
+[I 151128 12:17:16 web:1946] 304 GET /game (127.0.0.1) 1.94ms
+[I 151128 12:17:16 web:1946] 304 GET /game (127.0.0.1) 1.77ms
+[I 151128 12:17:16 web:1946] 304 GET /game (127.0.0.1) 1.67ms
+[I 151128 12:17:16 web:1946] 304 GET /game (127.0.0.1) 1.82ms
+[I 151128 12:17:16 web:1946] 304 GET /game (127.0.0.1) 2.29ms
+[I 151128 12:17:16 web:1946] 304 GET /game (127.0.0.1) 1.67ms
+[I 151128 12:17:17 web:1946] 304 GET /game (127.0.0.1) 1.99ms
+[I 151128 12:17:17 web:1946] 304 GET /game (127.0.0.1) 1.77ms
+[I 151128 12:17:17 web:1946] 304 GET /game (127.0.0.1) 1.72ms
+[I 151128 12:17:17 web:1946] 304 GET /game (127.0.0.1) 1.78ms
+[I 151128 12:23:23 web:1946] 304 GET /game (127.0.0.1) 2.77ms
+[I 151128 12:23:34 web:1946] 304 GET /game (127.0.0.1) 1.59ms
+[I 151128 12:23:36 web:1946] 304 GET /game (127.0.0.1) 1.59ms
+[I 151128 12:24:58 autoreload:204] /var/www/isysu-wechat/server_debug.py modified; restarting server
+/var/www/isysu-wechat/server_debug.py:160: Warning: Can't create database 'iSysu'; database exists
+  cur.execute('create database if not exists iSysu')
+/var/www/isysu-wechat/server_debug.py:167: Warning: Table 'sysu_game' already exists
+  mission4 int)""")
+[I 151128 12:25:05 web:1946] 200 GET /game (127.0.0.1) 120.61ms
+[W 151128 12:25:07 web:1946] 404 GET /project.json (127.0.0.1) 20.36ms
+/var/www/isysu-wechat/server_debug.py:266: Warning: Can't create database 'iSysu'; database exists
+  cur.execute('create database if not exists iSysu')
+/var/www/isysu-wechat/server_debug.py:273: Warning: Table 'sysu_game' already exists
+  mission4 int)')
+[I 151128 12:25:29 web:1946] 200 POST /winGame (127.0.0.1) 8.06ms
+[I 151128 12:26:04 autoreload:204] /var/www/isysu-wechat/server_debug.py modified; restarting server
+[I 151128 12:26:14 web:1946] 302 GET /game (127.0.0.1) 1.69ms
+/var/www/isysu-wechat/server_debug.py:160: Warning: Can't create database 'iSysu'; database exists
+  cur.execute('create database if not exists iSysu')
+/var/www/isysu-wechat/server_debug.py:167: Warning: Table 'sysu_game' already exists
+  mission4 int)""")
+[I 151128 12:26:14 web:1946] 200 GET /play_game (127.0.0.1) 37.34ms
+[W 151128 12:26:15 web:1946] 404 GET /project.json (127.0.0.1) 2.57ms
+/var/www/isysu-wechat/server_debug.py:266: Warning: Can't create database 'iSysu'; database exists
+  cur.execute('create database if not exists iSysu')
+/var/www/isysu-wechat/server_debug.py:273: Warning: Table 'sysu_game' already exists
+  mission4 int)')
+[I 151128 12:26:33 web:1946] 200 POST /winGame (127.0.0.1) 7.58ms
+[I 151128 12:28:07 autoreload:204] /var/www/isysu-wechat/server_debug.py modified; restarting server
+[E 151128 12:28:11 web:1524] Uncaught exception GET /play_game (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/play_game', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Connection': 'close', 'Cache-Control': 'max-age=0', 'X-Real-Ip': '172.19.39.239', 'If-None-Match': 'W/"f3d1ed727163cf57442878a08cd23aaeb2bf9130"', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.99 Safari/537.36'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in get
+        "appid="+AppId+"&secret="+AppSecret+"&code="+code+"&grant_type=authorization_code"
+    TypeError: cannot concatenate 'str' and 'NoneType' objects
+[E 151128 12:28:11 web:1946] 500 GET /play_game (127.0.0.1) 2.52ms
+[E 151128 12:28:11 web:1524] Uncaught exception GET /play_game (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/play_game', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Connection': 'close', 'Cache-Control': 'max-age=0', 'X-Real-Ip': '172.19.39.239', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.99 Safari/537.36'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in get
+        "appid="+AppId+"&secret="+AppSecret+"&code="+code+"&grant_type=authorization_code"
+    TypeError: cannot concatenate 'str' and 'NoneType' objects
+[E 151128 12:28:11 web:1946] 500 GET /play_game (127.0.0.1) 1.31ms
+[E 151128 12:28:18 web:1524] Uncaught exception GET /play_game (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/play_game', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-cn, zh', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.2; zh-cn; GT-I9500 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.0 QQ-URL-Manager Mobile Safari/537.36', 'Accept-Charset': 'GB2312,utf-8;q=0.7,*;q=0.7', 'Connection': 'close', 'X-Real-Ip': '112.64.235.249'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in get
+        "appid="+AppId+"&secret="+AppSecret+"&code="+code+"&grant_type=authorization_code"
+    TypeError: cannot concatenate 'str' and 'NoneType' objects
+[E 151128 12:28:18 web:1946] 500 GET /play_game (127.0.0.1) 1.84ms
+[I 151128 12:28:24 web:1946] 302 GET /game (127.0.0.1) 1.09ms
+[I 151128 12:28:49 web:1946] 302 GET /game (127.0.0.1) 1.06ms
+[I 151128 12:31:57 web:1946] 302 GET /game (127.0.0.1) 0.99ms
+[I 151128 12:31:57 web:1946] 200 GET / (127.0.0.1) 1.64ms
+[I 151128 12:31:57 web:1946] 200 GET / (127.0.0.1) 0.80ms
+[I 151128 12:33:24 web:1946] 302 GET /game (127.0.0.1) 0.58ms
+[I 151128 12:34:12 web:1946] 304 GET / (127.0.0.1) 1.17ms
+[E 151128 12:34:22 web:1524] Uncaught exception GET /play_game (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/play_game', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Connection': 'close', 'Cache-Control': 'max-age=0', 'X-Real-Ip': '172.19.39.239', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.99 Safari/537.36'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in get
+        "appid="+AppId+"&secret="+AppSecret+"&code="+code+"&grant_type=authorization_code"
+    TypeError: cannot concatenate 'str' and 'NoneType' objects
+[E 151128 12:34:22 web:1946] 500 GET /play_game (127.0.0.1) 1.69ms
+[I 151128 12:34:51 web:1946] 200 GET /?signature=f5bbe585694ce4018093e0333c69a309f5b155e7&echostr=2397339811376395709&timestamp=1448732092&nonce=1197601542 (127.0.0.1) 0.99ms
+[I 151128 12:34:56 web:1946] 302 GET /game (127.0.0.1) 0.93ms
+[I 151128 12:35:07 web:1946] 302 GET /game (127.0.0.1) 0.90ms
+[I 151128 12:36:03 web:1946] 302 GET /game (127.0.0.1) 0.56ms
+[I 151128 12:36:39 web:1946] 302 GET /game (127.0.0.1) 0.88ms
+[I 151128 12:37:11 web:1946] 302 GET /game (127.0.0.1) 1.72ms
+[E 151128 12:37:23 web:1524] Uncaught exception GET /play_game (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/play_game', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Upgrade-Insecure-Requests': '1', 'Connection': 'close', 'Cache-Control': 'max-age=0', 'X-Real-Ip': '172.19.39.239', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.99 Safari/537.36'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in get
+        "appid="+AppId+"&secret="+AppSecret+"&code="+code+"&grant_type=authorization_code"
+    TypeError: cannot concatenate 'str' and 'NoneType' objects
+[E 151128 12:37:23 web:1946] 500 GET /play_game (127.0.0.1) 2.30ms
+[I 151128 12:37:30 web:1946] 302 GET /game (127.0.0.1) 0.86ms
