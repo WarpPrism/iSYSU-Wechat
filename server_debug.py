@@ -14,6 +14,7 @@ import tornado.httpserver
 import tornado.ioloop
 import tornado.options
 import tornado.web
+import xml.etree.ElementTree as ET
 
 from tornado.options import define, options
 define("port", default=8000, help="run on the given port", type=int)
@@ -34,6 +35,17 @@ Debug = False
 #存放自定义回复规则
 rules = []
 
+#Event回复模板
+eventReply = """
+<xml>
+<ToUserName><![CDATA[%s]]></ToUserName>
+<FromUserName><![CDATA[%s]]></FromUserName>
+<CreateTime>%d</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[%s]]></Content>
+</xml>
+"""
+
 #自定义菜单
 menuData = """
 {
@@ -42,24 +54,24 @@ menuData = """
             "name":"i学习",
             "sub_button":[
                 {
-                    "name":"校内常用网站",
-                    "type":"view",
-                    "url":"http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=205420177&idx=1&sn=127a582cd5adef81f22fdb3560e61672&scene=18#wechat_redirect"
+                "type": "view",
+                "name": "选课",
+                "url": "http://uems.sysu.edu.cn/elect/"
                 },
                 {
-                    "name":"中大校报",
-                    "type":"view",
-                    "url":"http://xiaobao.sysu.edu.cn/"
+                  "type": "view",
+                  "name": "图书馆",
+                  "url": "http://library.sysu.edu.cn/"
                 },
                 {
-                    "name":"图书馆",
-                    "type":"view",
-                    "url":"http://library.sysu.edu.cn/"
+                  "type": "view",
+                  "name": "中大校报",
+                  "url": "http://xiaobao.sysu.edu.cn/"
                 },
                 {
-                    "name":"选课",
-                    "type":"view",
-                    "url":"http://uems.sysu.edu.cn/elect/"
+                  "type": "view",
+                  "name": "校内常用网站",
+                  "url": "http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=205420177&idx=1&sn=127a582cd5adef81f22fdb3560e61672&scene=18#wechat_redirect"
                 }
             ]
         },
@@ -69,7 +81,7 @@ menuData = """
                 {
                    "type":"media_id",
                    "name":"校车时刻表",
-                   "media_id":"u8uPp_Xv-4FyRVPyTYou7ixpEKbWZC7w-a9bSUDZd19L3L_gnbKRQlwCB3pGIr7V"
+                   "media_id":"SKgIArOefFItmPddJEk8DvN7pdwlnTiwod4N0bptJtg"
                 },
                 {
                    "type":"view",
@@ -89,7 +101,7 @@ menuData = """
                 {
                    "type":"media_id",
                    "name":"中大校历",
-                   "media_id":"GI1Tl2pOccBGncHVrwFVwBWzFKhqzmW3J7IIOlYzKADitHqWXBz84VyHwSk3sGl4"
+                   "media_id":"SKgIArOefFItmPddJEk8DvZ2RbeHj_ZAUZWgWBqygKM"
                 }
             ]
         },
@@ -102,20 +114,21 @@ menuData = """
                    "url":"http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=208325182&idx=2&sn=35492466165661ce4323dcddb4b8c9d7&scene=18#wechat_redirect"
                 },
                 {
-                   "type":"text",
+                   "type":"click",
                    "name":"联系我们",
-                   "value":"中大官微iSYSU期待您的踊跃投稿，为您的精彩提供展现平台。我们也欢迎您真诚的反馈与建议，我们立志于更好。来稿请投：zhongdaguanwei@163.com，您对iSYSU的意见和建议可直接回复至微信后台。感谢您对iSYSU的支持！mo-示爱"
+                   "key":"connect"
                 },
                 {
                    "type":"view",
                    "name":"互动游戏",
-                   "url":""
+                   "url":"http://isysu.sysu.edu.cn/game"
                 },
             ]
         }
     ]
 }
 """
+
 
 #################################### Get json data by url ###################
 def getKeyValueByURL(url, key):
@@ -183,7 +196,6 @@ class PlayGameProcess(tornado.web.RequestHandler):
                 # print d_d['nonceStr'] + '\n'
                 # print "play_process" + js_au_url
                 count = cur.execute('select * from sysu_game where openid="%s"'% playerId)
-                
                 if count == 0L:
                     # new player comes, create database record
                     cur.execute("insert into sysu_game values('%s', '%d', '%d', '%d', '%d')"% \
@@ -330,16 +342,28 @@ class ServerAuthor(tornado.web.RequestHandler):
         fromusername = data.find('FromUserName').text
         createtime = data.find('CreateTime').text
         msgtype = data.find('MsgType').text
-        content = data.find('Content').text
-        msgid = data.find('MsgId').text
         out = ''
-        for item in rules:
-            if (item.match(content)):
-                out = item.makeXML(fromusername, tousername)
-                print(out)
-                break
-        self.write(out)
+        if (msgtype == 'event'):
+            if (data.find('Event').text == 'subscribe'):
+                self.write(eventReply % (fromusername, tousername, int(time.time()), """欢迎关注，这里是中山大学(Sun Yat-sen University)官方微信平台iSYSU。
+回复【中山大学】，获得中山大学简介。
+回复【招生】或【录取】，获得中山大学各院系介绍、中山大学相关招生信息 。
 
+中大官方微信平台欢迎您的投稿，投稿邮箱：zhongdaguanwei@163.com，您对中大微信平台的意见和建议也可直接回复至微信平台。
+
+更多中大相关信息可移步至中山大学官方网站：http://www.sysu.edu.cn/"""))
+            elif (data.find('Event').text == 'CLICK'):
+                if (data.find('EventKey').text == 'connect'):
+                    self.write(eventReply % (fromusername, tousername, int(time.time()), """中大官微iSYSU期待您的踊跃投稿，为您的精彩提供展现平台。我们也欢迎您真诚的反馈与建议，我们立志于更好。来稿请投：zhongdaguanwei@163.com，您对iSYSU的意见和建议可直接回复至微信后台。感谢您对iSYSU的支持！mo-示爱"""))
+        else:
+            msgid = data.find('MsgId').text
+            content = data.find('Content').text
+            for item in rules:
+                if (item.match(content)):
+                    out = item.makeXML(fromusername, tousername)
+                    print(out)
+                    break
+            self.write(out)
 ################## Get Sign part ##################################
 class Sign:
     def __init__(self, jsapi_ticket, url):
@@ -392,8 +416,8 @@ class AuthorizationJS:
 
 if __name__ == '__main__':
     rules = replyer.create_rulers('rule.json')
-    #helper.createMenu(menuData)
-
+    helper.createMenu(menuData)
+    print helper.getAccessToken()
     tornado.options.parse_command_line()
     settings = {
         "static_path": os.path.join(os.path.dirname(__file__), "static"),
@@ -412,3 +436,4 @@ if __name__ == '__main__':
     http_server = tornado.httpserver.HTTPServer(app)
     http_server.listen(options.port)
     tornado.ioloop.IOLoop.instance().start()
+

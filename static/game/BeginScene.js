@@ -106,7 +106,7 @@ var BeginScene = cc.Scene.extend({
 
         this.addChild(layer);
 
-        /*cc.audioEngine.playMusic(res.backgroundMP3, true);*/
+        cc.audioEngine.playMusic(res.backgroundMP3, true);
 
         this.scheduleUpdate();
     }

@@ -92,7 +92,7 @@ class Helper(object):
         buffer = StringIO()
         create = pycurl.Curl()
         create.setopt(create.URL, str(createMenuURL))
-        create.setopt(create.POSTFIELDS, (urlencode({'data': menuData}))[5:])
+        create.setopt(create.POSTFIELDS, menuData)
         create.setopt(create.WRITEFUNCTION, buffer.write)
         create.perform()
         create.close()

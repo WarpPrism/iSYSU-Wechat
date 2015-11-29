@@ -135,3 +135,106 @@
     TypeError: cannot concatenate 'str' and 'NoneType' objects
 [E 151128 12:37:23 web:1946] 500 GET /play_game (127.0.0.1) 2.30ms
 [I 151128 12:37:30 web:1946] 302 GET /game (127.0.0.1) 0.86ms
+[I 151129 12:29:56 web:1946] 302 GET /shareGame/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI?from=timeline&isappinstalled=0 (127.0.0.1) 1.10ms
+/var/www/isysu-wechat/server_debug.py:178: Warning: Can't create database 'iSysu'; database exists
+  cur.execute('create database if not exists iSysu')
+/var/www/isysu-wechat/server_debug.py:185: Warning: Table 'sysu_game' already exists
+  mission4 int)""")
+[E 151129 12:30:02 web:2653] Could not open static file '/var/www/isysu-wechat/static'
+[I 151129 12:30:02 web:1946] 200 GET /play_game/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI?code=001390c23a1ae349da0d988fdeb943fZ&state=OK (127.0.0.1) 2308.66ms
+[I 151129 12:30:02 web:1946] 302 GET /shareGame/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI?from=timeline&isappinstalled=0 (127.0.0.1) 1.15ms
+[W 151129 12:30:02 web:1946] 404 GET /play_game/project.json (127.0.0.1) 2.51ms
+[E 151129 12:30:07 web:2653] Could not open static file '/var/www/isysu-wechat/static'
+[I 151129 12:30:07 web:1946] 200 GET /play_game/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI?code=0316fcfb29d8fdf39cf415f63e523c3B&state=OK (127.0.0.1) 1739.69ms
+[W 151129 12:30:08 web:1946] 404 GET /play_game/project.json (127.0.0.1) 2.39ms
+[I 151129 12:30:16 web:1946] 302 GET /shareGame/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI?from=timeline&isappinstalled=0 (127.0.0.1) 1.07ms
+[E 151129 12:30:24 web:2653] Could not open static file '/var/www/isysu-wechat/static'
+[I 151129 12:30:24 web:1946] 200 GET /play_game/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI?code=011c52a7fbc3cb2caed2f67c7ca6a6bb&state=OK (127.0.0.1) 2875.36ms
+[W 151129 12:30:25 web:1946] 404 GET /play_game/project.json (127.0.0.1) 2.52ms
+/var/www/isysu-wechat/server_debug.py:291: Warning: Can't create database 'iSysu'; database exists
+  cur.execute('create database if not exists iSysu')
+/var/www/isysu-wechat/server_debug.py:298: Warning: Table 'sysu_game' already exists
+  mission4 int)')
+[I 151129 12:30:38 web:1946] 200 POST /winGame (127.0.0.1) 5.89ms
+[I 151129 12:31:37 web:1946] 302 GET /game (127.0.0.1) 0.67ms
+[E 151129 12:31:39 web:2653] Could not open static file '/var/www/isysu-wechat/static'
+[I 151129 12:31:39 web:1946] 200 GET /play_game?code=041928d9ddf6af4cb3e1cd5b2b25426i&state=OK (127.0.0.1) 2013.77ms
+[I 151129 12:31:40 web:1946] 200 POST /?signature=949534817ebbc76cea8b397a2bdf407c6ef99e95&timestamp=1448818294&nonce=1348872210 (127.0.0.1) 2.41ms
+[W 151129 12:31:40 web:1946] 404 GET /project.json (127.0.0.1) 2.49ms
+[I 151129 12:31:54 web:1946] 200 POST /winGame (127.0.0.1) 5.59ms
+[I 151129 12:32:05 web:1946] 200 POST /winGame (127.0.0.1) 5.85ms
+[E 151129 12:32:25 web:1524] Uncaught exception GET /play_game?code=041928d9ddf6af4cb3e1cd5b2b25426i&state=OK (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/play_game?code=041928d9ddf6af4cb3e1cd5b2b25426i&state=OK', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML; like Gecko) Mobile/12F70 MicroMessenger/6.1.5 NetType/WIFI', 'Connection': 'close', 'Pragma': 'no-cache', 'X-Real-Ip': '101.226.103.72'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 166, in get
+        playerId = getKeyValueByURL(url, 'openid')
+      File "/var/www/isysu-wechat/server_debug.py", line 145, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'openid'
+[E 151129 12:32:25 web:1946] 500 GET /play_game?code=041928d9ddf6af4cb3e1cd5b2b25426i&state=OK (127.0.0.1) 533.02ms
+[I 151129 12:32:41 web:1946] 302 GET /shareGame/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI?from=timeline&isappinstalled=0 (127.0.0.1) 1.12ms
+[E 151129 12:32:46 web:2653] Could not open static file '/var/www/isysu-wechat/static'
+[I 151129 12:32:46 web:1946] 200 GET /play_game/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI?code=031c33bcd7d1210e56eb9e5c146cd83C&state=OK (127.0.0.1) 1096.31ms
+[I 151129 12:32:47 web:1946] 302 GET /shareGame/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI?from=timeline&isappinstalled=0 (127.0.0.1) 1.21ms
+[W 151129 12:32:47 web:1946] 404 GET /play_game/project.json (127.0.0.1) 2.49ms
+[E 151129 12:32:51 web:2653] Could not open static file '/var/www/isysu-wechat/static'
+[I 151129 12:32:51 web:1946] 200 GET /play_game/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI?code=0417d2f20f2a9a96177131f1e78f182x&state=OK (127.0.0.1) 1069.87ms
+[W 151129 12:32:52 web:1946] 404 GET /play_game/project.json (127.0.0.1) 2.53ms
+[I 151129 12:33:04 web:1946] 200 POST /winGame (127.0.0.1) 7.46ms
+[I 151129 12:33:35 web:1946] 200 POST /winGame (127.0.0.1) 5.64ms
+[I 151129 12:33:38 web:1946] 200 POST /?signature=570fe00bbe14f7242a65c66e541c165cf1ae8aac&timestamp=1448818415&nonce=1951086524 (127.0.0.1) 1.92ms
+[I 151129 12:33:39 web:1946] 302 GET /game (127.0.0.1) 0.96ms
+[E 151129 12:33:42 web:2653] Could not open static file '/var/www/isysu-wechat/static'
+[I 151129 12:33:42 web:1946] 200 GET /play_game?code=011bf9d5dabb019945e147b11d072d8T&state=OK (127.0.0.1) 2008.57ms
+[W 151129 12:33:43 web:1946] 404 GET /project.json (127.0.0.1) 1.73ms
+[E 151129 12:35:46 web:1524] Uncaught exception GET /play_game/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/play_game/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-cn, zh', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.2; zh-cn; GT-I9500 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.0 QQ-URL-Manager Mobile Safari/537.36', 'Accept-Charset': 'GB2312,utf-8;q=0.7,*;q=0.7', 'Connection': 'close', 'X-Real-Ip': '112.64.235.249'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 226, in get
+        self.render('game.html', jsonData=d_d, shareId=id, playerId=playerId, missionId=3, passMission='F')
+    UnboundLocalError: local variable 'playerId' referenced before assignment
+[E 151129 12:35:46 web:1946] 500 GET /play_game/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI (127.0.0.1) 1424.22ms
+[I 151129 12:36:32 web:1946] 302 GET /shareGame/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI?from=timeline&isappinstalled=0 (127.0.0.1) 0.87ms
+[E 151129 12:36:40 web:2653] Could not open static file '/var/www/isysu-wechat/static'
+[I 151129 12:36:40 web:1946] 200 GET /play_game/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI?code=02157b4452536fda74544d602fef9e3Q&state=OK (127.0.0.1) 3755.10ms
+[W 151129 12:36:41 web:1946] 404 GET /play_game/project.json (127.0.0.1) 2.76ms
+[I 151129 12:36:59 web:1946] 302 GET /shareGame/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI?from=timeline&isappinstalled=0 (127.0.0.1) 1.01ms
+[E 151129 12:37:05 web:2653] Could not open static file '/var/www/isysu-wechat/static'
+[I 151129 12:37:05 web:1946] 200 GET /play_game/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI?code=001967d6083a54d741dfa61224c8431v&state=OK (127.0.0.1) 2357.64ms
+[W 151129 12:37:05 web:1946] 404 GET /play_game/project.json (127.0.0.1) 2.36ms
+[I 151129 12:40:28 autoreload:204] /var/www/isysu-wechat/server_debug.py modified; restarting server
+[I 151129 12:40:36 autoreload:204] /var/www/isysu-wechat/server_debug.py modified; restarting server
+[I 151129 12:41:21 web:1946] 302 GET /shareGame/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI?from=timeline&isappinstalled=0 (127.0.0.1) 1.99ms
+/var/www/isysu-wechat/server_debug.py:178: Warning: Can't create database 'iSysu'; database exists
+  cur.execute('create database if not exists iSysu')
+/var/www/isysu-wechat/server_debug.py:185: Warning: Table 'sysu_game' already exists
+  mission4 int)""")
+[E 151129 12:41:25 web:2653] Could not open static file '/var/www/isysu-wechat/static'
+[I 151129 12:41:25 web:1946] 200 GET /play_game/o_KAIt3WtTVmZeg6EZ7YgCnRfQBI?code=0217033efd55d0d65ef8198d0944ca27&state=OK (127.0.0.1) 2063.75ms
+[W 151129 12:41:26 web:1946] 404 GET /play_game/project.json (127.0.0.1) 1.62ms
+/var/www/isysu-wechat/server_debug.py:290: Warning: Can't create database 'iSysu'; database exists
+  cur.execute('create database if not exists iSysu')
+/var/www/isysu-wechat/server_debug.py:297: Warning: Table 'sysu_game' already exists
+  mission4 int)')
+[I 151129 12:41:55 web:1946] 200 POST /winGame (127.0.0.1) 7.72ms
+[I 151129 12:42:06 web:1946] 200 POST /winGame (127.0.0.1) 820.21ms
+[I 151129 12:42:27 web:1946] 200 POST /winGame (127.0.0.1) 4.90ms
+[I 151129 12:48:29 web:1946] 200 POST /?signature=01e5422eb36408a09d32d5911e545c5143f3499b&timestamp=1448819306&nonce=154752326 (127.0.0.1) 4.03ms
+[I 151129 12:48:31 web:1946] 302 GET /game (127.0.0.1) 0.63ms
+[I 151129 12:48:31 web:1946] 200 GET / (127.0.0.1) 1.00ms
+[I 151129 12:48:31 web:1946] 200 GET / (127.0.0.1) 0.66ms
+[E 151129 12:48:34 web:2653] Could not open static file '/var/www/isysu-wechat/static'
+[I 151129 12:48:34 web:1946] 200 GET /play_game?code=04197c8dc13a3f3f6376e5a0ff79774G&state=OK (127.0.0.1) 2379.18ms
+[W 151129 12:48:38 web:1946] 404 GET /project.json (127.0.0.1) 2.81ms
+[I 151129 12:48:54 web:1946] 200 POST /winGame (127.0.0.1) 6.34ms
+[I 151129 12:49:08 web:1946] 200 POST /winGame (127.0.0.1) 6.47ms
+[I 151129 12:50:33 web:1946] 302 GET /shareGame/o_KAIt0CfUK2bKpeq3QiXz8hZo-k?from=singlemessage&isappinstalled=0 (127.0.0.1) 1.24ms
+[I 151129 12:50:35 web:1946] 302 GET /shareGame/o_KAIt0CfUK2bKpeq3QiXz8hZo-k?from=singlemessage&isappinstalled=0 (127.0.0.1) 1.06ms
+[E 151129 12:50:41 web:2653] Could not open static file '/var/www/isysu-wechat/static'
+[I 151129 12:50:41 web:1946] 200 GET /play_game/o_KAIt0CfUK2bKpeq3QiXz8hZo-k?code=00173788a43274ca6e8b47aad4f08ccG&state=OK (127.0.0.1) 3064.08ms
+[W 151129 12:50:49 web:1946] 404 GET /play_game/project.json (127.0.0.1) 2.74ms
+[I 151129 12:54:04 web:1946] 302 GET /shareGame/o_KAIt0CfUK2bKpeq3QiXz8hZo-k?from=singlemessage&isappinstalled=0 (127.0.0.1) 1.00ms

@@ -3,36 +3,36 @@
  */
 
 var res = {
-    mission1: "static/res/game/mission1.jpg",
-    mission2: "static/res/game/mission2.jpg",
-    mission3: "static/res/game/mission3.jpg",
-    mission4: "static/res/game/mission4.jpg",
+    mission1: server_data.static_url + "res/game/mission1.jpg",
+    mission2: server_data.static_url + "res/game/mission2.jpg",
+    mission3: server_data.static_url + "res/game/mission3.jpg",
+    mission4: server_data.static_url + "res/game/mission4.jpg",
 
-    success1: "static/res/game/success1.gif",
-    success2: "static/res/game/success2.gif",
-    failure1: "static/res/game/failure1.gif",
-    runner_Ready: "static/res/game/runner_Ready.png",
-    runner_Run1: "static/res/game/runner_Run_1.png",
-    runner_Run2: "static/res/game/runner_Run_2.png",
-    runner_Run3: "static/res/game/runner_Run_3.png",
-    invite_friends: "static/res/game/invite_friends.gif",
-    run_again: "static/res/game/run_again.gif",
-    run_again_small: "static/res/game/run_again_small.gif",
+    success1: server_data.static_url + "res/game/success1.gif",
+    success2: server_data.static_url + "res/game/success2.gif",
+    failure1: server_data.static_url + "res/game/failure1.gif",
+    runner_Ready: server_data.static_url + "res/game/runner_Ready.png",
+    runner_Run1: server_data.static_url + "res/game/runner_Run_1.png",
+    runner_Run2: server_data.static_url + "res/game/runner_Run_2.png",
+    runner_Run3: server_data.static_url + "res/game/runner_Run_3.png",
+    invite_friends: 	server_data.static_url + "res/game/invite_friends.gif",
+    run_again: 		server_data.static_url + "res/game/run_again.gif",
+    run_again_small: 	server_data.static_url + "res/game/run_again_small.gif",
 
-    begin_bg: "static/res/game/home_back.png",
-    bicode: "static/res/game/bicode.png",
-    begin_label:"static/res/game/home0.png",
-    begin_enter:"static/res/game/home2.png",
-    begin_rules:"static/res/game/home1.png",
-    rule_label:"static/res/game/rules3.gif",
-    rule_know:"static/res/game/rules4.gif",
-    close:"static/res/game/close.gif",
-    launch:"static/res/game/launch_game_small.gif",
-    pass:"static/res/game/pass.png",
+    begin_bg: 		server_data.static_url + "res/game/home_back.png",
+    bicode: 		server_data.static_url + "res/game/bicode.png",
+    begin_label: 	server_data.static_url + "res/game/home0.png",
+    begin_enter: 	server_data.static_url + "res/game/home2.png",
+    begin_rules: 	server_data.static_url + "res/game/home1.png",
+    rule_label: 	server_data.static_url + "res/game/rules3.gif",
+    rule_know: 		server_data.static_url + "res/game/rules4.gif",
+    close:		server_data.static_url + "res/game/close.gif",
+    launch:		server_data.static_url + "res/game/launch_game_small.gif",
+    pass:		server_data.static_url + "res/game/pass.png",
 
     // music and audio
-    /*backgroundMP3: "static/res/game/background.mp3",*/
-    jumpMP3: "static/res/game/jump.mp3"
+    backgroundMP3: server_data.static_url + "res/game/background.mp3",
+    jumpMP3: 		server_data.static_url + "res/game/jump.mp3"
 };
 
 var g_resources = [
@@ -62,6 +62,6 @@ var g_resources = [
     res.rule_know,
     res.rule_label,
 
-    /*res.backgroundMP3,*/
+    res.backgroundMP3,
     res.jumpMP3
 ];

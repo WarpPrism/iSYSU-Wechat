@@ -9,7 +9,7 @@ var PlayLayer4 = cc.Layer.extend({
     center_pos: null,
     start_time : null,
     mission_complete: false,
-    request_time: 15,
+    request_time: 10,
 
     // Initial function of play layer.
     ctor: function() {
@@ -145,7 +145,7 @@ var PlayLayer4 = cc.Layer.extend({
             res.invite_friends,
             res.invite_friends,
             function() {
-                alert("Invite Friends!");
+                alert("请点击右上角分享到朋友圈 ：）");
             }, this);
 
             inviteFriends.attr({

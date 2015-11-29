@@ -14,6 +14,7 @@ import tornado.httpserver
 import tornado.ioloop
 import tornado.options
 import tornado.web
+import xml.etree.ElementTree as ET
 
 from tornado.options import define, options
 define("port", default=8000, help="run on the given port", type=int)
@@ -92,30 +93,33 @@ menuData = """
                    "media_id":"GI1Tl2pOccBGncHVrwFVwBWzFKhqzmW3J7IIOlYzKADitHqWXBz84VyHwSk3sGl4"
                 }
             ]
-        },
-         {
-            "name":"i互动",
-            "sub_button":[
-                {
-                   "type":"view",
-                   "name":"欢迎来稿",
-                   "url":"http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=208325182&idx=2&sn=35492466165661ce4323dcddb4b8c9d7&scene=18#wechat_redirect"
-                },
-                {
-                   "type":"text",
-                   "name":"联系我们",
-                   "value":"中大官微iSYSU期待您的踊跃投稿，为您的精彩提供展现平台。我们也欢迎您真诚的反馈与建议，我们立志于更好。来稿请投：zhongdaguanwei@163.com，您对iSYSU的意见和建议可直接回复至微信后台。感谢您对iSYSU的支持！mo-示爱"
-                },
-                {
-                   "type":"view",
-                   "name":"互动游戏",
-                   "url":""
-                },
-            ]
         }
     ]
 }
 """
+#         {
+#            "name":"i互动",
+#            "sub_button":[
+#                {
+#                   "type":"view",
+#                   "name":"欢迎来稿",
+#                   "url":"http://mp.weixin.qq.com/s?__biz=MzA3MDc5NjAyOA==&mid=208325182&idx=2&sn=35492466165661ce4323dcddb4b8c9d7&scene=18#wechat_redirect"
+#                },
+#                {
+#                   "type":"text",
+#                   "name":"联系我们",
+#                   "value":"中大官微iSYSU期待您的踊跃投稿，为您的精彩提供展现平台。我们也欢迎您真诚的反馈与建议，我们立志于更好。来稿请投：zhongdaguanwei@163.com，您对iSYSU的意见和建议可直接回复至微信后台。感谢您对iSYSU的支持！mo-示爱"
+#                },
+#                {
+#                   "type":"view",
+#                   "name":"互动游戏",
+#                   "url":"http://isysu.sysu.edu.cn/game"
+#                },
+#            ]
+#        }
+#    ]
+#}
+#"""
 
 #################################### Get json data by url ###################
 def getKeyValueByURL(url, key):
@@ -141,6 +145,7 @@ def getKeyValueByURL(url, key):
 class PlayGameProcess(tornado.web.RequestHandler):
     global Debug
     def get(self, shareId=None):
+        #print shareId
         code = self.get_argument('code', None)
         state = self.get_argument('state', None)
         if Debug:
@@ -172,7 +177,8 @@ class PlayGameProcess(tornado.web.RequestHandler):
             # print "current" + self.request.remote_ip 
             authorization = AuthorizationJS()
             
-            if shareId is None:
+            if shareId.strip() == '' or shareId is None:
+                print "ShareId is None"
                 d_d = authorization.get('http://isysu.sysu.edu.cn/play_game?code='+str(code)+'&state='+str(state))
 		# print "sid" + shareId
                 # print d_d['timestamp']
@@ -197,8 +203,9 @@ class PlayGameProcess(tornado.web.RequestHandler):
                     else:
                         self.render('game.html', jsonData=d_d, shareId=id, playerId=playerId, missionId=1, passMission='F')
             else:
-                d_d = authorization.get('')
+                d_d = authorization.get('http://isysu.sysu.edu.cn/play_game/'+str(shareId)+'?code='+str(code)+'&state='+str(state))
                 count = cur.execute('select * from sysu_game where openid="%s"'% shareId)
+                print "current dir: ", os.getcwd()
                 if count != 0L:
                     # data : (openid, mission1, mission2, mission3, mission4)
                     (id, m1, m2, m3, m4) = cur.fetchone()
@@ -340,7 +347,6 @@ class ServerAuthor(tornado.web.RequestHandler):
 ################## Get Sign part ##################################
 class Sign:
     def __init__(self, jsapi_ticket, url):
-        print jsapi_ticket
 	self.ret = {
             'nonceStr': self.__create_nonce_str(),
             'jsapi_ticket': jsapi_ticket,
@@ -356,7 +362,6 @@ class Sign:
 
     def sign(self):
         string = '&'.join(['%s=%s' % (key.lower(), self.ret[key]) for key in sorted(self.ret)])
-        print string
         self.ret['signature'] = hashlib.sha1(string).hexdigest()
         return self.ret
 
@@ -391,8 +396,8 @@ class AuthorizationJS:
 
 if __name__ == '__main__':
     rules = replyer.create_rulers('rule.json')
-    #helper.createMenu(menuData)
-
+    helper.createMenu(menuData)
+    print helper.getAccessToken()
     tornado.options.parse_command_line()
     settings = {
         "static_path": os.path.join(os.path.dirname(__file__), "static"),
@@ -404,7 +409,7 @@ if __name__ == '__main__':
         (r"/shareGame/?([a-zA-Z0-9\?_\-&=]*)", ShareLinkProcess),
         (r"/game", InitialLinkProcess),
         (r"/winGame", WinGameProcess),
-        (r"/play_game/?(\w+)?", PlayGameProcess),
+        (r"/play_game/?([a-zA-Z0-9\-_]*)", PlayGameProcess),
         (r"/", ServerAuthor)
     ], **settings)
 
