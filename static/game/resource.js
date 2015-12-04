@@ -20,7 +20,7 @@ var res = {
     run_again_small: 	server_data.static_url + "res/game/run_again_small.gif",
 
     begin_bg: 		server_data.static_url + "res/game/home_back.png",
-    bicode: 		server_data.static_url + "res/game/bicode.png",
+    bicode: 		server_data.static_url + "res/game/erweima.png",
     begin_label: 	server_data.static_url + "res/game/home0.png",
     begin_enter: 	server_data.static_url + "res/game/home2.png",
     begin_rules: 	server_data.static_url + "res/game/home1.png",

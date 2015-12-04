@@ -9,7 +9,7 @@ var PlayLayer1 = cc.Layer.extend({
     center_pos: null,
     start_time : null,
     mission_complete: false,
-    request_time: 13,
+    request_time: 11,
 
     // Initial function of play layer.
     ctor: function() {
@@ -145,7 +145,7 @@ var PlayLayer1 = cc.Layer.extend({
             res.invite_friends,
             res.invite_friends,
             function() {
-                alert("请点击右上角分享到朋友圈 ：）");        
+                alert("请点击右上角分享到朋友圈，邀请你的好友助你通关，四人通关后便可发送截图到中大官微iSYSU后台，赢取中大羊城通。：）");        
             }, this);
 
             inviteFriends.attr({

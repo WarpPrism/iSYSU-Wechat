@@ -361,7 +361,7 @@ class ServerAuthor(tornado.web.RequestHandler):
             for item in rules:
                 if (item.match(content)):
                     out = item.makeXML(fromusername, tousername)
-                    print(out)
+                    # print(out)
                     break
             self.write(out)
 ################## Get Sign part ##################################
