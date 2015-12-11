@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Define Viewport-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <script type="text/javascript" src="{{static_url('libs/jquery-2.1.4.min.js')}}" charset="utf-8"></script>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="{{static_url('libs/bootstrap/css/bootstrap.min.css')}}"/>
+    <link rel="stylesheet" href="{{ static_url('index/SchoolBus.css') }}">
+    <script type="text/javascript" src="{{ static_url('libs/vivus.min.js') }}"></script>
+    <script type="text/javascript" src="{{static_url('index/SchoolBus.js')}}"></script>
+    <title></title>
+    <script>static_url = {{ static_url('') }};</script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" id="svg-div">
+            <svg id='svg' width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+                <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+                <g>
+                    <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"></rect>
+                </g>
+                <g>
+                    <rect fill="#007f00" stroke="#007f00" stroke-width="1.5" fill-opacity="0" x="143.44134" y="141.44135" width="293" height="118" id="svg_2"></rect>
+                    <rect fill="#007f00" stroke="#007f00" stroke-width="1.5" fill-opacity="0" x="235.99998" y="160.5" width="34" height="30" id="svg_11"></rect>
+                    <rect fill="#007f00" stroke="#007f00" stroke-width="1.5" fill-opacity="0" x="365.00001" y="159.49999" width="34" height="30" id="svg_12"></rect>
+                    <rect fill="#007f00" stroke="#007f00" stroke-width="1.5" fill-opacity="0" x="170.99999" y="160.5" width="34" height="30" id="svg_14"></rect>
+                    <rect fill="#007f00" stroke="#007f00" stroke-width="1.5" fill-opacity="0" x="302" y="160.5" width="34" height="30" id="svg_15"></rect>
+                    <path fill="#007f00" stroke="#007f00" stroke-width="1.5" stroke-opacity="null" fill-opacity="0" d="m-80.26876,-8.52406l-0.19892,0.19894l1.00002,0l0,-1.00001l-0.80109,0.80107zm0.46897,-0.43959c0.00723,-0.00711 0.01862,-0.00711 0.02579,0l0.04505,0.04502c0.00717,0.00711 0.00723,0.01865 0.00011,0.02576c-0.00362,0.00353 -0.00829,0.00532 -0.01292,0.00532c-0.00468,0 -0.0093,-0.00179 -0.0128,-0.00532l-0.04523,-0.04502c-0.00711,-0.00711 -0.00711,-0.01861 0,-0.02575l0,-0.00001zm-0.06217,0.06231c0.00711,-0.00711 0.01861,-0.00711 0.02572,0l0.08376,0.08368c0.00712,0.00711 0.00712,0.01865 0.00006,0.02568c-0.00356,0.00357 -0.0083,0.0054 -0.01299,0.0054s-0.00931,-0.00179 -0.01281,-0.00533l-0.08375,-0.08368c-0.00717,-0.00711 -0.00717,-0.01864 0,-0.02576l0,0.00001zm-0.0623,0.0622c0.00713,-0.00711 0.01862,-0.00711 0.02579,0l0.04504,0.0451c0.00712,0.00711 0.00706,0.01865 -0.00005,0.02576c-0.00362,0.00357 -0.00824,0.00536 -0.01286,0.00536c-0.00468,0 -0.00931,-0.00179 -0.01286,-0.00536l-0.04505,-0.04506c-0.00711,-0.00711 -0.00711,-0.01869 0,-0.02579l-0.00002,-0.00001zm-0.06223,0.06227c0.00717,-0.00711 0.01867,-0.00703 0.02578,0.00008l0.04499,0.04502c0.00711,0.00715 0.00711,0.01865 0,0.02575c-0.00356,0.00358 -0.00824,0.00536 -0.01286,0.00536c-0.00462,0 -0.00936,-0.00179 -0.01292,-0.00536l-0.04498,-0.0451c-0.00712,-0.00714 -0.00712,-0.01864 0,-0.02576l-0.00001,0.00001zm-0.06224,0.06231c0.00711,-0.00715 0.01861,-0.00715 0.02573,0l0.08369,0.08364c0.00711,0.00714 0.00711,0.01869 0,0.02583c-0.00356,0.00358 -0.00818,0.00536 -0.0128,0.00536c-0.00475,0 -0.00943,-0.00179 -0.01299,-0.00536l-0.08363,-0.08371c-0.00711,-0.00715 -0.00711,-0.01865 0,-0.02576zm-0.07735,0.29613c-0.00356,0.00362 -0.00824,0.0054 -0.01292,0.0054c-0.00462,0 -0.00925,-0.00175 -0.01281,-0.00532l-0.08369,-0.08364c-0.00711,-0.00711 -0.00711,-0.01861 0,-0.02576s0.01862,-0.00715 0.02573,0l0.08369,0.08364c0.00713,0.00707 0.00713,0.01857 0,0.02567l0,0.00001zm0.02371,-0.10088c-0.00362,0.00361 -0.00836,0.00539 -0.01299,0.00539c-0.00462,0 -0.0093,-0.00175 -0.0128,-0.00532l-0.0451,-0.0451c-0.00716,-0.00711 -0.00716,-0.01861 0,-0.02564c0.00711,-0.00719 0.01862,-0.00727 0.02579,-0.00012l0.0451,0.04514c0.00711,0.00699 0.00711,0.01853 0,0.02564l0,0.00001zm0.06218,-0.06223c-0.00356,0.00357 -0.00818,0.00536 -0.01292,0.00536c-0.00462,0 -0.00925,-0.00179 -0.01286,-0.00536l-0.04499,-0.04506c-0.00717,-0.00715 -0.00717,-0.01865 0,-0.0258s0.01862,-0.00707 0.02573,0.00008l0.04505,0.0451c0.0071,0.00711 0.0071,0.01864 0,0.02568l-0.00002,0zm0.37823,0.06219l-0.3368,0l0.3368,-0.3368l0,0.3368zm-0.00462,-0.43575c-0.0035,0.00357 -0.00824,0.00536 -0.01286,0.00536c-0.00468,0 -0.00937,-0.00179 -0.01299,-0.00536l-0.04504,-0.04503c-0.00711,-0.00711 -0.00711,-0.01861 0,-0.02576c0.00705,-0.0071 0.01862,-0.0071 0.02573,0l0.04504,0.04503c0.00717,0.00715 0.00717,0.01864 0.00012,0.02576zm0.10082,-0.02362c-0.00356,0.00358 -0.0083,0.00533 -0.01292,0.00533s-0.0093,-0.00175 -0.01279,-0.00533l-0.08369,-0.08368c-0.00711,-0.00711 -0.00711,-0.01869 0,-0.02579s0.01873,-0.00703 0.02579,0.00007l0.08369,0.08368c0.00711,0.00711 0.00705,0.01864 -0.00006,0.02571l-0.00001,0.00001z" id="svg_18"></path>
+                    <text transform="matrix(1,0,0,1,0,0) " fill="#007f00" stroke-width="0" x="179.19864" y="84.27048" id="svg_25" font-size="30" font-family="'Palatino Linotype', 'Book Antiqua', Palatino, serif" text-anchor="left" xml:space="preserve" stroke="#000000">SYSU School Bus</text>
+                    <path fill="#007f00" stroke="#007f00" stroke-width="1.5" stroke-opacity="null" fill-opacity="0" opacity="0.5" d="m183.25,252.75" id="svg_29"></path>
+                    <path fill="none" stroke="#007fff" stroke-width="1.5" stroke-opacity="null" fill-opacity="0" id="svg_48"></path>
+                    <line fill="none" stroke-width="1.5" fill-opacity="0" x1="142.5" y1="210.5" x2="336.5" y2="258" id="svg_49" stroke-linejoin="null" stroke-linecap="null" stroke="#007f00"></line>
+                    <path fill="none" stroke="#007f00" stroke-width="1.5" fill-opacity="0" d="m184.63499,259.8425l0,0c0,-9.11307 7.83568,-16.5 17.5,-16.5l0,0c4.64096,0 9.09285,1.73822 12.3741,4.83298c3.28232,3.09375 5.1259,7.29126 5.1259,11.66702l0,0c0,9.11206 -7.83464,16.5 -17.5,16.5l0,0c-9.66432,0 -17.5,-7.38794 -17.5,-16.5zm8.75,0l0,0c0,4.55603 3.91785,8.25 8.75,8.25c4.83214,0 8.75,-3.69397 8.75,-8.25c0,-4.55603 -3.91786,-8.25 -8.75,-8.25l0,0c-4.83215,0 -8.75,3.69397 -8.75,8.25z" id="svg_50"></path>
+                    <path fill="none" stroke="#007f00" stroke-width="1.5" fill-opacity="0" d="m352.13498,259.8425l0,0c0,-9.11307 7.83569,-16.5 17.5,-16.5l0,0c4.64099,0 9.0929,1.73822 12.37415,4.83298c3.28232,3.09375 5.12585,7.29126 5.12585,11.66702l0,0c0,9.11206 -7.83463,16.5 -17.5,16.5l0,0c-9.66431,0 -17.5,-7.38794 -17.5,-16.5zm8.75,0l0,0c0,4.55603 3.91788,8.25 8.75,8.25c4.83218,0 8.75003,-3.69397 8.75003,-8.25c0,-4.55603 -3.91785,-8.25 -8.75003,-8.25l0,0c-4.83212,0 -8.75,3.69397 -8.75,8.25z" id="svg_51"></path>
+                    <line fill="none" stroke="#007f00" stroke-width="1.5" fill-opacity="0" x1="436.5" y1="199.5" x2="209" y2="226.5" id="svg_52" stroke-linejoin="null" stroke-linecap="null"></line>
+                </g>
+            </svg>
+        </div>
+
+        <div class="row">
+            <div class="col-xs test">
+                <div class="row header">
+                    <h3>中山大学校车时刻表</h3>
+                    <small>2015/03/19更新</small>
+                </div>
+
+                <div class="row option-div">
+                    <div class="row select-route">
+                        <div>
+                            <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
+                            请选择路线
+                        </div>
+                    </div>
+                    <div class="option" data-id="es">
+                        <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>
+                        东校区
+                        <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                        南校区
+                    </div>
+                    <div class="option" data-id="en">
+                        <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>
+                        东校区
+                        <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                        北校区
+                    </div>
+                    <div class="option">
+                        <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                        南校区
+                        <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                        东校区
+                    </div>
+                    <div class="option">
+                        <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                        南校区
+                        <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                        北校区
+                    </div>
+                    <div class="option">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        北校区
+                        <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                        南校区
+                    </div>
+                    <div class="option">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        北校区
+                        <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                        东校区
+                    </div>
+                </div>
+
+                <div class="row not-visible table-div" data-id="es">
+                    <h4 class="direction">
+                        东校区 --> 南校区
+                    </h4>
+                    <table class="table table-striped table-bordered table-condensed table-hover table-responsive">
+                        <tr><th>班次</th><th>发车时间</th><th>发车点</th><th>到达点</th><th>乘车人员</th></tr>
+                        <tr><td>1</td><td>7:55</td><td>东校生科院</td><td>南校南门停车场候车亭</td><td>教职工</td></tr>
+                        <tr><td>2</td><td>10:05</td><td>东校生科院</td><td>南校南门停车场候车亭</td><td>教职工、学生</td></tr>
+                        <tr><td>3</td><td>10:55</td><td>东校生科院</td><td>南校南门停车场候车亭</td><td>教职工、学生</td></tr>
+                        <tr><td>4</td><td>11:45</td><td>东校生科院</td><td>南校南门停车场候车亭</td><td>教职工、学生</td></tr>
+                        <tr><td>5</td><td>12:15</td><td>东校生科院</td><td>南校南门停车场候车亭</td><td>教职工、学生</td></tr>
+                        <tr><td>6</td><td>12:40</td><td>东校生科院</td><td>南校南门停车场候车亭</td><td>教职工</td></tr>
+                        <tr><td>7</td><td>13:50</td><td>东校生科院</td><td>南校南门停车场候车亭</td><td>教职工、学生</td></tr>
+                        <tr><td>8</td><td>15:35</td><td>东校生科院</td><td>南校南门停车场候车亭</td><td>教职工、学生</td></tr>
+                        <tr><td>9</td><td>16:25</td><td>东校生科院</td><td>南校南门停车场候车亭</td><td>教职工、学生</td></tr>
+                        <tr><td>10</td><td>17:10</td><td>东校生科院</td><td>南校南门停车场候车亭</td><td>教职工、学生</td></tr>
+                        <tr><td>11</td><td>18:15</td><td>东校生科院</td><td>南校南门停车场候车亭</td><td>教职工、学生</td></tr>
+                        <tr><td>12</td><td>20:00</td><td>东校生科院</td><td>南校南门停车场候车亭</td><td>教职工、学生</td></tr>
+                        <tr><td>13</td><td>21:05</td><td>东校生科院</td><td>南校西门对面</td><td>教职工、学生</td></tr>
+                        <tr><td>14</td><td>21:55</td><td>东校生科院</td><td>南校西门对面</td><td>教职工</td></tr>
+                        <tr><td>15</td><td>22:15</td><td>东校生科院</td><td>南校南门停车场候车亭</td><td>教职工、学生</td></tr>
+                    </table>
+                </div>
+
+                <div class="row not-visible table-div" data-id="en">
+                    <h4 class="direction">
+                        东校区 --> 北校区
+                    </h4>
+                    <table class="table table-striped table-bordered table-condensed table-hover table-responsive">
+                        <tr>
+                            <th>班次</th>
+                            <th>发车时间</th>
+                            <th>发车点</th>
+                            <th>到达点</th>
+                            <th>乘车人员</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>7:55</td>
+                            <td>东校生科院</td>
+                            <td>南校南门停车场候车亭</td>
+                            <td>教职工</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>10:05</td>
+                            <td>东校生科院</td>
+                            <td>南校南门停车场候车亭</td>
+                            <td>教职工、学生</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>10:55</td>
+                            <td>东校生科院</td>
+                            <td>南校南门停车场候车亭</td>
+                            <td>教职工、学生</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>11:45</td>
+                            <td>东校生科院</td>
+                            <td>南校南门停车场候车亭</td>
+                            <td>教职工、学生</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="row btn-div">
+                    <button class="btn btn-default btn-block" id="return-btn">返回</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

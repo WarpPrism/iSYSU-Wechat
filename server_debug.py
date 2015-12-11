@@ -310,7 +310,9 @@ class WinGameProcess(tornado.web.RequestHandler):
             self.write('False')
             print "Mysql Error %d: %s" % (e.args[0], e.args[1])
 
-
+class MainHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render("SchoolBus.html")
 ########################### Authorization server ##########################
 
 class ServerAuthor(tornado.web.RequestHandler):
@@ -430,7 +432,7 @@ if __name__ == '__main__':
         (r"/game", InitialLinkProcess),
         (r"/winGame", WinGameProcess),
         (r"/play_game/?([a-zA-Z0-9\-_]*)", PlayGameProcess),
-        (r"/", ServerAuthor)
+        (r"/", MainHandler)
     ], **settings)
 
     http_server = tornado.httpserver.HTTPServer(app)
