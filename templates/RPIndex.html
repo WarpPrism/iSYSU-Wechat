@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>四六级人品测试</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" href="{{static_url('res/index/favicon.ico')}}">
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+			border: 0px;
+		}
+
+		body, html {
+			height: 100%;
+		}
+
+		#globle {
+			position: absolute;
+			width: 100%;
+		}
+
+		input {
+			width:100%;
+			height:100%;
+			border-radius: 6px;
+			-webkit-border-radius:6px;
+    		-moz-border-radius:6px;
+			position: absolute;
+
+			text-align: center;
+			font-size: 1em;
+
+			transition: all 0.30s ease-in-out;
+			-webkit-transition: all 0.30s ease-in-out;
+			-moz-transition: all 0.30s ease-in-out;
+			border: black 0px solid;
+			outline: none;
+		}
+
+		input:focus {
+			border:#35a5e5 1px solid;
+			box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+			-webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+			-moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+		}
+
+		#input-box {
+			width:56%;
+			height:6%;
+			position: absolute;
+			margin-left: 22%;
+			bottom: 28%;
+		}
+		#main {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-size: 100% 100%;
+			
+			/* new change */
+			background-image: url({{static_url("rptest/image/test_bg.jpg")}});
+		}
+		
+		#query {
+			position: absolute;
+			width: 36%;
+			height: 5.4%;
+			background-color: rgba(255,255,0,0);
+			margin-left: 32%;
+			bottom:17.4%;
+			border-radius: 6px;
+			-webkit-border-radius:6px;
+    		-moz-border-radius:6px;
+
+    		transition: all 0.30s ease-in-out;
+			-webkit-transition: all 0.30s ease-in-out;
+			-moz-transition: all 0.30s ease-in-out;
+			border: black 0px solid;
+			outline: none;
+
+			/* new addition */
+			background-size: 100% 100%;
+			background-image: url({{static_url("rptest/image/icon_start.png")}});
+
+		}
+
+		#query:hover {
+			border:#FFFF55 1px solid;
+			box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+			-webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+			-moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+		}
+
+		/* WebKit browsers */
+		input::-webkit-input-placeholder {
+			color: #5555ff;
+			opacity: 0.3;
+		}
+		/* Mozilla Firefox 4 to 18 */
+		input:-moz-placeholder {
+			color: #5555ff;
+			opacity: 0.3;
+		}
+		/* Mozilla Firefox 19+ */
+		input::-moz-placeholder {
+			color: #5555ff;
+			opacity: 0.3;
+
+		}
+		/* Internet Explorer 10+ */
+		input:-ms-input-placeholder {
+			color: #5555ff;
+			opacity: 0.3;
+		}
+
+		#explanation {
+			position: absolute;
+			width: 54%;
+			padding: 3%;
+			padding-top: 2%;
+			height: 8%;
+			margin-left: 20%;
+			top:45%;
+			background-color: white;
+			opacity: 0.7;
+			display: none;
+			border-radius: 10px;
+		}
+
+		#header {
+			color:rgb(100,100,255);
+			font-size: 1em;
+		}
+
+	</style>
+
+	<script type="text/javascript">		
+		window.onload = function() {
+			var globle = document.getElementById("globle");
+			globle.style.height = ""+document.body.clientHeight+"px";
+
+			var bt = document.getElementById("query");
+			var input = document.getElementById("inputWord");
+			bt.ontouchstart = function() {
+				var word = input.value;
+				
+				var explanation = document.getElementById("explanation");
+
+				var re = /^[a-zA-Z]+$/;
+				if (!re.test(word)) {
+				    explanation.style.display = "block";
+					explanation.childNodes[1].innerHTML = "请输入正确的单词!";
+					explanation.childNodes[3].innerHTML = "";
+				}
+				else {
+					var bt = document.getElementById("query");
+				    bt.disabled = "true";
+					bt.style.display = "none";	
+					window.location.href = "http://isysu.sysu.edu.cn/QueryWord/"+word;
+					return;
+					var xhr = new XMLHttpRequest();
+					var url = "/GetWordInfo/"+word;
+					xhr.open("get", url, true);
+					xhr.onreadystatechange = function(){
+						if (xhr.readyState == 4 && xhr.status == 200) {
+							var resObj = eval("("+xhr.responseText+")");
+							if (resObj["msg"] == "SUCCESS") {
+								//explanation.childNodes[1].innerHTML = word;
+								//explanation.childNodes[3].innerHTML = resObj["data"]["definition"];				
+				                explanation.style.display = "none";
+								window.location.href = "http://isysu.sysu.edu.cn/QueryWord/"+word;
+							}
+							else {
+				                explanation.style.display = "block";
+								explanation.childNodes[1].innerHTML = word;
+								explanation.childNodes[3].innerHTML = "不存在这个单词!";
+							}
+
+						}
+					};
+					xhr.send(null);
+				}
+			}
+			
+			/*
+			input.oninput = function() {
+				var word = input.value;
+				
+				var explanation = document.getElementById("explanation");
+				explanation.style.display = "block";
+
+				var re = /^[a-zA-Z]+$/;
+				if (!re.test(word)) {
+					explanation.childNodes[1].innerHTML = "请输入正确的单词!";
+					explanation.childNodes[3].innerHTML = "";
+				}
+				else {
+					var xhr = new XMLHttpRequest();
+					var url = "/GetWordInfo/"+word;
+					xhr.open("get", url, true);
+					xhr.onreadystatechange = function(){
+						if (xhr.readyState == 4 && xhr.status == 200) {
+							var resObj = eval("("+xhr.responseText+")");
+							if (resObj["msg"] == "SUCCESS") {
+								explanation.childNodes[1].innerHTML = word;
+								explanation.childNodes[3].innerHTML = resObj["data"]["definition"];
+							}
+							else {
+								explanation.childNodes[1].innerHTML = word;
+								explanation.childNodes[3].innerHTML = "不存在这个单词!";
+							}
+
+						}
+					};
+					xhr.send(null);
+				}
+			}
+			*/
+
+		}
+	</script>
+
+	 <!--wechat js sdk-->
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
+    <script type="text/javascript" src="{{static_url('rptest/js/wechat.js')}}"></script>
+
+</head>
+<body>
+	<div id="globle">
+		<div id = "main">
+			<div id="input-box">
+				<input type="text" placeholder="输入你想到的英文单词" id="inputWord"></input>
+			</div>
+			<div id="explanation">
+				<p id="header"></p>
+				<p></p>
+			</div>
+			<div>
+				<button id="query"></button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

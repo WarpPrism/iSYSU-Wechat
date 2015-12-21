@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>四六级人品测试</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" href="{{static_url('res/index/favicon.ico')}}">
+	<style type="text/css">
+		* {
+			padding: 0px;
+			margin: 0px;
+			border: 0px;
+		}
+		#bg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-size: 100% 100%;
+			background-image:url({{static_url("rptest/image")+"/result_"+char+".jpg"}});
+		}
+
+		#share-bt {
+			position: absolute;
+			width:36%;
+			height: 5.4%;
+			background-color: rgba(255,255,0,0);
+			margin-left: 32%;
+			bottom:13.1%;
+
+			background-size: 100% 100%;
+			background-image:url({{static_url("rptest/image/icon_share.png")}});
+		}
+
+		#share-guide {
+			display: none;
+			position: absolute;
+			width: 70%;
+			height: 30%;
+			margin-left: 15%;
+			bottom: 40%;
+			background-size: 100% 100%;
+			background-image: url({{static_url("rptest/image/share_content.png")}});
+		}
+
+		#yes-bt {
+			position: absolute;
+			width: 44%;
+			height: 18%;
+			margin-left: 28%;
+			bottom:13%;
+			background-size: 100% 100%;
+			background-image: url({{static_url("rptest/image/icon_yes.png")}});
+		}
+
+		#wrapper {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: black;
+			opacity: 0.6;
+			display: none;
+		}
+
+	</style>
+	<script type="text/javascript">
+		server_data = {
+            wx_config: {
+				timestamp: {{jsonData["timestamp"]}}, // 必填，生成签名的时间戳
+				nonceStr: '{{jsonData["nonceStr"]}}', // 必填，生成签名的随机串
+				url: '{{jsonData["url"]}}',
+				jsapi_ticket: '{{jsonData["jsapi_ticket"]}}',
+				signature: '{{jsonData["signature"]}}'
+            },
+            rpValue:"{{value}}"
+        };
+		window.onload = function() {
+			var shareBt = document.getElementById("share-bt");
+			shareBt.ontouchstart = function() {
+				var shareGuide = document.getElementById("share-guide");
+				var wrapper = document.getElementById("wrapper");
+				shareGuide.style.display = "block";
+				wrapper.style.display = "block";
+			}
+
+			var yesBt = document.getElementById("yes-bt");
+			yesBt.ontouchstart = function() {
+				var shareGuide = document.getElementById("share-guide");
+				var wrapper = document.getElementById("wrapper");
+				shareGuide.style.display = "none";
+				wrapper.style.display = "none";
+			}
+		}
+	</script>
+	 <!--wechat js sdk-->
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script> 
+    <script type="text/javascript" src="{{static_url('rptest/js/wechat_res.js')}}"></script>
+</head>
+<body>
+	<div>
+		<div id="bg">
+			<div id="share">
+				<button id="share-bt"></button>
+			</div>
+		</div>
+		<div id="wrapper"></div>
+		<div id="share-guide">
+			<button id="yes-bt"></button>
+		</div>
+	</div>
+</body>
+</html>

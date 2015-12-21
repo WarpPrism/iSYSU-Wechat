@@ -3,6 +3,7 @@ import MySQLdb      # using mysql db
 import os.path
 
 from urllib import urlencode
+import urllib2
 
 import json
 import pycurl
@@ -14,6 +15,7 @@ import tornado.httpserver
 import tornado.ioloop
 import tornado.options
 import tornado.web
+import tornado.wsgi
 import xml.etree.ElementTree as ET
 
 from tornado.options import define, options
@@ -413,7 +415,94 @@ class AuthorizationJS:
         #        url='',
         #        signature='')
 
+#################### RP Test #####################
+RPcounter = 0
+class QueryHandler(tornado.web.RequestHandler):
+	def get(self, word):  	
+		print '####### Enter QueryHandler! #######'
+		remote_ip = self.request.remote_ip
+		print remote_ip+"=====> "+word
+		url = "http://isysu.sysu.edu.cn/QueryWord/"+word;
+		post_data = {}
+		for key in self.request.arguments:
+			post_data[key] = self.get_arguments(key)[0]
+		if len(post_data) is not 0:
+			url = url+'?'
+			for key in post_data:
+				url = url + str(key) + "=" + str(post_data[key]) + "&"
+			url = url[0:len(url)-1]
+		authorization = AuthorizationJS()
+		d_d = authorization.get(url)
+		print 'Got wechat authorization!'
+		dic = {"a":"-1000", "b":"-520", "c":"-0.01", "d":"1",
+			   "e":"11.11", "f":"12", "g":"50", "h":"78", "i":"120",
+		       "j":"1234", "k":"110", "l":"119", "m":"80", "n":"47", 
+			   "o":"59", "p":"666", "q":"15", "r":"2000", "s":"500",
+			   "t":"2121", "u":"100000+", "v":"365", "w":"-0.00001",
+			   "x":"0", "y":"4", "z":"2333"}
+		word = word.lower()
+		self.render('result.html', char=word[0], value=dic.get(word[0]),jsonData=d_d);
+		print '####### Quit the QueryHandler! #######'
 
+class RPIndexHandler(tornado.web.RequestHandler):
+	def get(self):
+		print '####### Enter RPIndexHandler! #######'
+		global RPcounter
+		if RPcounter < 100000:
+			RPcounter += 1
+		url = "http://isysu.sysu.edu.cn/RPTest"
+
+		'''
+		post_data = {}
+		for key in self.request.arguments:
+			post_data[key] = self.get_arguments(key)[0]
+		if len(post_data) is not 0:
+			url = url+'?'
+			for key in post_data:
+				url = url + str(key) + "=" + str(post_data[key]) + "&"
+			url = url[0:len(url)-1]
+
+		authorization = AuthorizationJS()
+		d_d = authorization.get(url)
+		'''
+		print 'Got wechat authorization!'
+		self.render('RPIndex.html');
+		print '####### Quit RPIndexHandler! #######'
+
+class GetWordInfoHandler(tornado.web.RequestHandler):
+	def get(self, word):
+		print '####### Enter GetWordInfoHandler! #######'
+		res = urllib2.urlopen('https://api.shanbay.com/bdc/search/?word='+word)
+		print '####### Got the word from shanbay! #######'
+		self.write(res.read())
+		print '####### Quit GetWordInfoHandler! #######'
+
+class RPCounterHandler(tornado.web.RequestHandler):
+	def get(self):
+		global RPcounter
+		self.write(str(RPcounter))
+##################  gunicorn boot  ########################################
+'''
+settings = {
+	"static_path": os.path.join(os.path.dirname(__file__), "static"),
+    "template_path": os.path.join(os.path.dirname(__file__), "templates"),
+    "debug": True
+}
+app = tornado.web.Application([
+    (r"/shareGame/?([a-zA-Z0-9\?_\-&=]*)", ShareLinkProcess),
+    (r"/game", InitialLinkProcess),
+    (r"/winGame", WinGameProcess),
+    (r"/play_game/?([a-zA-Z0-9\-_]*)", PlayGameProcess),
+    (r"/", ServerAuthor),
+    (r'/QueryWord/([a-zA-Z]+)',QueryHandler),
+	(r'/RPTest',RPIndexHandler),
+	(r'/GetWordInfo/([a-zA-Z]+)',GetWordInfoHandler)
+],**settings)
+
+wsgi_app = tornado.wsgi.WSGIAdapter(app)
+'''
+#########################################################################
+	
 if __name__ == '__main__':
     rules = replyer.create_rulers('rule.json')
     helper.createMenu(menuData)
@@ -430,8 +519,12 @@ if __name__ == '__main__':
         (r"/game", InitialLinkProcess),
         (r"/winGame", WinGameProcess),
         (r"/play_game/?([a-zA-Z0-9\-_]*)", PlayGameProcess),
-        (r"/", ServerAuthor)
-    ], **settings)
+        (r"/", ServerAuthor),
+        (r'/QueryWord/([a-zA-Z]+)',QueryHandler),
+		(r'/RPTest',RPIndexHandler),
+		(r'/GetWordInfo/([a-zA-Z]+)',GetWordInfoHandler),
+		(r'/RPcounter',RPCounterHandler),
+	],**settings)
 
     http_server = tornado.httpserver.HTTPServer(app)
     http_server.listen(options.port)

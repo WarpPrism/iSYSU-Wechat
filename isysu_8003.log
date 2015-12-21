@@ -1,0 +1,1844 @@
+Traceback (most recent call last):
+  File "/var/www/isysu-wechat/server_debug.py", line 508, in <module>
+    helper.createMenu(menuData)
+  File "/var/www/isysu-wechat/util.py", line 91, in createMenu
+    "access_token=" + self.getAccessToken()
+  File "/var/www/isysu-wechat/util.py", line 52, in getAccessToken
+    getToken.perform()
+pycurl.error: (7, 'Failed to connect to 117.185.116.143: Network is unreachable')
+Traceback (most recent call last):
+  File "/var/www/isysu-wechat/server_debug.py", line 508, in <module>
+    helper.createMenu(menuData)
+  File "/var/www/isysu-wechat/util.py", line 91, in createMenu
+    "access_token=" + self.getAccessToken()
+  File "/var/www/isysu-wechat/util.py", line 52, in getAccessToken
+    getToken.perform()
+pycurl.error: (6, 'Could not resolve host: api.weixin.qq.com; Unknown error')
+[E 151218 06:14:34 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151218 06:14:34 web:1946] 200 GET /QueryWord/u (127.0.0.1) 568.57ms
+[I 151218 06:14:41 web:1946] 304 GET /RPTest (127.0.0.1) 6.98ms
+[I 151218 06:14:53 web:1946] 304 GET /RPTest (127.0.0.1) 6.57ms
+[I 151218 06:15:10 web:1946] 200 GET /RPTest?from=groupmessage&isappinstalled=0 (127.0.0.1) 7.11ms
+[E 151218 06:15:51 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151218 06:15:51 web:1946] 200 GET /QueryWord/nice (127.0.0.1) 1106.69ms
+[I 151218 06:16:47 web:1946] 304 GET /RPTest (127.0.0.1) 4.57ms
+[I 151218 06:17:18 web:1946] 200 GET / (127.0.0.1) 0.82ms
+[I 151218 06:18:13 web:1946] 200 GET /RPTest (127.0.0.1) 5.12ms
+[E 151218 06:20:00 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151218 06:20:00 web:1946] 200 GET /QueryWord/apes (127.0.0.1) 563.80ms
+[I 151218 06:22:45 web:1946] 200 GET /RPcounter (127.0.0.1) 1.29ms
+[I 151218 06:22:46 web:1946] 200 GET /RPcounter (127.0.0.1) 0.59ms
+[I 151218 06:22:47 web:1946] 200 GET /RPcounter (127.0.0.1) 0.63ms
+[I 151218 06:23:44 web:1946] 200 GET /RPTest (127.0.0.1) 7.33ms
+[I 151218 06:24:00 web:1946] 200 GET /RPcounter (127.0.0.1) 1.05ms
+[I 151218 06:24:02 web:1946] 200 GET /RPcounter (127.0.0.1) 1.01ms
+[I 151218 06:24:04 web:1946] 200 GET /RPcounter (127.0.0.1) 0.96ms
+[I 151218 06:24:06 web:1946] 200 GET /RPcounter (127.0.0.1) 1.08ms
+[I 151218 06:24:06 web:1946] 200 GET /RPcounter (127.0.0.1) 0.95ms
+[I 151218 06:24:07 web:1946] 200 GET /RPcounter (127.0.0.1) 0.95ms
+[I 151218 06:25:17 web:1946] 200 GET /RPTest (127.0.0.1) 6.09ms
+[I 151218 06:26:12 web:1946] 304 GET /RPTest (127.0.0.1) 6.94ms
+[I 151218 06:26:31 web:1946] 200 GET /RPcounter (127.0.0.1) 0.67ms
+[I 151218 06:26:32 web:1946] 200 GET /RPcounter (127.0.0.1) 0.92ms
+[I 151218 06:26:33 web:1946] 200 GET /RPcounter (127.0.0.1) 0.64ms
+[I 151218 06:26:50 web:1946] 200 GET /RPTest (127.0.0.1) 4.39ms
+[E 151218 06:27:56 web:1524] Uncaught exception GET /QueryWord/jaha (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/jaha', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '120.236.174.164', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; SM-A7000 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '219.133.40.15'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 06:27:56 web:1946] 500 GET /QueryWord/jaha (127.0.0.1) 1073.76ms
+[I 151218 06:29:37 web:1946] 304 GET /RPTest (127.0.0.1) 7.36ms
+[E 151218 06:30:00 web:1524] Uncaught exception GET /QueryWord/abuse (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/abuse', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '120.236.174.149', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 5.0.1; zh-cn; GT-I9508 Build/LRX22C) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025469 Mobile Safari/533.1 MicroMessenger/6.3.7.51_rbb7fa12.660 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest?from=timeline&isappinstalled=0', 'X-Real-Ip': '183.232.118.13'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 06:30:00 web:1946] 500 GET /QueryWord/abuse (127.0.0.1) 528.47ms
+[E 151218 06:30:41 web:1524] Uncaught exception GET /QueryWord/abuse (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/abuse', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '120.236.174.149', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 5.0.1; zh-cn; GT-I9508 Build/LRX22C) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025469 Mobile Safari/533.1 MicroMessenger/6.3.7.51_rbb7fa12.660 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/QueryWord/abuse', 'Cache-Control': 'max-age=0', 'X-Real-Ip': '163.177.69.59'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 06:30:41 web:1946] 500 GET /QueryWord/abuse (127.0.0.1) 1069.91ms
+/var/www/isysu-wechat/server_debug.py:180: Warning: Can't create database 'iSysu'; database exists
+  cur.execute('create database if not exists iSysu')
+/var/www/isysu-wechat/server_debug.py:187: Warning: Table 'sysu_game' already exists
+  mission4 int)""")
+[E 151218 06:31:21 web:1524] Uncaught exception GET /play_game?code=011764b614dd47816638a486d5c320cQ&state=OK (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/play_game?code=011764b614dd47816638a486d5c320cQ&state=OK', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Origin': 'https://open.weixin.qq.com', 'Accept-Language': 'zh-cn', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_1_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12B466 MicroMessenger/6.3.8 NetType/3G+ Language/zh_CN', 'Connection': 'close', 'X-Real-Ip': '223.104.131.122'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 193, in get
+        d_d = authorization.get('http://isysu.sysu.edu.cn/play_game?code='+str(code)+'&state='+str(state))
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 06:31:21 web:1946] 500 GET /play_game?code=011764b614dd47816638a486d5c320cQ&state=OK (127.0.0.1) 1965.25ms
+[E 151218 06:31:48 web:1524] Uncaught exception GET /QueryWord/uup (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/uup', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '120.236.174.164', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; SM-A7000 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '163.177.82.13'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 06:31:48 web:1946] 500 GET /QueryWord/uup (127.0.0.1) 1835.36ms
+[I 151218 06:31:56 web:1946] 200 GET /RPTest?from=groupmessage&isappinstalled=0 (127.0.0.1) 4.90ms
+[E 151218 06:32:31 web:1524] Uncaught exception GET /QueryWord/run (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/run', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-cn', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12F70 MicroMessenger/6.3.8 NetType/3G+ Language/zh_CN', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest?from=groupmessage&isappinstalled=0', 'X-Real-Ip': '112.96.109.143'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 06:32:31 web:1946] 500 GET /QueryWord/run (127.0.0.1) 546.73ms
+[E 151218 06:32:52 web:1524] Uncaught exception GET /QueryWord/good (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/good', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-cn', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12F70 MicroMessenger/6.3.8 NetType/3G+ Language/zh_CN', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest?from=groupmessage&isappinstalled=0', 'X-Real-Ip': '112.96.109.143'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 06:32:52 web:1946] 500 GET /QueryWord/good (127.0.0.1) 534.96ms
+[I 151218 06:33:50 web:1946] 304 GET /RPTest (127.0.0.1) 4.45ms
+[I 151218 06:34:58 web:1946] 304 GET /RPTest (127.0.0.1) 7.53ms
+[E 151218 06:35:26 web:1524] Uncaught exception GET /QueryWord/ii (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/ii', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; SM-A7000 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '172.18.43.62'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 06:35:26 web:1946] 500 GET /QueryWord/ii (127.0.0.1) 1087.27ms
+[I 151218 06:35:33 web:1946] 200 GET /RPTest (127.0.0.1) 4.36ms
+[I 151218 06:35:49 web:1946] 304 GET /RPTest (127.0.0.1) 6.65ms
+[E 151218 06:36:27 web:1524] Uncaught exception GET /QueryWord/get (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/get', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '120.236.174.162', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; MI NOTE LTE Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Cookie': 'safedog-flow-item=F829016142F07AC313CAB947CA263317', 'X-Real-Ip': '183.232.90.37', 'Referer': 'http://isysu.sysu.edu.cn/RPTest'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 06:36:27 web:1946] 500 GET /QueryWord/get (127.0.0.1) 1090.72ms
+[I 151218 06:37:38 web:1946] 304 GET /RPTest (127.0.0.1) 7.35ms
+[I 151218 06:41:49 web:1946] 200 GET /RPTest?from=timeline&isappinstalled=0 (127.0.0.1) 5.01ms
+[E 151218 06:45:44 web:1524] Uncaught exception GET /QueryWord/fuck (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/fuck', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 5.1; zh-cn; m2 note Build/LMY47D) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.50_r251a77a.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest?from=timeline&isappinstalled=0', 'X-Real-Ip': '183.37.56.201'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 06:45:44 web:1946] 500 GET /QueryWord/fuck (127.0.0.1) 127803.69ms
+[I 151218 06:45:44 web:1946] 200 GET / (127.0.0.1) 0.52ms
+[E 151218 06:49:00 web:1524] Uncaught exception GET /QueryWord/exam (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/exam', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '59.37.132.36', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; OPPO R7t Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/cmnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '14.17.37.143'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 06:49:00 web:1946] 500 GET /QueryWord/exam (127.0.0.1) 127993.78ms
+[I 151218 06:53:51 web:1946] 200 GET /RPTest?from=timeline&isappinstalled=0 (127.0.0.1) 5.95ms
+[E 151218 06:54:59 web:1524] Uncaught exception GET /QueryWord/apple (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/apple', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '120.236.174.162', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 5.0; zh-cn; SM-G9008V Build/LRX21T) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest?from=timeline&isappinstalled=0', 'X-Real-Ip': '219.133.40.14'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 06:54:59 web:1946] 500 GET /QueryWord/apple (127.0.0.1) 1852.53ms
+[W 151218 06:55:42 web:1946] 404 GET /Showcounter (127.0.0.1) 0.81ms
+[W 151218 06:56:34 web:1946] 404 GET /ShowCounter (127.0.0.1) 1.29ms
+[I 151218 06:57:33 web:1946] 200 GET /RPcounter (127.0.0.1) 1.12ms
+[I 151218 06:57:47 web:1946] 200 GET /RPcounter (127.0.0.1) 0.99ms
+[E 151218 06:58:17 web:1524] Uncaught exception GET /QueryWord/ujb (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/ujb', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; SM-A7000 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/cmnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '117.136.40.143'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 06:58:17 web:1946] 500 GET /QueryWord/ujb (127.0.0.1) 1098.83ms
+[I 151218 06:59:15 web:1946] 200 GET /RPTest?from=timeline&isappinstalled=0 (127.0.0.1) 7.90ms
+[I 151218 07:00:10 web:1946] 304 GET /RPTest (127.0.0.1) 6.93ms
+[I 151218 07:00:34 web:1946] 304 GET /RPTest (127.0.0.1) 7.03ms
+[E 151218 07:03:10 web:1524] Uncaught exception GET /QueryWord/yes (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/yes', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; SM-A7000 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/cmnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '117.136.40.143'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:03:10 web:1946] 500 GET /QueryWord/yes (127.0.0.1) 127864.00ms
+[E 151218 07:03:11 web:1524] Uncaught exception GET /QueryWord/rp (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/rp', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; SM-A7000 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/cmnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '117.136.40.143'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:03:11 web:1946] 500 GET /QueryWord/rp (127.0.0.1) 524.24ms
+[I 151218 07:03:11 web:1946] 200 GET /RPcounter (127.0.0.1) 0.86ms
+[I 151218 07:03:11 web:1946] 200 GET /RPTest (127.0.0.1) 5.22ms
+[I 151218 07:03:11 web:1946] 200 GET /RPTest (127.0.0.1) 3.68ms
+[E 151218 07:03:37 web:1524] Uncaught exception GET /QueryWord/ttl (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/ttl', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '117.136.40.143', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; SM-A7000 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/cmnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '183.232.90.80'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:03:37 web:1946] 500 GET /QueryWord/ttl (127.0.0.1) 1077.50ms
+[E 151218 07:03:57 web:1524] Uncaught exception GET /QueryWord/ttlo (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/ttlo', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; SM-A7000 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/cmnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '117.136.40.143'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:03:57 web:1946] 500 GET /QueryWord/ttlo (127.0.0.1) 759.13ms
+[E 151218 07:04:27 web:1524] Uncaught exception GET /QueryWord/oijj (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/oijj', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '117.136.40.143', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; SM-A7000 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/cmnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '183.232.90.80'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:04:27 web:1946] 500 GET /QueryWord/oijj (127.0.0.1) 778.10ms
+[I 151218 07:07:02 web:1946] 200 GET /RPTest?from=timeline&isappinstalled=0 (127.0.0.1) 6.11ms
+[E 151218 07:08:20 web:1524] Uncaught exception GET /QueryWord/test (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/test', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; en-us; SM-G5308W Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025478 Mobile Safari/533.1 MicroMessenger/6.2.5.51_rfe7d7c5.621 NetType/WIFI Language/en', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '172.16.67.101'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:08:20 web:1946] 500 GET /QueryWord/test (127.0.0.1) 780.87ms
+[E 151218 07:09:02 web:1524] Uncaught exception GET /QueryWord/lily (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/lily', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 5.0.2; zh-cn; vivo X5M Build/LRX22G) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/cmnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest?from=timeline&isappinstalled=0', 'X-Real-Ip': '172.18.148.169'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:09:02 web:1946] 500 GET /QueryWord/lily (127.0.0.1) 543.29ms
+[E 151218 07:09:35 web:1524] Uncaught exception GET /QueryWord/test (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/test', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; en-us; SM-G5308W Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025478 Mobile Safari/533.1 MicroMessenger/6.2.5.51_rfe7d7c5.621 NetType/WIFI Language/en', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '172.16.67.101'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:09:35 web:1946] 500 GET /QueryWord/test (127.0.0.1) 572.48ms
+create menu success
+SH_oJss-SFom2RNbJQR2bpR3SXfB8rCPeQGCiukFh1DlokhgTk_xw8lfw57xUOdsBZvmuMx27WfC4Qn2TxlcDqT8F5vO3ILCXZ_XvM0a9boBLFdAFAOYS
+####### Enter QueryHandler! #######
+127.0.0.1=====> u
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> nice
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> apes
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> jaha
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> abuse
+####### Enter QueryHandler! #######
+127.0.0.1=====> abuse
+ShareId is None
+####### Enter QueryHandler! #######
+127.0.0.1=====> uup
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> run
+####### Enter QueryHandler! #######
+127.0.0.1=====> good
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> ii
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> get
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> fuck
+####### Enter QueryHandler! #######
+127.0.0.1=====> exam
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> apple
+####### Enter QueryHandler! #######
+127.0.0.1=====> ujb
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> yes
+####### Enter QueryHandler! #######
+127.0.0.1=====> rp
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> ttl
+####### Enter QueryHandler! #######
+127.0.0.1=====> ttlo
+####### Enter QueryHandler! #######
+127.0.0.1=====> oijj
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> test
+####### Enter QueryHandler! #######
+127.0.0.1=====> lily
+####### Enter QueryHandler! #######
+127.0.0.1=====> test
+####### Enter QueryHan[E 151218 07:10:15 web:1524] Uncaught exception GET /QueryWord/meanwhile (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/meanwhile', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 5.0.2; zh-cn; vivo X5M Build/LRX22G) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/cmnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest?from=timeline&isappinstalled=0', 'X-Real-Ip': '172.18.148.169'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:10:15 web:1946] 500 GET /QueryWord/meanwhile (127.0.0.1) 539.92ms
+[E 151218 07:12:55 web:1524] Uncaught exception GET /QueryWord/test (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/test', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; en-us; SM-G5308W Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025478 Mobile Safari/533.1 MicroMessenger/6.2.5.51_rfe7d7c5.621 NetType/WIFI Language/en', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '172.16.67.101'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:12:55 web:1946] 500 GET /QueryWord/test (127.0.0.1) 128428.83ms
+[E 151218 07:12:56 web:1524] Uncaught exception GET /QueryWord/test (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/test', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '120.236.174.154', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; en-us; SM-G5308W Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025478 Mobile Safari/533.1 MicroMessenger/6.2.5.51_rfe7d7c5.621 NetType/WIFI Language/en', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '14.17.37.146', 'If-None-Match': 'W/"0a7e2fd630fd3f3f967d80b35d5b0cdf9140171a"'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:12:56 web:1946] 500 GET /QueryWord/test (127.0.0.1) 540.21ms
+[E 151218 07:14:58 web:1524] Uncaught exception GET /QueryWord/testing (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/testing', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; en-us; SM-G5308W Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025478 Mobile Safari/533.1 MicroMessenger/6.2.5.51_rfe7d7c5.621 NetType/WIFI Language/en', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '172.16.67.101', 'If-None-Match': 'W/"28bc6a7feda206998ed809fb104db321d854d09a"'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:14:58 web:1946] 500 GET /QueryWord/testing (127.0.0.1) 1075.55ms
+[I 151218 07:25:08 web:1946] 200 GET / (127.0.0.1) 0.83ms
+[E 151218 07:25:53 web:1524] Uncaught exception GET /QueryWord/duet (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/duet', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; A31t Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.50_r251a77a.680 NetType/cmnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '117.136.94.215'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:25:53 web:1946] 500 GET /QueryWord/duet (127.0.0.1) 1163.14ms
+[I 151218 07:27:47 web:1946] 200 GET / (127.0.0.1) 1.98ms
+[I 151218 07:27:55 web:1946] 200 GET /RPcounter (127.0.0.1) 0.88ms
+[I 151218 07:29:30 web:1946] 302 GET /game (127.0.0.1) 0.78ms
+[E 151218 07:38:43 web:1524] Uncaught exception GET /QueryWord/hello (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/hello', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.2.2; zh-cn; X909T Build/JDQ39) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest?from=timeline&isappinstalled=0', 'X-Real-Ip': '202.205.79.131'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:38:43 web:1946] 500 GET /QueryWord/hello (127.0.0.1) 128569.64ms
+[E 151218 07:40:51 web:1524] Uncaught exception GET /QueryWord/hello (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/hello', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '182.48.102.90', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.2.2; zh-cn; X909T Build/JDQ39) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/QueryWord/hello', 'Cache-Control': 'max-age=0', 'X-Real-Ip': '123.151.42.57'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:40:51 web:1946] 500 GET /QueryWord/hello (127.0.0.1) 127718.17ms
+[E 151218 07:40:52 web:1524] Uncaught exception GET /QueryWord/Rap (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/Rap', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.3; zh-cn; H30-C00 Build/HuaweiH30-C00) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025478 Mobile Safari/533.1 MicroMessenger/6.2.2.54_rec1912d.581 NetType/ctnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '14.16.155.177'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:40:52 web:1946] 500 GET /QueryWord/Rap (127.0.0.1) 793.52ms
+[E 151218 07:40:52 web:1524] Uncaught exception GET /QueryWord/good (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/good', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 5.1.1; zh-cn; SM-G9208 Build/LMY47X) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '172.18.139.45'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:40:52 web:1946] 500 GET /QueryWord/good (127.0.0.1) 562.68ms
+[E 151218 07:40:53 web:1524] Uncaught exception GET /QueryWord/Win (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/Win', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '125.88.113.205', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.3; zh-cn; H30-C00 Build/HuaweiH30-C00) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025478 Mobile Safari/533.1 MicroMessenger/6.2.2.54_rec1912d.581 NetType/ctnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '183.232.120.38'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:40:53 web:1946] 500 GET /QueryWord/Win (127.0.0.1) 541.15ms
+[E 151218 07:40:55 web:1524] Uncaught exception GET /QueryWord/Consistent (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/Consistent', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.3; zh-cn; H30-C00 Build/HuaweiH30-C00) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025478 Mobile Safari/533.1 MicroMessenger/6.2.2.54_rec1912d.581 NetType/ctnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '14.16.155.177'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:40:55 web:1946] 500 GET /QueryWord/Consistent (127.0.0.1) 2541.58ms
+[E 151218 07:54:41 web:1524] Uncaught exception GET /QueryWord/exceed (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/exceed', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '112.96.176.129', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; SM-G7200 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.7.52_r0199e0b.660 NetType/3gnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest?from=timeline&isappinstalled=0', 'X-Real-Ip': '219.133.40.16'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:54:41 web:1946] 500 GET /QueryWord/exceed (127.0.0.1) 1368.97ms
+[E 151218 07:55:10 web:1524] Uncaught exception GET /QueryWord/exceed (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/exceed', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; SM-G7200 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.7.52_r0199e0b.660 NetType/3gnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest?from=timeline&isappinstalled=0', 'X-Real-Ip': '112.96.176.129', 'If-None-Match': 'W/"9e356485f55cb7a58c10d40576ddb7e4941ce41a"'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 07:55:10 web:1946] 500 GET /QueryWord/exceed (127.0.0.1) 1092.44ms
+[I 151218 07:59:19 web:1946] 200 GET / (127.0.0.1) 0.78ms
+[I 151218 08:06:14 web:1946] 200 GET / (127.0.0.1) 1.03ms
+[E 151218 08:07:36 web:1524] Uncaught exception GET /QueryWord/me (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/me', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-tw', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13B143 MicroMessenger/6.3.6 NetType/WIFI Language/zh_TW', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '172.18.141.3'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 08:07:36 web:1946] 500 GET /QueryWord/me (127.0.0.1) 545.17ms
+[I 151218 08:07:54 web:1946] 200 GET /RPTest (127.0.0.1) 7.13ms
+[I 151218 08:08:28 web:1946] 200 GET / (127.0.0.1) 0.65ms
+[E 151218 08:10:59 web:1524] Uncaught exception GET /QueryWord/get (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/get', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; 3007 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.50_r251a77a.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '119.54.90.186'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 08:10:59 web:1946] 500 GET /QueryWord/get (127.0.0.1) 128425.29ms
+[E 151218 08:13:06 web:1524] Uncaught exception GET /QueryWord/abandon (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/abandon', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; 3007 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.50_r251a77a.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '119.54.90.186'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 08:13:06 web:1946] 500 GET /QueryWord/abandon (127.0.0.1) 127728.34ms
+[E 151218 08:15:15 web:1524] Uncaught exception GET /QueryWord/get (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/get', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; 3007 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.50_r251a77a.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '119.54.90.186', 'If-None-Match': 'W/"364ccb4070a325543ced808328d315e923578ddb"'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 08:15:15 web:1946] 500 GET /QueryWord/get (127.0.0.1) 128280.43ms
+[I 151218 08:17:18 web:1946] 200 GET / (127.0.0.1) 0.80ms
+[E 151218 08:24:40 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151218 08:24:40 web:1946] 200 GET /QueryWord/nice (127.0.0.1) 1894.64ms
+[E 151218 08:25:28 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151218 08:25:28 web:1946] 200 GET /QueryWord/pass (127.0.0.1) 1083.78ms
+[E 151218 08:33:09 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151218 08:33:09 web:1946] 200 GET /QueryWord/hello (127.0.0.1) 1109.16ms
+[I 151218 08:49:27 web:1946] 200 GET / (127.0.0.1) 1.71ms
+[E 151218 08:56:18 web:1524] Uncaught exception GET /QueryWord/crazy (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/crazy', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '120.236.174.149', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; MI 2A Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.50_r251a77a.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest?from=timeline&isappinstalled=0', 'X-Real-Ip': '183.60.52.227', 'If-None-Match': 'W/"50250e2bffac108e7cc64e7a53811daeab24d2f0"'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 08:56:18 web:1946] 500 GET /QueryWord/crazy (127.0.0.1) 1096.42ms
+[E 151218 08:56:49 web:1524] Uncaught exception GET /QueryWord/ou (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/ou', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; MI 2A Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.50_r251a77a.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest?from=timeline&isappinstalled=0', 'X-Real-Ip': '172.18.42.65'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 08:56:49 web:1946] 500 GET /QueryWord/ou (127.0.0.1) 1022.64ms
+[I 151218 09:02:38 web:1946] 200 GET /RPTest (127.0.0.1) 5.16ms
+[E 151218 09:02:58 web:1524] Uncaught exception GET /QueryWord/Irisdaisy (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/Irisdaisy', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 5.0.2; zh-cn; HTC M8Sw Build/LRX22G) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '172.18.150.193'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 09:02:58 web:1946] 500 GET /QueryWord/Irisdaisy (127.0.0.1) 1081.28ms
+[E 151218 09:03:12 web:1524] Uncaught exception GET /QueryWord/Iris (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/Iris', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '58.249.112.43', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 5.0.2; zh-cn; HTC M8Sw Build/LRX22G) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '14.17.37.72'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 09:03:12 web:1946] 500 GET /QueryWord/Iris (127.0.0.1) 1104.46ms
+[E 151218 09:05:46 web:1524] Uncaught exception GET /QueryWord/seven (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/seven', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '58.249.112.43', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 5.0.2; zh-cn; HTC M8Sw Build/LRX22G) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '14.17.37.72'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 09:05:46 web:1946] 500 GET /QueryWord/seven (127.0.0.1) 128300.31ms
+[E 151218 09:05:46 web:1524] Uncaught exception GET /QueryWord/monster (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/monster', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-cn, zh', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.2; zh-cn; GT-I9500 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.0 QQ-URL-Manager Mobile Safari/537.36', 'Accept-Charset': 'GB2312,utf-8;q=0.7,*;q=0.7', 'Connection': 'close', 'X-Real-Ip': '101.226.68.217'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 09:05:46 web:1946] 500 GET /QueryWord/monster (127.0.0.1) 533.46ms
+[E 151218 09:06:46 web:1524] Uncaught exception GET /QueryWord/ideological (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/ideological', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 5.0.2; zh-cn; HTC M8Sw Build/LRX22G) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '172.18.150.193'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 09:06:46 web:1946] 500 GET /QueryWord/ideological (127.0.0.1) 1070.67ms
+[E 151218 09:16:57 web:1524] Uncaught exception GET /QueryWord/get (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/get', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.2; zh-cn; MX4 Build/KOT49H) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/3gnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '112.96.64.83'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 09:16:57 web:1946] 500 GET /QueryWord/get (127.0.0.1) 1832.33ms
+[E 151218 09:19:08 web:1524] Uncaught exception GET /QueryWord/waht (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/waht', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '120.236.174.149', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; MI 2A Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.50_r251a77a.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '183.60.52.227'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 09:19:08 web:1946] 500 GET /QueryWord/waht (127.0.0.1) 1106.02ms
+[I 151218 09:28:21 web:1946] 200 GET /RPTest (127.0.0.1) 4.80ms
+[E 151218 09:30:48 web:1524] Uncaught exception GET /QueryWord/artical (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/artical', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.2; zh-cn; M335 Build/KOT49H) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025440 Mobile Safari/533.1 MicroMessenger/6.2.5.51_rfe7d7c5.621 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '180.161.151.101'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 09:30:48 web:1946] 500 GET /QueryWord/artical (127.0.0.1) 1093.71ms
+[I 151218 09:36:03 web:1946] 200 GET /RPTest (127.0.0.1) 4.86ms
+[E 151218 09:36:12 web:1524] Uncaught exception GET /QueryWord/tel (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/tel', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '120.236.174.164', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; SM-A7000 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '219.133.40.15'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 09:36:12 web:1946] 500 GET /QueryWord/tel (127.0.0.1) 1085.88ms
+[I 151218 09:36:13 web:1946] 200 GET / (127.0.0.1) 0.64ms
+[I 151218 09:36:33 web:1946] 304 GET /RPTest (127.0.0.1) 4.74ms
+[E 151218 09:38:06 web:1524] Uncaught exception GET /QueryWord/dog (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/dog', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-cn', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13C75 MicroMessenger/6.3.8 NetType/3G+ Language/zh_CN', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '113.200.204.244'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 09:38:06 web:1946] 500 GET /QueryWord/dog (127.0.0.1) 564.40ms
+[I 151218 09:39:17 web:1946] 200 GET /RPTest (127.0.0.1) 4.45ms
+[E 151218 09:40:27 web:1524] Uncaught exception GET /QueryWord/dog?from=singlemessage&isappinstalled=0 (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/dog?from=singlemessage&isappinstalled=0', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '1.84.207.151', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; HM 2A Build/KTU84Q) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.50_r251a77a.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'X-Real-Ip': '123.151.153.35'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 09:40:27 web:1946] 500 GET /QueryWord/dog?from=singlemessage&isappinstalled=0 (127.0.0.1) 1113.13ms
+[E 151218 09:41:18 web:1524] Uncaught exception GET /QueryWord/dog?from=singlemessage&isappinstalled=0 (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/dog?from=singlemessage&isappinstalled=0', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '1.84.207.151', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; HM 2A Build/KTU84Q) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.50_r251a77a.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'X-Real-Ip': '123.151.153.35', 'If-None-Match': 'W/"7c992f30681338ecefa31d9af4b30d718a8b2bfb"'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 09:41:18 web:1946] 500 GET /QueryWord/dog?from=singlemessage&isappinstalled=0 (127.0.0.1) 781.18ms
+[E 151218 09:43:28 web:1524] Uncaught exception GET /QueryWord/go (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/go', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '223.104.11.83', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; SM-A5000 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.7.51_rbb7fa12.660 NetType/cmnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest?from=timeline&isappinstalled=0', 'X-Real-Ip': '123.151.42.52'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 09:43:28 web:1946] 500 GET /QueryWord/go (127.0.0.1) 530.98ms
+[E 151218 09:44:19 web:1524] Uncaught exception GET /QueryWord/yes (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/yes', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-cn, zh', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.2; zh-cn; GT-I9500 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.0 QQ-URL-Manager Mobile Safari/537.36', 'Accept-Charset': 'GB2312,utf-8;q=0.7,*;q=0.7', 'Connection': 'close', 'X-Real-Ip': '101.226.68.217'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 09:44:19 web:1946] 500 GET /QueryWord/yes (127.0.0.1) 530.97ms
+[I 151218 09:47:28 web:1946] 200 GET /RPTest?from=timeline&isappinstalled=0 (127.0.0.1) 4.93ms
+[E 151218 09:48:01 web:1524] Uncaught exception GET /QueryWord/yes (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/yes', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,en-US;q=0.8', 'Accept-Encoding': 'gzip,deflate', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; Android 4.4.4; SM-A5009 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 MicroMessenger/6.0.2.58_r984381.501 NetType/WIFI', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '218.197.155.2', 'X-Requested-With': 'com.tencent.mm'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 09:48:01 web:1946] 500 GET /QueryWord/yes (127.0.0.1) 776.15ms
+[I 151218 09:56:26 web:1946] 200 GET / (127.0.0.1) 0.93ms
+[I 151218 09:57:14 web:1946] 304 GET /RPTest (127.0.0.1) 4.98ms
+[E 151218 09:58:11 web:1524] Uncaught exception GET /QueryWord/one (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/one', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '120.236.174.168', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.1.2; zh-cn; GT-I8268 Build/JZO54K) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '14.17.37.146'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 09:58:11 web:1946] 500 GET /QueryWord/one (127.0.0.1) 1084.70ms
+[E 151218 10:01:04 web:1524] Uncaught exception GET /QueryWord/one (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/one', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'identity', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.2.1; zh-cn; HUAWEI G700-U00 Build/HuaweiG700-U00) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/QueryWord/one', 'X-Real-Ip': '220.181.132.220'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 10:01:04 web:1946] 500 GET /QueryWord/one (127.0.0.1) 127694.94ms
+[E 151218 10:01:04 web:1524] Uncaught exception GET /QueryWord/one (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/one', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip,deflate', 'X-Forwarded-For': 'unknown', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_0 like Mac OS X) AppleWebKit/600.1.3 (KHTML, like Gecko) Version/8.0 Mobile/12A4345d Safari/600.1.4', 'Accept-Charset': 'iso-8859-1,*,utf-8', 'Connection': 'close', 'Cache-Control': 'max-age=0', 'X-Real-Ip': '27.221.19.12'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 10:01:04 web:1946] 500 GET /QueryWord/one (127.0.0.1) 529.91ms
+[E 151218 10:05:22 web:1524] Uncaught exception GET /QueryWord/hj (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/hj', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; SM-A7000 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '172.18.43.62'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 10:05:22 web:1946] 500 GET /QueryWord/hj (127.0.0.1) 128696.81ms
+[E 151218 10:05:23 web:1524] Uncaught exception GET /QueryWord/QQ (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/QQ', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '120.236.174.164', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; SM-A7000 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '219.133.40.15'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 10:05:23 web:1946] 500 GET /QueryWord/QQ (127.0.0.1) 517.77ms
+[E 151218 10:05:23 web:1524] Uncaught exception GET /QueryWord/poll (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/poll', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '120.236.174.164', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; SM-A7000 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '163.177.82.13'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 10:05:23 web:1946] 500 GET /QueryWord/poll (127.0.0.1) 531.97ms
+[E 151218 10:05:39 web:1524] Uncaught exception GET /QueryWord/UI (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/UI', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '120.236.174.164', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; SM-A7000 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '219.133.40.15'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 10:05:39 web:1946] 500 GET /QueryWord/UI (127.0.0.1) 534.93ms
+[E 151218 10:06:24 web:1524] Uncaught exception GET /QueryWord/fuck (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/fuck', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-cn', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13C75 MicroMessenger/6.3.8 NetType/3G+ Language/zh_CN', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest?from=timeline&isappinstalled=0', 'X-Real-Ip': '113.200.204.244'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 10:06:24 web:1946] 500 GET /QueryWord/fuck (127.0.0.1) 799.42ms
+[E 151218 10:08:27 web:1524] Uncaught exception GET /QueryWord/victory (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/victory', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN, en-US', 'Accept-Encoding': 'gzip,deflate', 'X-Wap-Profile': 'http://www.oppo.com/resource/UA-PROF/OPPOR831S.xml', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,text/vnd.wap.wml,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.3; zh-cn; R831S Build/JLS36C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '113.14.4.42', 'X-Requested-With': 'com.tencent.mm'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 10:08:27 web:1946] 500 GET /QueryWord/victory (127.0.0.1) 1090.43ms
+[I 151218 10:15:47 web:1946] 200 GET / (127.0.0.1) 0.78ms
+[E 151218 10:16:12 web:1524] Uncaught exception GET /QueryWord/word (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/word', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '106.57.132.49', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; R7c Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '182.131.10.29'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 10:16:12 web:1946] 500 GET /QueryWord/word (127.0.0.1) 1077.72ms
+[I 151218 10:23:00 web:1946] 200 GET / (127.0.0.1) 0.96ms
+[I 151218 10:23:14 web:1946] 304 GET /RPTest (127.0.0.1) 4.82ms
+[I 151218 10:23:44 web:1946] 200 GET /RPTest (127.0.0.1) 4.28ms
+[I 151218 10:24:31 web:1946] 200 GET /RPTest (127.0.0.1) 4.22ms
+[I 151218 10:40:53 web:1946] 200 GET /RPTest (127.0.0.1) 5.44ms
+[I 151218 10:46:38 web:1946] 200 GET / (127.0.0.1) 0.71ms
+[I 151218 10:57:04 web:1946] 200 GET / (127.0.0.1) 0.91ms
+dler! #######
+127.0.0.1=====> meanwhile
+####### Enter QueryHandler! #######
+127.0.0.1=====> test
+####### Enter QueryHandler! #######
+127.0.0.1=====> test
+####### Enter QueryHandler! #######
+127.0.0.1=====> testing
+####### Enter QueryHandler! #######
+127.0.0.1=====> duet
+####### Enter QueryHandler! #######
+127.0.0.1=====> hello
+####### Enter QueryHandler! #######
+127.0.0.1=====> hello
+####### Enter QueryHandler! #######
+127.0.0.1=====> Rap
+####### Enter QueryHandler! #######
+127.0.0.1=====> good
+####### Enter QueryHandler! #######
+127.0.0.1=====> Win
+####### Enter QueryHandler! #######
+127.0.0.1=====> Consistent
+####### Enter QueryHandler! #######
+127.0.0.1=====> exceed
+####### Enter QueryHandler! #######
+127.0.0.1=====> exceed
+####### Enter QueryHandler! #######
+127.0.0.1=====> me
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> get
+####### Enter QueryHandler! #######
+127.0.0.1=====> abandon
+####### Enter QueryHandler! #######
+127.0.0.1=====> get
+####### Enter QueryHandler! #######
+127.0.0.1=====> nice
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> pass
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> hello
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> crazy
+####### Enter QueryHandler! #######
+127.0.0.1=====> ou
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> Irisdaisy
+####### Enter QueryHandler! #######
+127.0.0.1=====> Iris
+####### Enter QueryHandler! #######
+127.0.0.1=====> seven
+####### Enter QueryHandler! #######
+127.0.0.1=====> monster
+####### Enter QueryHandler! #######
+127.0.0.1=====> ideological
+####### Enter QueryHandler! #######
+127.0.0.1=====> get
+####### Enter QueryHandler! #######
+127.0.0.1=====> waht
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> artical
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> tel
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> dog
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> dog
+####### Enter QueryHandler! #######
+127.0.0.1=====> dog
+####### Enter QueryHandler! #######
+127.0.0.1=====> go
+####### Enter QueryHandler! #######
+127.0.0.1=====> yes
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> yes
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> one
+####### Enter QueryHandler! #######
+127.0.0.1=====> one
+####### Enter QueryHandler! #######
+127.0.0.1=====> one
+####### Enter QueryHandler! #######
+127.0.0.1=====> hj
+####### Enter QueryHandler! #######
+127.0.0.1=====> QQ
+####### Enter QueryHandler! #######
+127.0.0.1=====> poll
+####### Enter QueryHandler! #######
+127.0.0.1=====> UI
+####### Enter QueryHandler! #######
+127.0.0.1=====> fuck
+####### Enter QueryHandler! #######
+127.0.0.1=====> victory
+####### Enter QueryHandler! #######
+127.0.0.1=====> word
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Ent[I 151218 11:02:43 web:1946] 200 GET /RPTest?from=timeline&isappinstalled=0 (127.0.0.1) 4.60ms
+[I 151218 11:13:44 web:1946] 304 GET /RPTest (127.0.0.1) 7.65ms
+[I 151218 11:16:47 web:1946] 200 GET /RPTest?from=groupmessage&isappinstalled=0 (127.0.0.1) 4.85ms
+[E 151218 11:17:21 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151218 11:17:21 web:1946] 200 GET /QueryWord/I (127.0.0.1) 2920.52ms
+[I 151218 11:18:13 web:1946] 200 GET /RPTest?from=groupmessage&isappinstalled=0 (127.0.0.1) 4.48ms
+[I 151218 11:19:47 web:1946] 200 GET /RPTest?from=groupmessage&isappinstalled=0 (127.0.0.1) 5.80ms
+[I 151218 11:27:26 web:1946] 200 GET /RPTest (127.0.0.1) 5.00ms
+[E 151218 11:27:53 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151218 11:27:53 web:1946] 200 GET /QueryWord/play (127.0.0.1) 790.89ms
+[E 151218 11:37:15 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151218 11:37:15 web:1946] 200 GET /QueryWord/pass (127.0.0.1) 1081.84ms
+[W 151218 12:30:49 web:1946] 405 HEAD / (127.0.0.1) 3.62ms
+[I 151218 18:06:34 web:1946] 200 GET /RPTest?from=timeline&isappinstalled=0 (127.0.0.1) 5.65ms
+[E 151218 18:07:57 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151218 18:07:57 web:1946] 200 GET /QueryWord/obtaine (127.0.0.1) 1968.45ms
+[E 151218 18:09:35 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151218 18:09:35 web:1946] 200 GET /QueryWord/devote (127.0.0.1) 765.12ms
+[E 151218 18:21:33 web:1524] Uncaught exception GET /QueryWord/test (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/test', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-cn', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12H143 MicroMessenger/6.3.8 NetType/WIFI Language/zh_CN', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest?from=timeline&isappinstalled=0', 'X-Real-Ip': '202.117.145.240'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 18:21:33 web:1946] 500 GET /QueryWord/test (127.0.0.1) 1078.74ms
+[I 151218 18:23:15 web:1946] 200 GET /RPTest (127.0.0.1) 6.62ms
+[E 151218 18:26:36 web:1524] Uncaught exception GET /QueryWord/persistent (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/persistent', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; MI 4LTE Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025478 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/cmnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest?from=groupmessage&isappinstalled=0', 'X-Real-Ip': '117.136.3.176'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 18:26:36 web:1946] 500 GET /QueryWord/persistent (127.0.0.1) 128331.94ms
+[E 151218 18:49:27 web:1524] Uncaught exception GET /QueryWord/love (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/love', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-cn', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12F70 MicroMessenger/6.3.7 NetType/WIFI Language/zh_CN', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '172.19.35.113'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 18:49:27 web:1946] 500 GET /QueryWord/love (127.0.0.1) 1080.58ms
+[I 151218 19:13:15 web:1946] 200 GET / (127.0.0.1) 1.17ms
+[E 151218 19:13:33 web:1524] Uncaught exception GET /QueryWord/quality (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/quality', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 5.0.2; zh-cn; Redmi Note 2 Build/LRX22G) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.7.51_rbb7fa12.660 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '123.64.27.136'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 19:13:33 web:1946] 500 GET /QueryWord/quality (127.0.0.1) 2297.33ms
+[I 151218 19:39:07 web:1946] 200 GET /RPTest?from=timeline&isappinstalled=0 (127.0.0.1) 6.22ms
+[I 151218 19:39:16 web:1946] 200 GET /RPTest?from=timeline&isappinstalled=0 (127.0.0.1) 4.37ms
+[I 151218 19:39:51 web:1946] 200 GET /RPTest (127.0.0.1) 6.54ms
+[I 151218 20:02:08 web:1946] 200 GET / (127.0.0.1) 1.33ms
+[I 151218 20:53:55 web:1946] 200 GET / (127.0.0.1) 0.83ms
+[E 151218 20:59:05 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151218 20:59:05 web:1946] 200 GET /QueryWord/english (127.0.0.1) 256411.86ms
+[I 151218 21:09:28 web:1946] 200 GET / (127.0.0.1) 0.78ms
+[I 151218 21:18:54 web:1946] 200 GET /RPTest (127.0.0.1) 5.09ms
+[I 151218 21:46:48 web:1946] 200 GET / (127.0.0.1) 1.22ms
+[E 151218 21:47:03 web:1524] Uncaught exception GET /QueryWord/me (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/me', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.2.2; zh-cn; Coolpad 8297 Build/JDQ39) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.50_r251a77a.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '172.20.40.85'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 21:47:03 web:1946] 500 GET /QueryWord/me (127.0.0.1) 1169.38ms
+[E 151218 22:33:34 web:1524] Uncaught exception GET /QueryWord/publish (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/publish', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '110.249.244.116', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; 3005 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '123.151.64.143'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151218 22:33:35 web:1946] 500 GET /QueryWord/publish (127.0.0.1) 1082.90ms
+[I 151218 23:20:39 web:1946] 200 GET /RPTest (127.0.0.1) 9.53ms
+[I 151219 00:03:50 web:1946] 200 GET /RPTest (127.0.0.1) 5.53ms
+[E 151219 00:05:07 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151219 00:05:07 web:1946] 200 GET /QueryWord/play (127.0.0.1) 2107.16ms
+[E 151219 00:06:47 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151219 00:06:47 web:1946] 200 GET /QueryWord/play (127.0.0.1) 537.48ms
+[E 151219 00:36:36 web:1524] Uncaught exception GET /QueryWord/contrary (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/contrary', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-cn', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_2 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13C75 MicroMessenger/6.3.8 NetType/WIFI Language/zh_CN', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '172.20.32.189'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151219 00:36:36 web:1946] 500 GET /QueryWord/contrary (127.0.0.1) 1078.12ms
+[W 151219 00:45:25 web:1946] 404 GET /kns/Request/login.aspx (127.0.0.1) 1.64ms
+[E 151219 00:51:19 web:1524] Uncaught exception GET /QueryWord/good (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/good', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '223.104.8.27', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn; MI 2A Build/JRO03L) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.2.4.54_r266a9ba.601 NetType/cmnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '123.151.38.94'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151219 00:51:19 web:1946] 500 GET /QueryWord/good (127.0.0.1) 1101.50ms
+[E 151219 00:54:27 web:1524] Uncaught exception GET /QueryWord/ok (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/ok', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.1.1; zh-cn; MI 2A Build/JRO03L) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.2.4.54_r266a9ba.601 NetType/cmnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '223.104.8.27'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151219 00:54:27 web:1946] 500 GET /QueryWord/ok (127.0.0.1) 128344.65ms
+[E 151219 01:00:09 web:1524] Uncaught exception GET /QueryWord/good (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/good', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN, en-US', 'Accept-Encoding': 'gzip,deflate', 'X-Wap-Profile': 'http://www.oppo.com/resource/UA-PROF/OPPOR831S.xml', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,text/vnd.wap.wml,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.3; zh-cn; R831S Build/JLS36C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 MicroMessenger/6.3.8.50_r251a77a.680 NetType/cmnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '117.136.93.241', 'X-Requested-With': 'com.tencent.mm'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151219 01:00:09 web:1946] 500 GET /QueryWord/good (127.0.0.1) 1080.14ms
+[I 151219 02:32:03 web:1946] 200 GET / (127.0.0.1) 0.68ms
+[W 151219 02:32:21 web:1946] 404 GET /play_game/project.json (127.0.0.1) 0.73ms
+[I 151219 04:58:54 web:1946] 200 GET /RPTest (127.0.0.1) 5.70ms
+[I 151219 05:03:41 web:1946] 200 GET / (127.0.0.1) 1.18ms
+[E 151219 05:04:32 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151219 05:04:32 web:1946] 200 GET /QueryWord/an (127.0.0.1) 2114.59ms
+[I 151219 05:05:14 web:1946] 200 GET /RPTest (127.0.0.1) 6.66ms
+[E 151219 05:07:45 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151219 05:07:45 web:1946] 200 GET /QueryWord/hi (127.0.0.1) 128098.88ms
+[E 151219 05:09:54 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151219 05:09:54 web:1946] 200 GET /QueryWord/hi (127.0.0.1) 128949.05ms
+[E 151219 05:12:02 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151219 05:12:02 web:1946] 200 GET /QueryWord/an (127.0.0.1) 127824.52ms
+[E 151219 05:19:43 web:1524] Uncaught exception GET /QueryWord/significant (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/significant', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 5.1; zh-cn; m2 Build/LMY47D) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.50_r251a77a.680 NetType/3gnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '112.96.97.147'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151219 05:19:43 web:1946] 500 GET /QueryWord/significant (127.0.0.1) 128098.96ms
+[I 151219 05:19:43 web:1946] 200 GET / (127.0.0.1) 0.61ms
+[E 151219 05:19:45 web:1524] Uncaught exception GET /QueryWord/significant (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/significant', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 5.1; zh-cn; m2 Build/LMY47D) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.50_r251a77a.680 NetType/3gnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '112.96.97.147'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151219 05:19:45 web:1946] 500 GET /QueryWord/significant (127.0.0.1) 1077.00ms
+[W 151219 06:06:38 web:1946] 404 GET //phpmyadmin/scripts/setup.php (127.0.0.1) 1.29ms
+[W 151219 06:06:40 web:1946] 404 GET //scripts/setup.php (127.0.0.1) 1.22ms
+[I 151219 06:15:09 web:1946] 200 GET /RPTest (127.0.0.1) 8.54ms
+[I 151219 07:01:43 web:1946] 200 GET /RPTest (127.0.0.1) 5.24ms
+[E 151219 07:02:18 web:1524] Uncaught exception GET /QueryWord/cat (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/cat', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; R8107 Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.50_r251a77a.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '202.192.1.120'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151219 07:02:18 web:1946] 500 GET /QueryWord/cat (127.0.0.1) 1331.81ms
+[I 151219 07:49:47 web:1946] 302 GET /game (127.0.0.1) 0.76ms
+[I 151219 08:33:52 web:1946] 200 GET / (127.0.0.1) 0.93ms
+er RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> I
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> play
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> pass
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> obtaine
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> devote
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> test
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> persistent
+####### Enter QueryHandler! #######
+127.0.0.1=====> love
+####### Enter QueryHandler! #######
+127.0.0.1=====> quality
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> english
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> me
+####### Enter QueryHandler! #######
+127.0.0.1=====> publish
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> play
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> play
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> contrary
+####### Enter QueryHandler! #######
+127.0.0.1=====> good
+####### Enter QueryHandler! #######
+127.0.0.1=====> ok
+####### Enter QueryHandler! #######
+127.0.0.1=====> good
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> an
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> hi
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> hi
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> an
+Got wechat authorization!
+####### Quit the QueryHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> significant
+####### Enter QueryHandler! #######
+127.0.0.1=====> significant
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter RPIndexHandler! #######
+Got wechat authorization!
+####### Quit RPIndexHandler! #######
+####### Enter QueryHandler! #######
+127.0.0.1=====> cat
+####### Enter QueryHandler! #######
+127.0.0.1=====> good
+Got w[E 151219 08:35:23 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151219 08:35:23 web:1946] 200 GET /QueryWord/good (127.0.0.1) 2459.06ms
+[I 151219 10:01:23 web:1946] 200 GET / (127.0.0.1) 0.72ms
+[I 151219 10:44:19 web:1946] 200 GET / (127.0.0.1) 1.26ms
+[W 151219 13:19:07 web:1946] 404 GET /invoker/JMXInvokerServlet (127.0.0.1) 3.30ms
+[E 151219 19:05:59 web:2653] Could not open static file '/var/www/isysu-wechat/static'
+[I 151219 19:05:59 web:1946] 200 GET /play_game?code=011906dbd8f761375831557ef6adf34X&state=OK (127.0.0.1) 3282.18ms
+[I 151219 19:13:22 web:1946] 200 GET / (127.0.0.1) 1.20ms
+[I 151219 19:13:34 web:1946] 200 GET / (127.0.0.1) 1.19ms
+[E 151219 20:23:02 web:1524] Uncaught exception GET /QueryWord/abase (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/abase', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-Hans-CN,zh-Hans;q=0.5', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html, application/xhtml+xml, */*', 'User-Agent': 'Mozilla/5.0 (Mobile; Windows Phone 8.1; Android 4.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; Microsoft; RM-1090) like iPhone OS 7_0_3 Mac OS X AppleWebKit/537 (KHTML, like Gecko) Mobile Safari/537 MicroMessenger/6.0', 'Connection': 'close', 'Ua-Cpu': 'ARM', 'X-Real-Ip': '112.96.64.97'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151219 20:23:02 web:1946] 500 GET /QueryWord/abase (127.0.0.1) 796.31ms
+[I 151219 21:03:34 web:1946] 302 GET /game (127.0.0.1) 1.24ms
+[I 151219 23:00:46 web:1946] 200 GET / (127.0.0.1) 0.92ms
+[I 151219 23:00:48 web:1946] 200 GET / (127.0.0.1) 1.18ms
+[I 151219 23:13:31 web:1946] 200 GET /RPTest (127.0.0.1) 6.15ms
+[I 151219 23:47:45 web:1946] 200 GET / (127.0.0.1) 1.13ms
+[I 151219 23:48:08 web:1946] 302 GET /shareGame/o_KAIt3sryGEDG-wfhovLFKHgiZc?from=timeline&isappinstalled=0 (127.0.0.1) 1.34ms
+/var/www/isysu-wechat/server_debug.py:292: Warning: Can't create database 'iSysu'; database exists
+  cur.execute('create database if not exists iSysu')
+/var/www/isysu-wechat/server_debug.py:299: Warning: Table 'sysu_game' already exists
+  mission4 int)')
+[I 151219 23:49:45 web:1946] 200 POST /winGame (127.0.0.1) 5.25ms
+[I 151220 00:03:32 web:1946] 302 GET /game (127.0.0.1) 1.10ms
+[I 151220 00:04:55 web:1946] 302 GET /game (127.0.0.1) 0.74ms
+[W 151220 00:08:50 web:1946] 404 GET /manager/html (127.0.0.1) 2.77ms
+[I 151220 00:53:33 web:1946] 200 GET / (127.0.0.1) 0.64ms
+[E 151220 00:54:35 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151220 00:54:35 web:1946] 200 GET /QueryWord/congratulation (127.0.0.1) 1871.52ms
+[I 151220 01:43:15 web:1946] 200 GET / (127.0.0.1) 0.92ms
+[I 151220 01:43:16 web:1946] 200 GET / (127.0.0.1) 0.69ms
+[E 151220 01:44:28 web:1524] Uncaught exception GET /QueryWord/sociology (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/sociology', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '120.236.174.186', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.2; en-us; H60-L01 Build/HDH60-L01) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025469 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '113.108.11.52'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151220 01:44:28 web:1946] 500 GET /QueryWord/sociology (127.0.0.1) 536.36ms
+[I 151220 02:06:30 web:1946] 200 GET / (127.0.0.1) 1.10ms
+[E 151220 02:10:37 web:1524] Uncaught exception GET /QueryWord/like (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/like', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-cn', 'Accept-Encoding': 'gzip, deflate', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (iPad; CPU OS 7_0_4 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11B554a MicroMessenger/6.0.1 NetType/WIFI', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'Cache-Control': 'max-age=259200', 'X-Real-Ip': '117.169.1.78'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151220 02:10:37 web:1946] 500 GET /QueryWord/like (127.0.0.1) 1084.52ms
+[I 151220 03:23:33 web:1946] 200 GET / (127.0.0.1) 1.47ms
+[W 151220 03:24:07 web:1946] 404 GET /manager/html (127.0.0.1) 0.73ms
+[E 151220 03:25:44 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151220 03:25:44 web:1946] 200 GET /QueryWord/english (127.0.0.1) 2458.93ms
+[E 151220 04:26:17 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151220 04:26:17 web:1946] 200 GET /QueryWord/apple (127.0.0.1) 1082.79ms
+[I 151220 05:20:21 web:1946] 302 GET /shareGame/o_KAIt3a3tcewHj6EWBIWLeNGqZI?from=groupmessage&isappinstalled=0 (127.0.0.1) 0.81ms
+[E 151220 05:20:28 web:1524] Uncaught exception GET /play_game/o_KAIt3a3tcewHj6EWBIWLeNGqZI?code=01191d72c8389ca154b0046e2d5dd1au&state=OK (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/play_game/o_KAIt3a3tcewHj6EWBIWLeNGqZI?code=01191d72c8389ca154b0046e2d5dd1au&state=OK', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '125.88.113.211', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; HUAWEI C8817E Build/HuaweiC8817E) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.2.4.53_r843fb8e.600 NetType/ctnet Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'X-Real-Ip': '14.17.37.68'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 216, in get
+        d_d = authorization.get('http://isysu.sysu.edu.cn/play_game/'+str(shareId)+'?code='+str(code)+'&state='+str(state))
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151220 05:20:28 web:1946] 500 GET /play_game/o_KAIt3a3tcewHj6EWBIWLeNGqZI?code=01191d72c8389ca154b0046e2d5dd1au&state=OK (127.0.0.1) 2184.17ms
+[E 151220 05:24:28 web:1524] Uncaught exception GET /play_game/o_KAIt-KiGx47Ph0obMKEzqvRZOo?code=001b7ee249616880d423f76f8b4867bo&state=OK (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/play_game/o_KAIt-KiGx47Ph0obMKEzqvRZOo?code=001b7ee249616880d423f76f8b4867bo&state=OK', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '120.236.174.163', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 5.1.1; zh-cn; SM-G9250 Build/LMY47X) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.7.51_rbb7fa12.660 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'X-Real-Ip': '219.133.40.16'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 216, in get
+        d_d = authorization.get('http://isysu.sysu.edu.cn/play_game/'+str(shareId)+'?code='+str(code)+'&state='+str(state))
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151220 05:24:28 web:1946] 500 GET /play_game/o_KAIt-KiGx47Ph0obMKEzqvRZOo?code=001b7ee249616880d423f76f8b4867bo&state=OK (127.0.0.1) 2175.44ms
+[E 151220 05:25:19 web:1524] Uncaught exception GET /play_game?code=031a2bbda8c4448817cab888fe80e5c5&state=OK (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/play_game?code=031a2bbda8c4448817cab888fe80e5c5&state=OK', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 5.1.1; zh-cn; SM-G9250 Build/LMY47X) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.7.51_rbb7fa12.660 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'X-Real-Ip': '172.19.83.73'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 168, in get
+        playerId = getKeyValueByURL(url, 'openid')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'openid'
+[E 151220 05:25:19 web:1946] 500 GET /play_game?code=031a2bbda8c4448817cab888fe80e5c5&state=OK (127.0.0.1) 1340.86ms
+[I 151220 06:57:19 web:1946] 200 GET / (127.0.0.1) 1.27ms
+[I 151220 06:59:55 web:1946] 200 GET /RPTest (127.0.0.1) 5.24ms
+[E 151220 07:00:30 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151220 07:00:30 web:1946] 200 GET /QueryWord/interesting (127.0.0.1) 2265.22ms
+[I 151220 07:19:59 web:1946] 200 GET /RPTest (127.0.0.1) 5.45ms
+[I 151220 07:21:08 web:1946] 200 GET /RPTest (127.0.0.1) 4.58ms
+[I 151220 07:23:38 web:1946] 200 GET / (127.0.0.1) 1.00ms
+[E 151220 07:27:13 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151220 07:27:13 web:1946] 200 GET /QueryWord/pass (127.0.0.1) 784.05ms
+[E 151220 07:41:13 web:1524] Uncaught exception GET /QueryWord/GOOD (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/GOOD', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '119.130.84.82', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.2; zh-cn; CHM-UL00 Build/HonorCHM-UL00) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.50_r251a77a.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '113.108.11.50'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151220 07:41:13 web:1946] 500 GET /QueryWord/GOOD (127.0.0.1) 1097.89ms
+[E 151220 07:58:18 web:1524] Uncaught exception GET /QueryWord/particular (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/particular', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-TW, en-US', 'Accept-Encoding': 'gzip,deflate', 'X-Wap-Profile': 'http://218.249.47.94/Xianghe/MTK_Phone_JB_UAprofile.xml', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.2.1; zh-tw; 2013022 Build/HM2013022) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 MicroMessenger/6.3.8.50_r251a77a.680 NetType/WIFI Language/zh_TW', 'Accept-Charset': 'utf-8, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '218.76.65.99', 'X-Requested-With': 'com.tencent.mm'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151220 07:58:18 web:1946] 500 GET /QueryWord/particular (127.0.0.1) 1083.91ms
+[I 151220 08:21:43 web:1946] 200 GET / (127.0.0.1) 1.13ms
+[E 151220 08:22:11 web:1524] Uncaught exception GET /QueryWord/great (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/great', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '14.19.155.1', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; HM NOTE 1LTE Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.50_r251a77a.680 NetType/WIFI Language/zh_CN', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '183.232.120.38'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151220 08:22:11 web:1946] 500 GET /QueryWord/great (127.0.0.1) 2311.63ms
+[W 151220 08:27:04 web:1946] 404 GET /manager/html (127.0.0.1) 1.02ms
+[I 151220 09:42:10 web:1946] 200 GET /RPTest (127.0.0.1) 9.26ms
+[E 151220 10:42:44 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151220 10:42:44 web:1946] 200 GET /QueryWord/inevitable (127.0.0.1) 129403.34ms
+[E 151220 11:12:34 web:2653] Could not open static file '/var/www/isysu-wechat/static'
+[I 151220 11:12:34 web:1946] 200 GET /play_game?code=011f3e5d0e376d165aa2be5b78356eaf&state=OK (127.0.0.1) 129399.94ms
+[I 151220 12:16:44 web:1946] 200 GET / (127.0.0.1) 0.79ms
+[I 151220 12:16:44 web:1946] 200 GET /RPTest (127.0.0.1) 7.69ms
+[E 151220 12:19:48 web:1524] Uncaught exception GET /QueryWord/development (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/development', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '59.37.144.109', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; m1 note Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/cmnet Language/zh_HK', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '14.17.44.217'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151220 12:19:48 web:1946] 500 GET /QueryWord/development (127.0.0.1) 786.40ms
+[E 151220 12:21:00 web:1524] Uncaught exception GET /QueryWord/standpoint (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/standpoint', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Forwarded-For': '59.37.144.109', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; m1 note Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/cmnet Language/zh_HK', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '14.17.44.217'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151220 12:21:00 web:1946] 500 GET /QueryWord/standpoint (127.0.0.1) 1101.45ms
+[I 151220 12:26:20 web:1946] 304 GET /RPTest (127.0.0.1) 6.15ms
+[E 151220 12:27:28 web:1524] Uncaught exception GET /QueryWord/standpoint (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/standpoint', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; m1 note Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/cmnet Language/zh_HK', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '117.136.41.25', 'If-None-Match': 'W/"6555c7cb997dccdfcc29570e684453f69fce412a"'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151220 12:27:28 web:1946] 500 GET /QueryWord/standpoint (127.0.0.1) 781.50ms
+[W 151220 15:24:59 web:1946] 404 GET /phpMyAdmin/scripts/setup.php (127.0.0.1) 1.00ms
+[W 151220 15:25:02 web:1946] 404 GET /MyAdmin/scripts/setup.php (127.0.0.1) 0.85ms
+[W 151220 15:25:15 web:1946] 404 GET /pma/scripts/setup.php (127.0.0.1) 0.87ms
+[W 151220 15:25:44 web:1946] 404 GET /phpMyAdmin/scripts/setup.php (127.0.0.1) 0.78ms
+[W 151220 15:25:48 web:1946] 404 GET /MyAdmin/scripts/setup.php (127.0.0.1) 1.27ms
+[W 151220 15:26:02 web:1946] 404 GET /pma/scripts/setup.php (127.0.0.1) 1.68ms
+[I 151220 15:42:04 web:1946] 200 GET / (127.0.0.1) 0.63ms
+[I 151220 15:42:05 web:1946] 200 GET / (127.0.0.1) 0.67ms
+[E 151220 15:42:35 web:2653] Could not open static file '/var/www/isysu-wechat/static'
+[I 151220 15:42:35 web:1946] 200 GET /play_game?code=011caf5c57c24dc279b06db7aca225fi&state=OK (127.0.0.1) 2715.04ms
+[W 151220 17:10:35 web:1946] 404 GET /w00tw00t.at.blackhats.romanian.anti-sec:) (127.0.0.1) 3.55ms
+[W 151220 17:10:38 web:1946] 404 GET /myadmin/scripts/setup.php (127.0.0.1) 0.77ms
+[W 151220 17:10:50 web:1946] 404 GET /phpmyadmin/scripts/setup.php (127.0.0.1) 0.79ms
+[W 151220 17:11:15 web:1946] 404 GET /w00tw00t.at.blackhats.romanian.anti-sec:) (127.0.0.1) 1.10ms
+[W 151220 17:11:18 web:1946] 404 GET /myadmin/scripts/setup.php (127.0.0.1) 1.29ms
+[W 151220 17:11:34 web:1946] 404 GET /phpmyadmin/scripts/setup.php (127.0.0.1) 0.78ms
+[I 151220 17:45:26 web:1946] 200 GET /RPTest (127.0.0.1) 6.05ms
+[E 151220 17:46:30 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151220 17:46:30 web:1946] 200 GET /QueryWord/pig (127.0.0.1) 2108.39ms
+[W 151220 17:47:55 web:1946] 404 GET /register/default.jsp?sourceURL=http%3A%2F%2Fbbs.tianya.cn%2F (127.0.0.1) 2.74ms
+[W 151220 18:40:41 web:1946] 404 GET /pma/scripts/setup.php (127.0.0.1) 1.40ms
+[I 151220 20:06:35 web:1946] 200 GET /RPTest (127.0.0.1) 5.12ms
+[I 151220 20:07:05 web:1946] 200 GET / (127.0.0.1) 1.04ms
+[I 151220 20:37:53 web:1946] 302 GET /game (127.0.0.1) 0.81ms
+[I 151220 20:37:54 web:1946] 200 GET / (127.0.0.1) 0.94ms
+[E 151220 20:45:03 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151220 20:45:03 web:1946] 200 GET /QueryWord/perfect (127.0.0.1) 2217.93ms
+[I 151220 21:15:27 web:1946] 302 GET /game (127.0.0.1) 0.81ms
+[E 151220 21:27:57 web:1524] Uncaught exception GET /QueryWord/segmentation (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='isysu.sysu.edu.cn', method='GET', uri='/QueryWord/segmentation', version='HTTP/1.0', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN', 'Accept-Encoding': 'gzip', 'X-Scheme': 'http', 'Host': 'isysu.sysu.edu.cn', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; m1 note Build/KTU84P) AppleWebKit/533.1 (KHTML, like Gecko)Version/4.0 MQQBrowser/5.4 TBS/025483 Mobile Safari/533.1 MicroMessenger/6.3.8.56_re6b2553.680 NetType/cmnet Language/zh_HK', 'Accept-Charset': 'utf-8, iso-8859-1, utf-16, *;q=0.7', 'Connection': 'close', 'Referer': 'http://isysu.sysu.edu.cn/RPTest', 'X-Real-Ip': '117.136.79.66'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/var/www/isysu-wechat/server_debug.py", line 435, in get
+        d_d = authorization.get(url)
+      File "/var/www/isysu-wechat/server_debug.py", line 396, in get
+        ticket = getKeyValueByURL(get_jsapi_ticket, 'ticket')
+      File "/var/www/isysu-wechat/server_debug.py", line 147, in getKeyValueByURL
+        return json.loads(jsonData)[str(key)]
+    KeyError: 'ticket'
+[E 151220 21:27:57 web:1946] 500 GET /QueryWord/segmentation (127.0.0.1) 1840.70ms
+[I 151220 22:56:42 web:1946] 302 GET /game (127.0.0.1) 0.83ms
+[E 151221 01:17:41 web:2653] Could not open static file '/var/www/isysu-wechat/static'
+[I 151221 01:17:41 web:1946] 200 GET /play_game?code=0017f4b203bda9d6d3b10f31e26b3af6&state=OK (127.0.0.1) 131294.00ms
+[E 151221 02:23:17 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151221 02:23:17 web:1946] 200 GET /QueryWord/now (127.0.0.1) 1104.03ms
+[I 151221 02:49:20 web:1946] 200 GET /RPTest (127.0.0.1) 4.43ms
+[I 151221 02:49:51 web:1946] 200 GET /RPTest (127.0.0.1) 4.22ms
+[I 151221 02:55:52 web:1946] 200 GET / (127.0.0.1) 0.82ms
+[I 151221 02:56:43 web:1946] 304 GET /RPTest (127.0.0.1) 5.73ms
+[I 151221 03:42:01 web:1946] 302 GET /game (127.0.0.1) 1.46ms
+[I 151221 04:18:09 web:1946] 200 GET /RPTest (127.0.0.1) 7.46ms
+[I 151221 05:42:04 web:1946] 200 GET /RPTest (127.0.0.1) 4.82ms
+[I 151221 05:42:24 web:1946] 200 GET / (127.0.0.1) 1.09ms
+[I 151221 06:34:28 web:1946] 200 GET / (127.0.0.1) 1.44ms
+[I 151221 06:55:51 web:1946] 200 GET /RPTest (127.0.0.1) 4.68ms
+[E 151221 06:56:37 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151221 06:56:37 web:1946] 200 GET /QueryWord/belive (127.0.0.1) 1339.96ms
+[I 151221 07:36:26 web:1946] 200 GET / (127.0.0.1) 1.25ms
+[I 151221 08:35:22 web:1946] 200 GET / (127.0.0.1) 1.04ms
+[I 151221 08:57:31 web:1946] 200 GET / (127.0.0.1) 1.24ms
+[W 151221 08:57:41 web:1946] 404 GET /project.json (127.0.0.1) 2.62ms
+[I 151221 09:00:09 web:1946] 200 POST /winGame (127.0.0.1) 6.56ms
+[I 151221 09:38:30 web:1946] 200 GET / (127.0.0.1) 0.95ms
+[I 151221 09:54:23 web:1946] 200 GET / (127.0.0.1) 1.32ms
+[I 151221 09:56:55 web:1946] 302 GET /shareGame/o_KAItx1_oTHXok1ONkV0byn4k7c?from=timeline&isappinstalled=0 (127.0.0.1) 2.81ms
+[E 151221 10:30:38 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
+[I 151221 10:30:38 web:1946] 200 GET /QueryWord/yes (127.0.0.1) 129526.39ms
+[I 151221 11:09:58 web:1946] 302 GET /game (127.0.0.1) 1.57ms
