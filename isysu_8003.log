@@ -1842,3 +1842,24 @@ Got w[E 151219 08:35:23 web:2653] Could not open static file '/var/www/isysu-wec
 [E 151221 10:30:38 web:2653] Could not open static file '/var/www/isysu-wechat/static/rptest/image'
 [I 151221 10:30:38 web:1946] 200 GET /QueryWord/yes (127.0.0.1) 129526.39ms
 [I 151221 11:09:58 web:1946] 302 GET /game (127.0.0.1) 1.57ms
+[I 151221 12:11:47 autoreload:204] /var/www/isysu-wechat/server_debug.py modified; restarting server
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax

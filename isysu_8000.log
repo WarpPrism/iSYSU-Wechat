@@ -1523,3 +1523,24 @@ Got wechat authorization!
         count = cur.execute('select * from sysu_game where openid="%s"'% playerId)
     UnboundLocalError: local variable 'playerId' referenced before assignment
 [E 151221 11:12:43 web:1946] 500 GET /play_game (127.0.0.1) 165077.42ms
+[I 151221 12:11:47 autoreload:204] /var/www/isysu-wechat/server_debug.py modified; restarting server
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax

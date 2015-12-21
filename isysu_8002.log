@@ -1841,3 +1841,24 @@ Got wechat authorization!
     KeyError: 'ticket'
 [E 151221 10:29:35 web:1946] 500 GET /QueryWord/detection (127.0.0.1) 1080.82ms
 [I 151221 11:47:44 web:1946] 200 GET / (127.0.0.1) 0.86ms
+[I 151221 12:11:46 autoreload:204] /var/www/isysu-wechat/server_debug.py modified; restarting server
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax

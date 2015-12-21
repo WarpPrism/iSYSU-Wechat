@@ -1573,3 +1573,24 @@ Got wechat authorization!
         return json.loads(jsonData)[str(key)]
     KeyError: 'ticket'
 [E 151221 11:10:35 web:1946] 500 GET /play_game?code=021d15ebaa04110b62e27ebf66d584am&state=OK (127.0.0.1) 37163.00ms
+[I 151221 12:11:46 autoreload:204] /var/www/isysu-wechat/server_debug.py modified; restarting server
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
+  File "/var/www/isysu-wechat/server_debug.py", line 524
+    <<<<<<< HEAD
+     ^
+SyntaxError: invalid syntax
