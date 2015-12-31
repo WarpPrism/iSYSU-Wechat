@@ -334,7 +334,8 @@ class ServerAuthor(tornado.web.RequestHandler):
         return False
 
     def get(self):
-        self.write(str(self.check()))
+        # self.write(str(self.check()))
+		self.render("index.html")
 
     #处理微信转发过来的消息
     def post(self, *args, **kwargs):
@@ -481,6 +482,11 @@ class RPCounterHandler(tornado.web.RequestHandler):
 	def get(self):
 		global RPcounter
 		self.write(str(RPcounter))
+
+class SchoolBusHandler(tornado.web.RequestHandler):
+	def get(self):
+		self.render("SchoolBus.html")
+
 ##################  gunicorn boot  ########################################
 '''
 settings = {
@@ -524,6 +530,7 @@ if __name__ == '__main__':
 		(r'/RPTest',RPIndexHandler),
 		(r'/GetWordInfo/([a-zA-Z]+)',GetWordInfoHandler),
 		(r'/RPcounter',RPCounterHandler),
+		(r'/schoolbus', SchoolBusHandler)
 	],**settings)
 
     http_server = tornado.httpserver.HTTPServer(app)
